@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */; };
 		AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01C27B092C3001A96D8 /* PlaceModel.swift */; };
+		AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01F27B09387001A96D8 /* NetworkService.swift */; };
 		ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */; };
 		ABE0581527AF513D00E63467 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581427AF513D00E63467 /* SplashView.swift */; };
 		ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0581627AF513E00E63467 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.release.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.release.xcconfig"; sourceTree = "<group>"; };
 		6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.debug.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.debug.xcconfig"; sourceTree = "<group>"; };
 		AB31F01C27B092C3001A96D8 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		AB31F01F27B09387001A96D8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		ABE0580F27AF513D00E63467 /* Info Malang Batu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Info Malang Batu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuApp.swift; sourceTree = "<group>"; };
 		ABE0581427AF513D00E63467 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		AB31F01E27B0936A001A96D8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB31F01F27B09387001A96D8 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		ABE0580627AF513D00E63467 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		ABE0581127AF513D00E63467 /* Info Malang Batu */ = {
 			isa = PBXGroup;
 			children = (
+				AB31F01E27B0936A001A96D8 /* Services */,
 				AB31F01B27B092A6001A96D8 /* Models */,
 				ABE0582027AF54F000E63467 /* Views */,
 				ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */,
@@ -238,6 +249,7 @@
 			files = (
 				ABE0582827AF7B6100E63467 /* TabViewAbout.swift in Sources */,
 				ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */,
+				AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */,
 				ABE0582227AF557600E63467 /* HomeView.swift in Sources */,
 				ABE0582627AF7B4500E63467 /* TabViewGallery.swift in Sources */,
 				AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */,
