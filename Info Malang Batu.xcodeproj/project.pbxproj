@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */; };
 		ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */; };
 		ABE0581527AF513D00E63467 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581427AF513D00E63467 /* SplashView.swift */; };
 		ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0581627AF513E00E63467 /* Assets.xcassets */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.release.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.release.xcconfig"; sourceTree = "<group>"; };
+		6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.debug.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.debug.xcconfig"; sourceTree = "<group>"; };
 		ABE0580F27AF513D00E63467 /* Info Malang Batu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Info Malang Batu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuApp.swift; sourceTree = "<group>"; };
 		ABE0581427AF513D00E63467 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -27,6 +30,7 @@
 		ABE0582327AF7B1F00E63467 /* TabViewListPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewListPlace.swift; sourceTree = "<group>"; };
 		ABE0582527AF7B4500E63467 /* TabViewGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewGallery.swift; sourceTree = "<group>"; };
 		ABE0582727AF7B6100E63467 /* TabViewAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewAbout.swift; sourceTree = "<group>"; };
+		B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Malang_Batu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,17 +38,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9DCDB2CA36166F7F33FCB6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */,
+				3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		ABE0580627AF513D00E63467 = {
 			isa = PBXGroup;
 			children = (
 				ABE0581127AF513D00E63467 /* Info Malang Batu */,
 				ABE0581027AF513D00E63467 /* Products */,
+				A9DCDB2CA36166F7F33FCB6B /* Pods */,
+				F0DE7239F4BC4B0B263CD9E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +104,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		F0DE7239F4BC4B0B263CD9E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,9 +119,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE0581D27AF513E00E63467 /* Build configuration list for PBXNativeTarget "Info Malang Batu" */;
 			buildPhases = (
+				28A7603F81AEC1671ECE170B /* [CP] Check Pods Manifest.lock */,
 				ABE0580B27AF513D00E63467 /* Sources */,
 				ABE0580C27AF513D00E63467 /* Frameworks */,
 				ABE0580D27AF513D00E63467 /* Resources */,
+				75BD77AA1FF8C3EB71A195FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +178,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		28A7603F81AEC1671ECE170B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Info Malang Batu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75BD77AA1FF8C3EB71A195FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ABE0580B27AF513D00E63467 /* Sources */ = {
@@ -287,6 +356,7 @@
 		};
 		ABE0581E27AF513E00E63467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -315,6 +385,7 @@
 		};
 		ABE0581F27AF513E00E63467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
