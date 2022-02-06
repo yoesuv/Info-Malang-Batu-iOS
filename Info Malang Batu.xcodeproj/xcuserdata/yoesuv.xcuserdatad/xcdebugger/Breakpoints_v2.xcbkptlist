@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1433E623-8E2B-4D21-8158-8BF7375FE199"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "53A599EB-B028-481D-AB8E-A40D27F5B2BB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Info Malang Batu/Info_Malang_BatuApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "53A599EB-B028-481D-AB8E-A40D27F5B2BB - 5195184e3886328a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Info_Malang_Batu.Info_Malang_BatuApp.body.getter : some"
+                  moduleName = "Info Malang Batu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yoesuv/Documents/My-iOS-Project/Info%20Malang%20Batu/Info%20Malang%20Batu/Info_Malang_BatuApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "127">
+               </Location>
+               <Location
+                  uuid = "53A599EB-B028-481D-AB8E-A40D27F5B2BB - 4e85d497c1a4a153"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Info_Malang_Batu.SplashView in Info_Malang_Batu.Info_Malang_BatuApp.body.getter : some"
+                  moduleName = "Info Malang Batu"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yoesuv/Documents/My-iOS-Project/Info%20Malang%20Batu/Info%20Malang%20Batu/Info_Malang_BatuApp.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "9">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

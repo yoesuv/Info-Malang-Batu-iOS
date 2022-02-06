@@ -11,7 +11,7 @@ import SwiftUI
 struct Info_Malang_BatuApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashView()
         }
     }
 }
