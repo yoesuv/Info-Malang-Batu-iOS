@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var selectedTab = 0
+    
     var body: some View {
-        Text("Home View")
+        NavigationView {
+            TabView (selection: $selectedTab){
+                TabViewListPlace().tabItem {
+                    Image(systemName: "house.fill")
+                    Text("List Place")
+                }
+                .tag(0)
+                TabViewGallery().tabItem {
+                    Image(systemName: "photo.artframe")
+                    Text("Gallery")
+                }
+                .tag(1)
+                TabViewAbout().tabItem {
+                    Image(systemName: "info.circle.fill")
+                    Text("About")
+                }
+                .tag(2)
+            }
+        }
     }
 }
 

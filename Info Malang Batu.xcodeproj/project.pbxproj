@@ -12,6 +12,9 @@
 		ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0581627AF513E00E63467 /* Assets.xcassets */; };
 		ABE0581A27AF513E00E63467 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0581927AF513E00E63467 /* Preview Assets.xcassets */; };
 		ABE0582227AF557600E63467 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582127AF557600E63467 /* HomeView.swift */; };
+		ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582327AF7B1F00E63467 /* TabViewListPlace.swift */; };
+		ABE0582627AF7B4500E63467 /* TabViewGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582527AF7B4500E63467 /* TabViewGallery.swift */; };
+		ABE0582827AF7B6100E63467 /* TabViewAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582727AF7B6100E63467 /* TabViewAbout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		ABE0581627AF513E00E63467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE0581927AF513E00E63467 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABE0582127AF557600E63467 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ABE0582327AF7B1F00E63467 /* TabViewListPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewListPlace.swift; sourceTree = "<group>"; };
+		ABE0582527AF7B4500E63467 /* TabViewGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewGallery.swift; sourceTree = "<group>"; };
+		ABE0582727AF7B6100E63467 /* TabViewAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewAbout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +80,9 @@
 			children = (
 				ABE0581427AF513D00E63467 /* SplashView.swift */,
 				ABE0582127AF557600E63467 /* HomeView.swift */,
+				ABE0582327AF7B1F00E63467 /* TabViewListPlace.swift */,
+				ABE0582527AF7B4500E63467 /* TabViewGallery.swift */,
+				ABE0582727AF7B6100E63467 /* TabViewAbout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,7 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE0582827AF7B6100E63467 /* TabViewAbout.swift in Sources */,
+				ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */,
 				ABE0582227AF557600E63467 /* HomeView.swift in Sources */,
+				ABE0582627AF7B4500E63467 /* TabViewGallery.swift in Sources */,
 				ABE0581527AF513D00E63467 /* SplashView.swift in Sources */,
 				ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */,
 			);
