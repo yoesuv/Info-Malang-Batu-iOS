@@ -17,4 +17,11 @@ class NetworkService {
         }
     }
     
+    func fetchGalleries(result: @escaping (DataResponse<[GalleryModel], AFError>) -> Void) {
+        AF.request("https://info-malang-batu.firebaseapp.com/Gallery_Malang_Batu.json", method: .get)
+            .responseDecodable(of: [GalleryModel].self) { response in
+                result(response)
+        }
+    }
+    
 }

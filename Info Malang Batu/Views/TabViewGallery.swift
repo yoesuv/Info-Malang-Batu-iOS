@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct TabViewGallery: View {
+    
+    @ObservedObject var viewModel = GalleryViewModel()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -15,6 +18,9 @@ struct TabViewGallery: View {
             }
             .navigationTitle("Gallery")
             .navigationBarTitleDisplayMode(.inline)
+        }
+        .onAppear {
+            viewModel.fetchGalleries()
         }
         .navigationBarHidden(true)
     }
