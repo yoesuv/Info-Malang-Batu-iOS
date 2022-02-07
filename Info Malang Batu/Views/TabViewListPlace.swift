@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct TabViewListPlace: View {
+    
+    @ObservedObject var viewModel = ListPlaceViewModel()
+    
     var body: some View {
-        Text("List Place")
+        NavigationView {
+            
+        }
+        .onAppear {
+            viewModel.fetchPlaces()
+        }
     }
 }
 
