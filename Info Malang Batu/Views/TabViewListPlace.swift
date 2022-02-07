@@ -13,7 +13,11 @@ struct TabViewListPlace: View {
     
     var body: some View {
         NavigationView {
-            
+            List {
+                ForEach(viewModel.places) { place in
+                    ItemPlaceView(place: place)
+                }
+            }
         }
         .onAppear {
             viewModel.fetchPlaces()

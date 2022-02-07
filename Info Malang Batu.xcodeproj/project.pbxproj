@@ -11,6 +11,7 @@
 		AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01C27B092C3001A96D8 /* PlaceModel.swift */; };
 		AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01F27B09387001A96D8 /* NetworkService.swift */; };
 		AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */; };
+		ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */; };
 		ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */; };
 		ABE0581527AF513D00E63467 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581427AF513D00E63467 /* SplashView.swift */; };
 		ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0581627AF513E00E63467 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		AB31F01C27B092C3001A96D8 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		AB31F01F27B09387001A96D8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceViewModel.swift; sourceTree = "<group>"; };
+		ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPlaceView.swift; sourceTree = "<group>"; };
 		ABE0580F27AF513D00E63467 /* Info Malang Batu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Info Malang Batu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuApp.swift; sourceTree = "<group>"; };
 		ABE0581427AF513D00E63467 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -84,6 +86,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		ABCFE2F327B0F374007D19F3 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
 		ABE0580627AF513D00E63467 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +119,7 @@
 				AB31F01E27B0936A001A96D8 /* Services */,
 				AB31F01B27B092A6001A96D8 /* Models */,
 				ABE0582027AF54F000E63467 /* Views */,
+				ABCFE2F327B0F374007D19F3 /* Widgets */,
 				ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */,
 				ABE0581627AF513E00E63467 /* Assets.xcassets */,
 				ABE0581827AF513E00E63467 /* Preview Content */,
@@ -259,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE0582827AF7B6100E63467 /* TabViewAbout.swift in Sources */,
+				ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */,
 				ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */,
 				AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */,
 				ABE0582227AF557600E63467 /* HomeView.swift in Sources */,
