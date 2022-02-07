@@ -14,18 +14,23 @@ struct SplashView: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .center) {
-                Text("Info Malang Batu")
-                    .padding()
-                NavigationLink(
-                    destination: home,
-                    isActive: $isActive,
-                    label: {
-                        EmptyView()
-                    }
-                )
+            ZStack {
+                Color.blue
+                VStack(alignment: .center) {
+                    Text("Info Malang Batu")
+                        .font(.title)
+                        .padding()
+                    NavigationLink(
+                        destination: home,
+                        isActive: $isActive,
+                        label: {
+                            EmptyView()
+                        }
+                    )
+                }
             }
-            
+            .navigationBarHidden(true)
+            .edgesIgnoringSafeArea(.all)
         }.onAppear(perform: {
             goToHome()
         })
