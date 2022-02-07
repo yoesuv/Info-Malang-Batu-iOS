@@ -9,7 +9,14 @@ import SwiftUI
 
 struct TabViewAbout: View {
     var body: some View {
-        Text("About")
+        NavigationView {
+            VStack {
+                Text("About")
+            }
+            .navigationTitle("About")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationBarHidden(true)
     }
 }
 

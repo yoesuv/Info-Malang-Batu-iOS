@@ -17,11 +17,16 @@ struct TabViewListPlace: View {
                 ForEach(viewModel.places) { place in
                     ItemPlaceView(place: place)
                 }
+                .listRowInsets(EdgeInsets())
             }
+            .listStyle(PlainListStyle())
+            .navigationTitle("List Place")
+            .navigationBarTitleDisplayMode(.inline)
         }
         .onAppear {
             viewModel.fetchPlaces()
         }
+        .navigationBarHidden(true)
     }
 }
 

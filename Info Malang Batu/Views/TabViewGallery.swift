@@ -9,7 +9,14 @@ import SwiftUI
 
 struct TabViewGallery: View {
     var body: some View {
-        Text("Gallery")
+        NavigationView {
+            VStack {
+                Text("Gallery")
+            }
+            .navigationTitle("Gallery")
+            .navigationBarTitleDisplayMode(.inline)
+        }
+        .navigationBarHidden(true)
     }
 }
 

@@ -19,23 +19,24 @@ struct ItemPlaceView: View {
                 .fade(duration: 0.25)
                 .resizable()
                 .scaledToFill()
-                .frame(width: .infinity, height: 150)
+                .frame(width: .infinity, height: 180)
                 .clipped()
             VStack (alignment: .leading){
                 Text(place?.nama ?? "")
-                    .font(.body)
+                    .font(.title3)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
                     .shadow(color: .black, radius: 1, x: 1, y: 1)
                     .padding(EdgeInsets.init(top: 0, leading: 8, bottom: 0, trailing: 8))
                 Text(place?.lokasi ?? "")
-                    .font(.callout)
+                    .font(.body)
                     .foregroundColor(.white)
                     .shadow(color: .black, radius: 1, x: 1, y: 1)
                     .padding(EdgeInsets.init(top: 0, leading: 8, bottom: 8, trailing: 8))
             }
         }
     }
+    
 }
 
 struct ItemPlaceView_Previews: PreviewProvider {

@@ -30,7 +30,9 @@ struct HomeView: View {
                 }
                 .tag(2)
             }
+            .navigationViewStyle(StackNavigationViewStyle())
         }
+        .navigationBarHidden(true)
     }
 }
 
