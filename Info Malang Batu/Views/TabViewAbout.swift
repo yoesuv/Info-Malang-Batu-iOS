@@ -16,6 +16,7 @@ struct TabViewAbout: View {
             .navigationTitle("About")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .navigationTitle("")
         .navigationBarHidden(true)
     }
 }

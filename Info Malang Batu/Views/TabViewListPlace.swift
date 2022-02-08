@@ -26,6 +26,7 @@ struct TabViewListPlace: View {
         .onAppear {
             viewModel.fetchPlaces()
         }
+        .navigationTitle("")
         .navigationBarHidden(true)
     }
 }

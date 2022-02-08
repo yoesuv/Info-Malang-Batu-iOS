@@ -9,7 +9,7 @@ import Foundation
 
 class GalleryViewModel: ObservableObject {
     
-    @Published var places = [GalleryModel]()
+    @Published var galleries = [GalleryModel]()
     
     private let networkService = NetworkService()
     
@@ -19,7 +19,7 @@ class GalleryViewModel: ObservableObject {
                 if let count = response.value?.count {
                     print("GalleryViewModel # success data count \(count)")
                 }
-                self.places = response.value ?? []
+                self.galleries = response.value ?? []
             } else {
                 print("GalleryViewModel # error \(response.error!)")
             }

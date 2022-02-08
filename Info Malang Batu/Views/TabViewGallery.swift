@@ -10,11 +10,24 @@ import SwiftUI
 struct TabViewGallery: View {
     
     @ObservedObject var viewModel = GalleryViewModel()
+    let column = [
+        GridItem(.flexible(), spacing: 0),
+        GridItem(.flexible(), spacing: 0),
+        GridItem(.flexible(), spacing: 0),
+    ]
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Gallery")
+            ScrollView (showsIndicators: false){
+                LazyVGrid(columns: column, spacing: 0) {
+                    ForEach(viewModel.galleries) { item in
+                        GeometryReader { geo in
+                            ItemGalleryView(gallery: item)
+                        }
+                        .clipped()
+                        .aspectRatio(1, contentMode: .fill)
+                    }
+                }
             }
             .navigationTitle("Gallery")
             .navigationBarTitleDisplayMode(.inline)
@@ -22,6 +35,7 @@ struct TabViewGallery: View {
         .onAppear {
             viewModel.fetchGalleries()
         }
+        .navigationTitle("")
         .navigationBarHidden(true)
     }
 }
