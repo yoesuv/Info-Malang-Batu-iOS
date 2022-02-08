@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct TabViewAbout: View {
+    
+    @State var selectedTab:Int = 0
+    
     var body: some View {
         NavigationView {
             VStack {
-                Text("About")
+                TabView(selection: $selectedTab) {
+                    SwipeTabAbout().tag(0)
+                    SwipeTabChangelog().tag(1)
+                    SwipeTabLibraries().tag(2)
+                }
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             }
             .navigationTitle("About")
             .navigationBarTitleDisplayMode(.inline)
