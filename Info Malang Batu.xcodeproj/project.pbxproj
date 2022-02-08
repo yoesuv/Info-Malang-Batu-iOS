@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */; };
+		AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838E927B2D60B001DCBC8 /* Bundle.swift */; };
 		AB257A6F27B201510003B98F /* ItemGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB257A6E27B201510003B98F /* ItemGalleryView.swift */; };
 		AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01C27B092C3001A96D8 /* PlaceModel.swift */; };
 		AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01F27B09387001A96D8 /* NetworkService.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.release.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.release.xcconfig"; sourceTree = "<group>"; };
 		6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.debug.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.debug.xcconfig"; sourceTree = "<group>"; };
+		AB1838E927B2D60B001DCBC8 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		AB257A6E27B201510003B98F /* ItemGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGalleryView.swift; sourceTree = "<group>"; };
 		AB31F01C27B092C3001A96D8 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		AB31F01F27B09387001A96D8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		AB1838E827B2D5FB001DCBC8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AB1838E927B2D60B001DCBC8 /* Bundle.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		AB31F01B27B092A6001A96D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,13 +108,6 @@
 				ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		AB76902E27B25B30006DA09B /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Utils;
 			sourceTree = "<group>";
 		};
 		ABCFE2F327B0F374007D19F3 /* Widgets */ = {
@@ -137,7 +140,7 @@
 		ABE0581127AF513D00E63467 /* Info Malang Batu */ = {
 			isa = PBXGroup;
 			children = (
-				AB76902E27B25B30006DA09B /* Utils */,
+				AB1838E827B2D5FB001DCBC8 /* Utils */,
 				AB31F02127B09600001A96D8 /* ViewModels */,
 				AB31F01E27B0936A001A96D8 /* Services */,
 				AB31F01B27B092A6001A96D8 /* Models */,
@@ -308,6 +311,7 @@
 				ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */,
 				ABE0581527AF513D00E63467 /* SplashView.swift in Sources */,
 				AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */,
+				AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */,
 				AB257A6F27B201510003B98F /* ItemGalleryView.swift in Sources */,
 				AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */,
 				ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */,
@@ -453,7 +457,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -482,7 +486,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
