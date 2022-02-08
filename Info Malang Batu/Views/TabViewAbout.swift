@@ -35,24 +35,31 @@ struct AppBar: View {
     @Binding var index: Int
     
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 10) {
-                Spacer().frame(width: 10)
-                Button(action: {
-                    setSelected(index: 0)
-                }, label: {
-                    Text("About")
-                })
-                Button(action: {
-                    setSelected(index: 1)
-                }, label: {
-                    Text("Changelog")
-                })
-                Button(action: {
-                    setSelected(index: 2)
-                }, label: {
-                    Text("Libraries")
-                })
+        ZStack {
+            Color.blue
+                .frame(height: 45)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 10) {
+                    Spacer().frame(width: 10)
+                    Button(action: {
+                        setSelected(index: 0)
+                    }, label: {
+                        Text("About")
+                            .foregroundColor(self.index == 0 ? .white : Color.white.opacity(0.7))
+                    })
+                    Button(action: {
+                        setSelected(index: 1)
+                    }, label: {
+                        Text("Changelog")
+                            .foregroundColor(self.index == 1 ? .white : Color.white.opacity(0.7))
+                    })
+                    Button(action: {
+                        setSelected(index: 2)
+                    }, label: {
+                        Text("Libraries")
+                            .foregroundColor(self.index == 2 ? .white : Color.white.opacity(0.7))
+                    })
+                }
             }
         }
     }

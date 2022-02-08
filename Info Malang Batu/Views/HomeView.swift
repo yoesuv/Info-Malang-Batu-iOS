@@ -13,13 +13,15 @@ struct HomeView: View {
     
     init() {
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = .blue
+        appearance.backgroundColor = UIColor(Color.blue)
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.shadowColor = .clear
         
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().isTranslucent = false
     }
     
     var body: some View {
