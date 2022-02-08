@@ -13,13 +13,13 @@ struct TabViewListPlace: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.places) { place in
-                    ItemPlaceView(place: place)
+            ScrollView(showsIndicators: false) {
+                LazyVStack(spacing: 0) {
+                    ForEach(viewModel.places) { place in
+                        ItemPlaceView(place: place)
+                    }
                 }
-                .listRowInsets(EdgeInsets())
             }
-            .listStyle(PlainListStyle())
             .navigationTitle("List Place")
             .navigationBarTitleDisplayMode(.inline)
         }

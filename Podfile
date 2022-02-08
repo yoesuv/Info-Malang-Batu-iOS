@@ -8,6 +8,5 @@ target 'Info Malang Batu' do
   # Pods for Info Malang Batu
   pod 'Alamofire', '~> 5.5'
   pod 'Kingfisher', '~> 7.0'
-  pod 'Introspect'
 
 end
