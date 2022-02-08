@@ -11,6 +11,17 @@ struct HomeView: View {
     
     @State var selectedTab = 0
     
+    init() {
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .blue
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+    
     var body: some View {
         NavigationView {
             TabView (selection: $selectedTab){

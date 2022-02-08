@@ -100,6 +100,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		AB76902E27B25B30006DA09B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		ABCFE2F327B0F374007D19F3 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +137,7 @@
 		ABE0581127AF513D00E63467 /* Info Malang Batu */ = {
 			isa = PBXGroup;
 			children = (
+				AB76902E27B25B30006DA09B /* Utils */,
 				AB31F02127B09600001A96D8 /* ViewModels */,
 				AB31F01E27B0936A001A96D8 /* Services */,
 				AB31F01B27B092A6001A96D8 /* Models */,
