@@ -14,6 +14,7 @@ struct TabViewAbout: View {
     var body: some View {
         NavigationView {
             VStack {
+                AppBar(index: $selectedTab)
                 TabView(selection: $selectedTab) {
                     SwipeTabAbout().tag(0)
                     SwipeTabChangelog().tag(1)
@@ -26,6 +27,40 @@ struct TabViewAbout: View {
         }
         .navigationTitle("")
         .navigationBarHidden(true)
+    }
+}
+
+struct AppBar: View {
+    
+    @Binding var index: Int
+    
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 10) {
+                Spacer().frame(width: 10)
+                Button(action: {
+                    setSelected(index: 0)
+                }, label: {
+                    Text("About")
+                })
+                Button(action: {
+                    setSelected(index: 1)
+                }, label: {
+                    Text("Changelog")
+                })
+                Button(action: {
+                    setSelected(index: 2)
+                }, label: {
+                    Text("Libraries")
+                })
+            }
+        }
+    }
+    
+    func setSelected(index: Int) {
+        withAnimation {
+            self.index = index
+        }
     }
 }
 
