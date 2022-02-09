@@ -18,7 +18,8 @@ struct SplashView: View {
                 Color.blue
                 VStack(alignment: .center) {
                     Text("Info Malang Batu")
-                        .font(.title)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
                         .padding()
                     NavigationLink(
                         destination: home,
