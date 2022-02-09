@@ -23,6 +23,7 @@
 		ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */; };
 		ABCFE2F927B11E64007D19F3 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */; };
 		ABD01BB927B3A0AD008DAE5F /* GalleryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD01BB827B3A0AD008DAE5F /* GalleryDetailView.swift */; };
+		ABD01BBB27B3BC36008DAE5F /* TabViewMaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD01BBA27B3BC36008DAE5F /* TabViewMaps.swift */; };
 		ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */; };
 		ABE0581527AF513D00E63467 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581427AF513D00E63467 /* SplashView.swift */; };
 		ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0581627AF513E00E63467 /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
 		ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
 		ABD01BB827B3A0AD008DAE5F /* GalleryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailView.swift; sourceTree = "<group>"; };
+		ABD01BBA27B3BC36008DAE5F /* TabViewMaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewMaps.swift; sourceTree = "<group>"; };
 		ABE0580F27AF513D00E63467 /* Info Malang Batu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Info Malang Batu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuApp.swift; sourceTree = "<group>"; };
 		ABE0581427AF513D00E63467 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */,
 				ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */,
 				ABD01BB827B3A0AD008DAE5F /* GalleryDetailView.swift */,
+				ABD01BBA27B3BC36008DAE5F /* TabViewMaps.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				AB1838F027B2DC1C001DCBC8 /* ChangelogModel.swift in Sources */,
 				ABF7737027B3728E00330C8D /* ListPlaceDetailView.swift in Sources */,
 				ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */,
+				ABD01BBB27B3BC36008DAE5F /* TabViewMaps.swift in Sources */,
 				ABE0581527AF513D00E63467 /* SplashView.swift in Sources */,
 				AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */,
 				AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */,

@@ -37,11 +37,16 @@ struct HomeView: View {
                     Text("Gallery")
                 }
                 .tag(1)
+                TabViewMaps().tabItem {
+                    Image(systemName: "map")
+                    Text("Maps")
+                }
+                .tag(2)
                 TabViewAbout().tabItem {
                     Image(systemName: "info.circle.fill")
                     Text("About")
                 }
-                .tag(2)
+                .tag(3)
             }
             .navigationViewStyle(StackNavigationViewStyle())
         }
