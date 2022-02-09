@@ -34,6 +34,7 @@
 		ABF7736A27B3605400330C8D /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736927B3605400330C8D /* LibraryModel.swift */; };
 		ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736B27B3609700330C8D /* LibraryViewModel.swift */; };
 		ABF7736E27B3657D00330C8D /* ItemLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */; };
+		ABF7737027B3728E00330C8D /* ListPlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		ABF7736927B3605400330C8D /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
 		ABF7736B27B3609700330C8D /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLibraryView.swift; sourceTree = "<group>"; };
+		ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceDetailView.swift; sourceTree = "<group>"; };
 		B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Malang_Batu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +195,7 @@
 				AB76902827B24E13006DA09B /* SwipeTabAbout.swift */,
 				AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */,
 				AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */,
+				ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */,
 				AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */,
 				AB1838F027B2DC1C001DCBC8 /* ChangelogModel.swift in Sources */,
+				ABF7737027B3728E00330C8D /* ListPlaceDetailView.swift in Sources */,
 				ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */,
 				ABE0581527AF513D00E63467 /* SplashView.swift in Sources */,
 				AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */,

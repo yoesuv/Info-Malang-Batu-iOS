@@ -16,7 +16,9 @@ struct TabViewListPlace: View {
             ScrollView(showsIndicators: false) {
                 LazyVStack(spacing: 0) {
                     ForEach(viewModel.places) { place in
-                        ItemPlaceView(place: place)
+                        NavigationLink(destination: ListPlaceDetailView(place: place)) {
+                            ItemPlaceView(place: place)
+                        }
                     }
                 }
             }
