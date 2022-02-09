@@ -21,11 +21,13 @@ struct TabViewGallery: View {
             ScrollView (showsIndicators: false){
                 LazyVGrid(columns: column, spacing: 0) {
                     ForEach(viewModel.galleries) { item in
-                        GeometryReader { geo in
-                            ItemGalleryView(gallery: item)
+                        NavigationLink(destination: GalleryDetailView(gallery: item)) {
+                            GeometryReader { geo in
+                                ItemGalleryView(gallery: item)
+                            }
+                            .clipped()
+                            .aspectRatio(1, contentMode: .fill)
                         }
-                        .clipped()
-                        .aspectRatio(1, contentMode: .fill)
                     }
                 }
             }
