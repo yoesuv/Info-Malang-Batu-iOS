@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct SwipeTabChangelog: View {
+    
+    @ObservedObject var viewModel = ChangelogViewModel()
+    
     var body: some View {
-        Text("Swipe Tab Changelog")
+        ScrollView(showsIndicators: false) {
+            LazyVStack(alignment: .leading) {
+                ForEach(viewModel.changelog) { item in
+                    ItemChangelogView(changelog: item)
+                }
+            }
+        }
+        
     }
 }
 
