@@ -7,20 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */; };
+		AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838E927B2D60B001DCBC8 /* Bundle.swift */; };
+		AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */; };
+		AB1838EE27B2D9C3001DCBC8 /* ChangelogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */; };
+		AB1838F027B2DC1C001DCBC8 /* ChangelogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838EF27B2DC1C001DCBC8 /* ChangelogModel.swift */; };
+		AB257A6F27B201510003B98F /* ItemGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB257A6E27B201510003B98F /* ItemGalleryView.swift */; };
+		AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01C27B092C3001A96D8 /* PlaceModel.swift */; };
+		AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01F27B09387001A96D8 /* NetworkService.swift */; };
+		AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */; };
+		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
+		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
+		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
+		ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */; };
+		ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */; };
+		ABCFE2F927B11E64007D19F3 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */; };
+		ABD01BB927B3A0AD008DAE5F /* GalleryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABD01BB827B3A0AD008DAE5F /* GalleryDetailView.swift */; };
 		ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */; };
 		ABE0581527AF513D00E63467 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0581427AF513D00E63467 /* SplashView.swift */; };
 		ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0581627AF513E00E63467 /* Assets.xcassets */; };
 		ABE0581A27AF513E00E63467 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE0581927AF513E00E63467 /* Preview Assets.xcassets */; };
 		ABE0582227AF557600E63467 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582127AF557600E63467 /* HomeView.swift */; };
+		ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582327AF7B1F00E63467 /* TabViewListPlace.swift */; };
+		ABE0582627AF7B4500E63467 /* TabViewGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582527AF7B4500E63467 /* TabViewGallery.swift */; };
+		ABE0582827AF7B6100E63467 /* TabViewAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582727AF7B6100E63467 /* TabViewAbout.swift */; };
+		ABF7736827B3555500330C8D /* HtmlText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736727B3555500330C8D /* HtmlText.swift */; };
+		ABF7736A27B3605400330C8D /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736927B3605400330C8D /* LibraryModel.swift */; };
+		ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736B27B3609700330C8D /* LibraryViewModel.swift */; };
+		ABF7736E27B3657D00330C8D /* ItemLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */; };
+		ABF7737027B3728E00330C8D /* ListPlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.release.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.release.xcconfig"; sourceTree = "<group>"; };
+		6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.debug.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.debug.xcconfig"; sourceTree = "<group>"; };
+		AB1838E927B2D60B001DCBC8 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemChangelogView.swift; sourceTree = "<group>"; };
+		AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogViewModel.swift; sourceTree = "<group>"; };
+		AB1838EF27B2DC1C001DCBC8 /* ChangelogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogModel.swift; sourceTree = "<group>"; };
+		AB257A6E27B201510003B98F /* ItemGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGalleryView.swift; sourceTree = "<group>"; };
+		AB31F01C27B092C3001A96D8 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
+		AB31F01F27B09387001A96D8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceViewModel.swift; sourceTree = "<group>"; };
+		AB76902827B24E13006DA09B /* SwipeTabAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabAbout.swift; sourceTree = "<group>"; };
+		AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabChangelog.swift; sourceTree = "<group>"; };
+		AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabLibraries.swift; sourceTree = "<group>"; };
+		ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPlaceView.swift; sourceTree = "<group>"; };
+		ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		ABD01BB827B3A0AD008DAE5F /* GalleryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryDetailView.swift; sourceTree = "<group>"; };
 		ABE0580F27AF513D00E63467 /* Info Malang Batu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Info Malang Batu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuApp.swift; sourceTree = "<group>"; };
 		ABE0581427AF513D00E63467 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		ABE0581627AF513E00E63467 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABE0581927AF513E00E63467 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABE0582127AF557600E63467 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		ABE0582327AF7B1F00E63467 /* TabViewListPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewListPlace.swift; sourceTree = "<group>"; };
+		ABE0582527AF7B4500E63467 /* TabViewGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewGallery.swift; sourceTree = "<group>"; };
+		ABE0582727AF7B6100E63467 /* TabViewAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewAbout.swift; sourceTree = "<group>"; };
+		ABF7736727B3555500330C8D /* HtmlText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlText.swift; sourceTree = "<group>"; };
+		ABF7736927B3605400330C8D /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
+		ABF7736B27B3609700330C8D /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLibraryView.swift; sourceTree = "<group>"; };
+		ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceDetailView.swift; sourceTree = "<group>"; };
+		B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Malang_Batu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +78,79 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9DCDB2CA36166F7F33FCB6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */,
+				3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AB1838E827B2D5FB001DCBC8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AB1838E927B2D60B001DCBC8 /* Bundle.swift */,
+				ABF7736727B3555500330C8D /* HtmlText.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AB31F01B27B092A6001A96D8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AB31F01C27B092C3001A96D8 /* PlaceModel.swift */,
+				ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */,
+				AB1838EF27B2DC1C001DCBC8 /* ChangelogModel.swift */,
+				ABF7736927B3605400330C8D /* LibraryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AB31F01E27B0936A001A96D8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AB31F01F27B09387001A96D8 /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AB31F02127B09600001A96D8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */,
+				ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */,
+				AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */,
+				ABF7736B27B3609700330C8D /* LibraryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		ABCFE2F327B0F374007D19F3 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */,
+				AB257A6E27B201510003B98F /* ItemGalleryView.swift */,
+				AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */,
+				ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
 		ABE0580627AF513D00E63467 = {
 			isa = PBXGroup;
 			children = (
 				ABE0581127AF513D00E63467 /* Info Malang Batu */,
 				ABE0581027AF513D00E63467 /* Products */,
+				A9DCDB2CA36166F7F33FCB6B /* Pods */,
+				F0DE7239F4BC4B0B263CD9E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +165,12 @@
 		ABE0581127AF513D00E63467 /* Info Malang Batu */ = {
 			isa = PBXGroup;
 			children = (
+				AB1838E827B2D5FB001DCBC8 /* Utils */,
+				AB31F02127B09600001A96D8 /* ViewModels */,
+				AB31F01E27B0936A001A96D8 /* Services */,
+				AB31F01B27B092A6001A96D8 /* Models */,
 				ABE0582027AF54F000E63467 /* Views */,
+				ABCFE2F327B0F374007D19F3 /* Widgets */,
 				ABE0581227AF513D00E63467 /* Info_Malang_BatuApp.swift */,
 				ABE0581627AF513E00E63467 /* Assets.xcassets */,
 				ABE0581827AF513E00E63467 /* Preview Content */,
@@ -74,8 +191,24 @@
 			children = (
 				ABE0581427AF513D00E63467 /* SplashView.swift */,
 				ABE0582127AF557600E63467 /* HomeView.swift */,
+				ABE0582327AF7B1F00E63467 /* TabViewListPlace.swift */,
+				ABE0582527AF7B4500E63467 /* TabViewGallery.swift */,
+				ABE0582727AF7B6100E63467 /* TabViewAbout.swift */,
+				AB76902827B24E13006DA09B /* SwipeTabAbout.swift */,
+				AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */,
+				AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */,
+				ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */,
+				ABD01BB827B3A0AD008DAE5F /* GalleryDetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F0DE7239F4BC4B0B263CD9E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE0581D27AF513E00E63467 /* Build configuration list for PBXNativeTarget "Info Malang Batu" */;
 			buildPhases = (
+				28A7603F81AEC1671ECE170B /* [CP] Check Pods Manifest.lock */,
 				ABE0580B27AF513D00E63467 /* Sources */,
 				ABE0580C27AF513D00E63467 /* Frameworks */,
 				ABE0580D27AF513D00E63467 /* Resources */,
+				75BD77AA1FF8C3EB71A195FC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -143,13 +278,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28A7603F81AEC1671ECE170B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Info Malang Batu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75BD77AA1FF8C3EB71A195FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ABE0580B27AF513D00E63467 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABE0582827AF7B6100E63467 /* TabViewAbout.swift in Sources */,
+				ABF7736827B3555500330C8D /* HtmlText.swift in Sources */,
+				ABCFE2F927B11E64007D19F3 /* GalleryViewModel.swift in Sources */,
+				AB1838EE27B2D9C3001DCBC8 /* ChangelogViewModel.swift in Sources */,
+				ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */,
+				ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */,
+				ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */,
+				ABF7736E27B3657D00330C8D /* ItemLibraryView.swift in Sources */,
+				AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */,
+				AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */,
 				ABE0582227AF557600E63467 /* HomeView.swift in Sources */,
+				ABE0582627AF7B4500E63467 /* TabViewGallery.swift in Sources */,
+				AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */,
+				ABF7736A27B3605400330C8D /* LibraryModel.swift in Sources */,
+				AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */,
+				AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */,
+				ABD01BB927B3A0AD008DAE5F /* GalleryDetailView.swift in Sources */,
+				AB1838F027B2DC1C001DCBC8 /* ChangelogModel.swift in Sources */,
+				ABF7737027B3728E00330C8D /* ListPlaceDetailView.swift in Sources */,
+				ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */,
 				ABE0581527AF513D00E63467 /* SplashView.swift in Sources */,
+				AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */,
+				AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */,
+				AB257A6F27B201510003B98F /* ItemGalleryView.swift in Sources */,
+				AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */,
 				ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +475,7 @@
 		};
 		ABE0581E27AF513E00E63467 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +493,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -303,6 +504,7 @@
 		};
 		ABE0581F27AF513E00E63467 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

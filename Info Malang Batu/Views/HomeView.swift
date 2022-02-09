@@ -8,8 +8,45 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var selectedTab = 0
+    
+    init() {
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = UIColor(Color.blue)
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.shadowColor = .clear
+        
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().compactAppearance = appearance
+        UINavigationBar.appearance().compactScrollEdgeAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+        UINavigationBar.appearance().isTranslucent = false
+    }
+    
     var body: some View {
-        Text("Home View")
+        NavigationView {
+            TabView (selection: $selectedTab){
+                TabViewListPlace().tabItem {
+                    Image(systemName: "house.fill")
+                    Text("List Place")
+                }
+                .tag(0)
+                TabViewGallery().tabItem {
+                    Image(systemName: "photo.artframe")
+                    Text("Gallery")
+                }
+                .tag(1)
+                TabViewAbout().tabItem {
+                    Image(systemName: "info.circle.fill")
+                    Text("About")
+                }
+                .tag(2)
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
+        }
+        .navigationTitle("")
+        .navigationBarHidden(true)
     }
 }
 
