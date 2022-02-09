@@ -18,7 +18,7 @@ struct HtmlText: UIViewRepresentable {
     }
     
     func makeUIView(context: UIViewRepresentableContext<Self>) -> UITextView {
-        textView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width - 40).isActive = true
+        textView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-20).isActive = true
         textView.isSelectable = false
         textView.isUserInteractionEnabled = false
         textView.translatesAutoresizingMaskIntoConstraints = false

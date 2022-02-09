@@ -18,8 +18,7 @@ struct ItemLibraryView: View {
                 .fontWeight(.bold)
             Text(library?.url ?? "")
                 .font(.caption)
-            Text(library?.license ?? "")
-                .font(.caption)
+            HtmlText(library?.license ?? "")
             Divider()
         }
         .padding(.horizontal, 10)
