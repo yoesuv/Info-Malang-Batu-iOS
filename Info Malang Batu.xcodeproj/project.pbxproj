@@ -31,6 +31,9 @@
 		ABE0582627AF7B4500E63467 /* TabViewGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582527AF7B4500E63467 /* TabViewGallery.swift */; };
 		ABE0582827AF7B6100E63467 /* TabViewAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE0582727AF7B6100E63467 /* TabViewAbout.swift */; };
 		ABF7736827B3555500330C8D /* HtmlText.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736727B3555500330C8D /* HtmlText.swift */; };
+		ABF7736A27B3605400330C8D /* LibraryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736927B3605400330C8D /* LibraryModel.swift */; };
+		ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736B27B3609700330C8D /* LibraryViewModel.swift */; };
+		ABF7736E27B3657D00330C8D /* ItemLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		ABE0582527AF7B4500E63467 /* TabViewGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewGallery.swift; sourceTree = "<group>"; };
 		ABE0582727AF7B6100E63467 /* TabViewAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewAbout.swift; sourceTree = "<group>"; };
 		ABF7736727B3555500330C8D /* HtmlText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlText.swift; sourceTree = "<group>"; };
+		ABF7736927B3605400330C8D /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
+		ABF7736B27B3609700330C8D /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLibraryView.swift; sourceTree = "<group>"; };
 		B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Malang_Batu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -99,6 +105,7 @@
 				AB31F01C27B092C3001A96D8 /* PlaceModel.swift */,
 				ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */,
 				AB1838EF27B2DC1C001DCBC8 /* ChangelogModel.swift */,
+				ABF7736927B3605400330C8D /* LibraryModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -117,6 +124,7 @@
 				AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */,
 				ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */,
 				AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */,
+				ABF7736B27B3609700330C8D /* LibraryViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 				ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */,
 				AB257A6E27B201510003B98F /* ItemGalleryView.swift */,
 				AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */,
+				ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -316,11 +325,14 @@
 				AB1838EE27B2D9C3001DCBC8 /* ChangelogViewModel.swift in Sources */,
 				ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */,
 				ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */,
+				ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */,
+				ABF7736E27B3657D00330C8D /* ItemLibraryView.swift in Sources */,
 				AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */,
 				AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */,
 				ABE0582227AF557600E63467 /* HomeView.swift in Sources */,
 				ABE0582627AF7B4500E63467 /* TabViewGallery.swift in Sources */,
 				AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */,
+				ABF7736A27B3605400330C8D /* LibraryModel.swift in Sources */,
 				AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */,
 				AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */,
 				AB1838F027B2DC1C001DCBC8 /* ChangelogModel.swift in Sources */,
