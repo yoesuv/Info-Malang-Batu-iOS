@@ -24,11 +24,7 @@ struct TabViewMaps: View {
 struct AppGoogleMapsView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> some GMSMapView {
-        let path = Bundle.main.path(forResource: "keys", ofType: "plist")
-        let dict = NSDictionary(contentsOfFile: path ?? "")
-        let apiKey = dict!["google_maps_api_key"] as? String
-        GMSServices.provideAPIKey(apiKey!)
-        let camera = GMSCameraPosition.init(latitude: -7.927592, longitude: 112.600567, zoom: 16)
+        let camera = GMSCameraPosition.init(latitude: -7.982914, longitude: 112.630875, zoom: 9)
         let mapView = GMSMapView(frame: CGRect.zero, camera: camera)
         return mapView
     }
