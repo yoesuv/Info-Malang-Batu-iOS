@@ -4,17 +4,7 @@
 
 ### How to run/build this project ###
 - in project directory run ```Pod install```
-- in root project create file ```keys.plist``` then set value
-```
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>google_maps_api_key</key>
-	<string>your google maps api key</string>
-</dict>
-</plist>
-```
+- in root project create file ```keys.plist``` then set value ![](https://images2.imgbox.com/62/c5/D3UZ3vqN_o.png)
 
 ### Screenshot ###
 | ![Splash Screen](https://i.imgur.com/izozNJx.png) | ![List Place](https://i.imgur.com/gOBTpX1.png) | ![Detail List Place](https://i.imgur.com/1FXYww1.png) | ![Gallery](https://i.imgur.com/4AG7ePP.png) |
