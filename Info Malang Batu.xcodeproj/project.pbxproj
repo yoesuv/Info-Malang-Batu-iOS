@@ -16,6 +16,8 @@
 		AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01C27B092C3001A96D8 /* PlaceModel.swift */; };
 		AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01F27B09387001A96D8 /* NetworkService.swift */; };
 		AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */; };
+		AB4D5B2A27B50FBE00E01431 /* PinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5B2927B50FBE00E01431 /* PinModel.swift */; };
+		AB4D5B2C27B5107100E01431 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5B2B27B5107100E01431 /* MapsViewModel.swift */; };
 		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
 		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
 		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
@@ -52,6 +54,8 @@
 		AB31F01C27B092C3001A96D8 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		AB31F01F27B09387001A96D8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceViewModel.swift; sourceTree = "<group>"; };
+		AB4D5B2927B50FBE00E01431 /* PinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinModel.swift; sourceTree = "<group>"; };
+		AB4D5B2B27B5107100E01431 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
 		AB76902827B24E13006DA09B /* SwipeTabAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabAbout.swift; sourceTree = "<group>"; };
 		AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabChangelog.swift; sourceTree = "<group>"; };
 		AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabLibraries.swift; sourceTree = "<group>"; };
@@ -116,6 +120,7 @@
 				ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */,
 				AB1838EF27B2DC1C001DCBC8 /* ChangelogModel.swift */,
 				ABF7736927B3605400330C8D /* LibraryModel.swift */,
+				AB4D5B2927B50FBE00E01431 /* PinModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 				ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */,
 				AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */,
 				ABF7736B27B3609700330C8D /* LibraryViewModel.swift */,
+				AB4D5B2B27B5107100E01431 /* MapsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -370,11 +376,13 @@
 				ABF7736A27B3605400330C8D /* LibraryModel.swift in Sources */,
 				AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */,
 				AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */,
+				AB4D5B2C27B5107100E01431 /* MapsViewModel.swift in Sources */,
 				ABD01BB927B3A0AD008DAE5F /* GalleryDetailView.swift in Sources */,
 				AB1838F027B2DC1C001DCBC8 /* ChangelogModel.swift in Sources */,
 				ABF7737027B3728E00330C8D /* ListPlaceDetailView.swift in Sources */,
 				ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */,
 				ABD01BBB27B3BC36008DAE5F /* TabViewMaps.swift in Sources */,
+				AB4D5B2A27B50FBE00E01431 /* PinModel.swift in Sources */,
 				ABE0581527AF513D00E63467 /* SplashView.swift in Sources */,
 				AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */,
 				AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */,

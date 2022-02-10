@@ -9,12 +9,18 @@ import SwiftUI
 import GoogleMaps
 
 struct TabViewMaps: View {
+    
+    @ObservedObject var viewModel = MapsViewModel()
+    
     var body: some View {
         NavigationView {
             AppGoogleMapsView()
                 .edgesIgnoringSafeArea(.top)
             .navigationTitle("Maps")
             .navigationBarTitleDisplayMode(.inline)
+        }
+        .onAppear {
+            viewModel.fetchPins()
         }
         .navigationTitle("")
         .navigationBarHidden(true)
