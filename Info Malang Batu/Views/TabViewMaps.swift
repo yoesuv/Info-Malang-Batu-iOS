@@ -6,31 +6,35 @@
 //
 
 import SwiftUI
+import GoogleMaps
 
 struct TabViewMaps: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Menu Maps")
-            }
+            AppGoogleMapsView()
+                .edgesIgnoringSafeArea(.top)
             .navigationTitle("Maps")
             .navigationBarTitleDisplayMode(.inline)
-        }
-        .onAppear {
-            loadApiKeys()
         }
         .navigationTitle("")
         .navigationBarHidden(true)
     }
+}
+
+struct AppGoogleMapsView: UIViewRepresentable {
     
-    func loadApiKeys() {
-        if let path = Bundle.main.path(forResource: "keys", ofType: "plist") {
-            if let dict = NSDictionary(contentsOfFile: path) {
-                if let apiKey = dict["google_maps_api_key"] as? String {
-                    print("TabViewMaps # google maps api key \(apiKey)")
-                }
-            }
-        }
+    func makeUIView(context: Context) -> some GMSMapView {
+        let path = Bundle.main.path(forResource: "keys", ofType: "plist")
+        let dict = NSDictionary(contentsOfFile: path ?? "")
+        let apiKey = dict!["google_maps_api_key"] as? String
+        GMSServices.provideAPIKey(apiKey!)
+        let camera = GMSCameraPosition.init(latitude: -7.927592, longitude: 112.600567, zoom: 16)
+        let mapView = GMSMapView(frame: CGRect.zero, camera: camera)
+        return mapView
+    }
+    
+    func updateUIView(_ uiView: UIViewType, context: Context) {
+        
     }
     
 }
