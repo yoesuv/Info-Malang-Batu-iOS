@@ -9,5 +9,6 @@ target 'Info Malang Batu' do
   pod 'Alamofire', '~> 5.5'
   pod 'Kingfisher', '~> 7.0'
   pod 'GoogleMaps', '~> 6.0'
+  pod 'Firebase/Analytics'
 
 end

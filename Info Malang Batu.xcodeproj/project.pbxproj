@@ -19,6 +19,7 @@
 		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
 		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
 		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
+		ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */; };
 		ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */; };
 		ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */; };
 		ABCFE2F927B11E64007D19F3 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */; };
@@ -54,6 +55,7 @@
 		AB76902827B24E13006DA09B /* SwipeTabAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabAbout.swift; sourceTree = "<group>"; };
 		AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabChangelog.swift; sourceTree = "<group>"; };
 		AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabLibraries.swift; sourceTree = "<group>"; };
+		ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPlaceView.swift; sourceTree = "<group>"; };
 		ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
 		ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 		ABE0581127AF513D00E63467 /* Info Malang Batu */ = {
 			isa = PBXGroup;
 			children = (
+				ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */,
 				AB1838E827B2D5FB001DCBC8 /* Utils */,
 				AB31F02127B09600001A96D8 /* ViewModels */,
 				AB31F01E27B0936A001A96D8 /* Services */,
@@ -279,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ABE0581A27AF513E00E63467 /* Preview Assets.xcassets in Resources */,
+				ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */,
 				ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */,
 				ABD551BC27B4B17D0003CE9F /* keys.plist in Resources */,
 			);

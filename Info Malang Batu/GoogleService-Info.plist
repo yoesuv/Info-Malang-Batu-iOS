@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>958039428037-bj562v52o5b2qd492qevbbd9m6dhdaec.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.958039428037-bj562v52o5b2qd492qevbbd9m6dhdaec</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>958039428037-nakhsb7cah52sn9k5ie39ngcn5fvt9ta.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAcS9tAtfoFHeiC5wLkmPLtJCFp5SpSnaM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>958039428037</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.yoesuv.Info-Malang-Batu</string>
+	<key>PROJECT_ID</key>
+	<string>info-malang-batu</string>
+	<key>STORAGE_BUCKET</key>
+	<string>info-malang-batu.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:958039428037:ios:1c48b024d6b6c0f74e99ac</string>
+	<key>DATABASE_URL</key>
+	<string>https://info-malang-batu.firebaseio.com</string>
+</dict>
+</plist>
