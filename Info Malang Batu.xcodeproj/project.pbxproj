@@ -12,6 +12,7 @@
 		AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */; };
 		AB1838EE27B2D9C3001DCBC8 /* ChangelogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */; };
 		AB1838F027B2DC1C001DCBC8 /* ChangelogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838EF27B2DC1C001DCBC8 /* ChangelogModel.swift */; };
+		AB23060127B6466A006B803B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB23060027B6466A006B803B /* MapViewController.swift */; };
 		AB257A6F27B201510003B98F /* ItemGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB257A6E27B201510003B98F /* ItemGalleryView.swift */; };
 		AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01C27B092C3001A96D8 /* PlaceModel.swift */; };
 		AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F01F27B09387001A96D8 /* NetworkService.swift */; };
@@ -50,6 +51,7 @@
 		AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemChangelogView.swift; sourceTree = "<group>"; };
 		AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogViewModel.swift; sourceTree = "<group>"; };
 		AB1838EF27B2DC1C001DCBC8 /* ChangelogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogModel.swift; sourceTree = "<group>"; };
+		AB23060027B6466A006B803B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		AB257A6E27B201510003B98F /* ItemGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGalleryView.swift; sourceTree = "<group>"; };
 		AB31F01C27B092C3001A96D8 /* PlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceModel.swift; sourceTree = "<group>"; };
 		AB31F01F27B09387001A96D8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				AB1838E927B2D60B001DCBC8 /* Bundle.swift */,
 				ABF7736727B3555500330C8D /* HtmlText.swift */,
+				AB23060027B6466A006B803B /* MapViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 				ABE0582227AF557600E63467 /* HomeView.swift in Sources */,
 				ABE0582627AF7B4500E63467 /* TabViewGallery.swift in Sources */,
 				AB31F01D27B092C3001A96D8 /* PlaceModel.swift in Sources */,
+				AB23060127B6466A006B803B /* MapViewController.swift in Sources */,
 				ABF7736A27B3605400330C8D /* LibraryModel.swift in Sources */,
 				AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */,
 				AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */,
