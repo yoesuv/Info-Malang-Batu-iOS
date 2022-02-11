@@ -14,8 +14,8 @@ struct TabViewMaps: View {
     
     var body: some View {
         NavigationView {
-            AppGoogleMapsView()
-                .edgesIgnoringSafeArea(.top)
+            MapViewControllerBridge()
+            .edgesIgnoringSafeArea(.top)
             .navigationTitle("Maps")
             .navigationBarTitleDisplayMode(.inline)
         }
@@ -25,20 +25,6 @@ struct TabViewMaps: View {
         .navigationTitle("")
         .navigationBarHidden(true)
     }
-}
-
-struct AppGoogleMapsView: UIViewRepresentable {
-    
-    func makeUIView(context: Context) -> some GMSMapView {
-        let camera = GMSCameraPosition.init(latitude: -7.982914, longitude: 112.630875, zoom: 9)
-        let mapView = GMSMapView(frame: CGRect.zero, camera: camera)
-        return mapView
-    }
-    
-    func updateUIView(_ uiView: UIViewType, context: Context) {
-        
-    }
-    
 }
 
 struct TabViewMaps_Previews: PreviewProvider {
