@@ -11,6 +11,8 @@ import GoogleMaps
 
 struct MapViewControllerBridge: UIViewControllerRepresentable {
     
+    var pins:[PinModel]
+    
     func makeUIViewController(context: Context) -> some MapViewController {
         return MapViewController()
     }
@@ -18,10 +20,14 @@ struct MapViewControllerBridge: UIViewControllerRepresentable {
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
         let camera = GMSCameraPosition.init(latitude: -7.982914, longitude: 112.630875, zoom: 9)
         uiViewController.map.camera = camera
-        let marker : GMSMarker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -7.982914, longitude: 112.630875)
-        marker.title = "DOT Indonesia"
-        marker.snippet = "Indonesia"
-        marker.map = uiViewController.map
+        uiViewController.map.settings.compassButton = true
+        uiViewController.map.clear()
+        for pin in pins {
+            let marker : GMSMarker = GMSMarker()
+            let locationLatLng = CLLocationCoordinate2D(latitude: pin.latitude ?? 0, longitude: pin.longitude ?? 0)
+            marker.position = locationLatLng
+            marker.title = pin.name
+            marker.map = uiViewController.map
+        }
     }
 }

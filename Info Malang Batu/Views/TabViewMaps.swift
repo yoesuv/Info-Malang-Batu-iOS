@@ -14,7 +14,7 @@ struct TabViewMaps: View {
     
     var body: some View {
         NavigationView {
-            MapViewControllerBridge()
+            MapViewControllerBridge(pins: viewModel.pins)
             .edgesIgnoringSafeArea(.top)
             .navigationTitle("Maps")
             .navigationBarTitleDisplayMode(.inline)
