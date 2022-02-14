@@ -23,8 +23,10 @@ struct MapViewControllerBridge: UIViewControllerRepresentable {
         uiViewController.map.settings.compassButton = true
         uiViewController.map.clear()
         for pin in pins {
-            let marker : GMSMarker = GMSMarker()
+            let markerImage = UIImage(named: "IcMapPin")!.withRenderingMode(.alwaysTemplate)
+            let marker = GMSMarker()
             let locationLatLng = CLLocationCoordinate2D(latitude: pin.latitude ?? 0, longitude: pin.longitude ?? 0)
+            marker.icon = markerImage
             marker.position = locationLatLng
             marker.title = pin.name
             marker.map = uiViewController.map
