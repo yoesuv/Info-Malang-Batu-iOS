@@ -14,7 +14,7 @@ struct HomeView: View {
     init() {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(Color.blue)
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "pacifico", size: 20)!]
         appearance.shadowColor = .clear
         
         UINavigationBar.appearance().standardAppearance = appearance
