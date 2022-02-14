@@ -23,6 +23,7 @@
 		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
 		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
 		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
+		ABC661D027BA145A003928F0 /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC661CF27BA145A003928F0 /* pacifico.ttf */; };
 		ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */; };
 		ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */; };
 		ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */; };
@@ -63,6 +64,7 @@
 		AB76902827B24E13006DA09B /* SwipeTabAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabAbout.swift; sourceTree = "<group>"; };
 		AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabChangelog.swift; sourceTree = "<group>"; };
 		AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabLibraries.swift; sourceTree = "<group>"; };
+		ABC661CF27BA145A003928F0 /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPlaceView.swift; sourceTree = "<group>"; };
 		ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		ABE0582327AF7B1F00E63467 /* TabViewListPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewListPlace.swift; sourceTree = "<group>"; };
 		ABE0582527AF7B4500E63467 /* TabViewGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewGallery.swift; sourceTree = "<group>"; };
 		ABE0582727AF7B6100E63467 /* TabViewAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewAbout.swift; sourceTree = "<group>"; };
+		ABF3E77527BA2D2D0013E00F /* Info-Malang-Batu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Info-Malang-Batu-Info.plist"; sourceTree = SOURCE_ROOT; };
 		ABF7736727B3555500330C8D /* HtmlText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlText.swift; sourceTree = "<group>"; };
 		ABF7736927B3605400330C8D /* LibraryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryModel.swift; sourceTree = "<group>"; };
 		ABF7736B27B3609700330C8D /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
@@ -151,6 +154,22 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		ABC661CD27BA141B003928F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ABC661CE27BA142A003928F0 /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ABC661CE27BA142A003928F0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ABC661CF27BA145A003928F0 /* pacifico.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		ABCFE2F327B0F374007D19F3 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +203,8 @@
 		ABE0581127AF513D00E63467 /* Info Malang Batu */ = {
 			isa = PBXGroup;
 			children = (
+				ABF3E77527BA2D2D0013E00F /* Info-Malang-Batu-Info.plist */,
+				ABC661CD27BA141B003928F0 /* Resources */,
 				ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */,
 				AB1838E827B2D5FB001DCBC8 /* Utils */,
 				AB31F02127B09600001A96D8 /* ViewModels */,
@@ -295,6 +316,7 @@
 			files = (
 				ABE0581A27AF513E00E63467 /* Preview Assets.xcassets in Resources */,
 				ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */,
+				ABC661D027BA145A003928F0 /* pacifico.ttf in Resources */,
 				ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */,
 				ABD551BC27B4B17D0003CE9F /* keys.plist in Resources */,
 			);
@@ -530,6 +552,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Info Malang Batu/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Info-Malang-Batu-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -559,6 +582,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Info Malang Batu/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Info-Malang-Batu-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
