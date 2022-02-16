@@ -23,6 +23,7 @@
 		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
 		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
 		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
+		ABB268E427BBA74700BD3305 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB268E327BBA74700BD3305 /* LocationManager.swift */; };
 		ABC661D027BA145A003928F0 /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC661CF27BA145A003928F0 /* pacifico.ttf */; };
 		ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */; };
 		ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */; };
@@ -64,6 +65,7 @@
 		AB76902827B24E13006DA09B /* SwipeTabAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabAbout.swift; sourceTree = "<group>"; };
 		AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabChangelog.swift; sourceTree = "<group>"; };
 		AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabLibraries.swift; sourceTree = "<group>"; };
+		ABB268E327BBA74700BD3305 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ABC661CF27BA145A003928F0 /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPlaceView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				ABF7736727B3555500330C8D /* HtmlText.swift */,
 				AB23060027B6466A006B803B /* MapViewController.swift */,
 				AB23060227B64928006B803B /* MapViewControllerBridge.swift */,
+				ABB268E327BBA74700BD3305 /* LocationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				ABF7736827B3555500330C8D /* HtmlText.swift in Sources */,
 				ABCFE2F927B11E64007D19F3 /* GalleryViewModel.swift in Sources */,
 				AB1838EE27B2D9C3001DCBC8 /* ChangelogViewModel.swift in Sources */,
+				ABB268E427BBA74700BD3305 /* LocationManager.swift in Sources */,
 				ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */,
 				ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */,
 				ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */,
