@@ -20,13 +20,12 @@ struct MapViewControllerBridge: UIViewControllerRepresentable {
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
         uiViewController.map.clear()
-        let userLat = locationManager.lastLocation?.coordinate.latitude ?? 0.0
-        let userLng = locationManager.lastLocation?.coordinate.longitude ?? 0.0
-        print("MapViewControllerBridge # user lat:\(userLat) lng:\(userLng)")
-        let camera = GMSCameraPosition.init(latitude: userLat, longitude: userLng, zoom: 9)
-        uiViewController.map.camera = camera
         if (CLLocationManager.locationServicesEnabled()) {
+            let userLat = locationManager.lastLocation?.coordinate.latitude ?? 0.0
+            let userLng = locationManager.lastLocation?.coordinate.longitude ?? 0.0
+            print("MapViewControllerBridge # test get user user location lat:\(userLat) lng:\(userLng)")
             uiViewController.map.isMyLocationEnabled = true
+            uiViewController.map.settings.compassButton = true
             uiViewController.map.settings.myLocationButton = true
         }
         for pin in pins {
