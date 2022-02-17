@@ -18,6 +18,12 @@ struct TabViewMaps: View {
             .edgesIgnoringSafeArea(.top)
             .navigationTitle("Maps")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button(action: {
+                
+            }, label: {
+                Image(systemName: "arrow.triangle.2.circlepath")
+                    .foregroundColor(.white)
+            }))
         }
         .onAppear {
             viewModel.fetchPins()
