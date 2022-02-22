@@ -20,6 +20,7 @@
 		AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */; };
 		AB4D5B2A27B50FBE00E01431 /* PinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5B2927B50FBE00E01431 /* PinModel.swift */; };
 		AB4D5B2C27B5107100E01431 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5B2B27B5107100E01431 /* MapsViewModel.swift */; };
+		AB625ECC27BDECE500305171 /* MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB625ECB27BDECE500305171 /* MapDelegate.swift */; };
 		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
 		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
 		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
@@ -62,6 +63,7 @@
 		AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceViewModel.swift; sourceTree = "<group>"; };
 		AB4D5B2927B50FBE00E01431 /* PinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinModel.swift; sourceTree = "<group>"; };
 		AB4D5B2B27B5107100E01431 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
+		AB625ECB27BDECE500305171 /* MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDelegate.swift; sourceTree = "<group>"; };
 		AB76902827B24E13006DA09B /* SwipeTabAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabAbout.swift; sourceTree = "<group>"; };
 		AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabChangelog.swift; sourceTree = "<group>"; };
 		AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabLibraries.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				AB23060027B6466A006B803B /* MapViewController.swift */,
 				AB23060227B64928006B803B /* MapViewControllerBridge.swift */,
 				ABB268E327BBA74700BD3305 /* LocationManager.swift */,
+				AB625ECB27BDECE500305171 /* MapDelegate.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -400,6 +403,7 @@
 				ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */,
 				ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */,
 				ABF7736E27B3657D00330C8D /* ItemLibraryView.swift in Sources */,
+				AB625ECC27BDECE500305171 /* MapDelegate.swift in Sources */,
 				AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */,
 				AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */,
 				ABE0582227AF557600E63467 /* HomeView.swift in Sources */,
@@ -557,6 +561,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Info-Malang-Batu-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "show user current location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -566,7 +571,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -587,6 +592,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Info-Malang-Batu-Info.plist";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "show user current location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -596,7 +602,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

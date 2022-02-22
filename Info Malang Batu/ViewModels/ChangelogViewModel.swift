@@ -12,6 +12,7 @@ class ChangelogViewModel: ObservableObject {
     @Published var changelog = [ChangelogModel]()
     
     init() {
+        changelog.append(ChangelogModel(version: "1.1.0", information: "- add maps"))
         changelog.append(ChangelogModel(version: "1.0.0", information: "- initial release"))
     }
     
