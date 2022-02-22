@@ -13,10 +13,9 @@ struct MapViewControllerBridge: UIViewControllerRepresentable {
     
     var pins:[PinModel]
     @StateObject var locationManager = LocationManager()
-    let mapViewController = MapViewController()
     
     func makeUIViewController(context: Context) -> some MapViewController {
-        return mapViewController
+        return MapViewController()
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {

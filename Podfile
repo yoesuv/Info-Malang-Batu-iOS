@@ -10,5 +10,6 @@ target 'Info Malang Batu' do
   pod 'Kingfisher', '~> 7.0'
   pod 'GoogleMaps', '~> 6.0'
   pod 'Firebase/Analytics'
+  pod 'AlertToast', '~> 1.3'
 
 end
