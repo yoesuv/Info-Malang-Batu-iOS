@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct TabViewListPlace: View {
     
@@ -30,6 +31,9 @@ struct TabViewListPlace: View {
         }
         .navigationTitle("")
         .navigationBarHidden(true)
+        .toast(isPresenting: $viewModel.loading, alert: {
+            AlertToast.init(type: .loading)
+        })
     }
 }
 

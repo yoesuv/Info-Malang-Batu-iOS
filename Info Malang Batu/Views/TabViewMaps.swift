@@ -35,6 +35,9 @@ struct TabViewMaps: View {
         .toast(isPresenting: $showToast, alert: {
             AlertToast(type: .error(.yellow), title: "Under Development!")
         })
+        .toast(isPresenting: $viewModel.loading, alert: {
+            AlertToast.init(type: .loading)
+        })
     }
 }
 
