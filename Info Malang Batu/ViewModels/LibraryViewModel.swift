@@ -16,6 +16,9 @@ class LibraryViewModel: ObservableObject {
     
     init() {
         libraries.append(LibraryModel(name: "Alamofire", url: "https://cocoapods.org/pods/Alamofire", license: "The MIT License (MIT)</br></br><p align='justify'>Copyright (c) 2019 Wei Wang</p></br>"+mitPartOne+"</br>"+mitPartTwo+"</br>"+mitPartThree))
+        libraries.append(LibraryModel(name: "AlertToast", url: "https://cocoapods.org/pods/AlertToast", license: "The MIT License (MIT)</br></br><p align='justify'>Copyright (c) 2021 Elai Zuberman</p></br>"+mitPartOne+"</br>"+mitPartTwo+"</br>"+mitPartThree))
+        libraries.append(LibraryModel(name: "FirebaseAnalytics", url: "https://cocoapods.org/pods/FirebaseAnalytics", license: "GOOGLE ANALYTICS FOR FIREBASE TERMS OF SERVICE</br></br><p>https://firebase.google.com/terms/analytics</p>"))
+        libraries.append(LibraryModel(name: "GoogleMaps", url: "https://cocoapods.org/pods/GoogleMaps", license: "Google Maps Platform License Agreement</br></br><p>https://cloud.google.com/maps-platform/terms</p>"))
         libraries.append(LibraryModel(name: "Kingfisher", url: "https://cocoapods.org/pods/Kingfisher", license: "The MIT License (MIT)</br></br><p align='justify'>Copyright (c) 2015-2021 Alamofire Software Foundation (http://alamofire.org/)</p></br>"+mitPartOne+"</br>"+mitPartTwo+"</br>"+mitPartThree))
     }
     
