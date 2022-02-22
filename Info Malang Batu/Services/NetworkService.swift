@@ -24,4 +24,11 @@ class NetworkService {
         }
     }
     
+    func fetchPins(result: @escaping (DataResponse<[PinModel], AFError>) -> Void) {
+        AF.request("https://info-malang-batu.firebaseapp.com/Maps_Malang_Batu.json", method: .get)
+            .responseDecodable(of: [PinModel].self) { response in
+                result(response)
+        }
+    }
+    
 }

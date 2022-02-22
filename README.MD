@@ -1,14 +1,21 @@
 ## Info Malang Batu iOS ##
 
-- Initial Release
+- Add Maps
+
+### How to run/build this project ###
+- in project directory run ```Pod install```
+- in root project create file ```keys.plist``` then set value ![](https://images2.imgbox.com/62/c5/D3UZ3vqN_o.png)
 
 ### Screenshot ###
-| ![Splash Screen](https://i.imgur.com/izozNJx.png) | ![List Place](https://i.imgur.com/gOBTpX1.png) | ![Detail List Place](https://i.imgur.com/1FXYww1.png) | ![Gallery](https://i.imgur.com/4AG7ePP.png) |
+| ![Splash Screen](https://i.imgur.com/iPgNYdB.png) | ![List Place](https://i.imgur.com/ctnH16Z.png) | ![Detail List Place](https://i.imgur.com/25jB6Kl.png) | ![Gallery](https://i.imgur.com/bBRlZ8L.png) |
 | :---: | :---: | :---: | :---: |
-| ![Detail Gallery](https://i.imgur.com/zWOS9Bq.png) | ![About](https://i.imgur.com/42bYUyk.png) | ![Changelog](https://i.imgur.com/xxjyVrZ.png) | ![Libraries](https://i.imgur.com/JpWR9K3.png) |
+| ![Detail Gallery](https://i.imgur.com/0CHMbEF.png) | ![Maps](https://i.imgur.com/nu2nODF.png) | ![About](https://i.imgur.com/vDMwqi8.png) | ![Changelog](https://i.imgur.com/0KE6NTW.png) |
 
 ### List Library ###
 - [Alamofire](https://cocoapods.org/pods/Alamofire)
+- [AlertToast](https://cocoapods.org/pods/AlertToast)
+- [Firebase Analytics](https://cocoapods.org/pods/FirebaseAnalytics)
+- [Google Maps](https://cocoapods.org/pods/GoogleMaps)
 - [Kingfisher](https://cocoapods.org/pods/Kingfisher)
 
 ### License ###

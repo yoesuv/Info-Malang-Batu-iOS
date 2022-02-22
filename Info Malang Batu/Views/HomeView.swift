@@ -14,7 +14,7 @@ struct HomeView: View {
     init() {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = UIColor(Color.blue)
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "pacifico", size: 20)!]
         appearance.shadowColor = .clear
         
         UINavigationBar.appearance().standardAppearance = appearance
@@ -37,11 +37,16 @@ struct HomeView: View {
                     Text("Gallery")
                 }
                 .tag(1)
+                TabViewMaps().tabItem {
+                    Image(systemName: "map")
+                    Text("Maps")
+                }
+                .tag(2)
                 TabViewAbout().tabItem {
                     Image(systemName: "info.circle.fill")
                     Text("About")
                 }
-                .tag(2)
+                .tag(3)
             }
             .navigationViewStyle(StackNavigationViewStyle())
         }
