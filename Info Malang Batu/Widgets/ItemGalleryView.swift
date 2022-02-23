@@ -14,6 +14,12 @@ struct ItemGalleryView: View {
     
     var body: some View {
         KFImage.url(URL(string: gallery?.image ?? ""))
+            .placeholder{
+                Image(uiImage: UIImage(named: "PlaceholderLoadingSquare")!)
+                    .resizable()
+                    .scaledToFill()
+                    .clipped()
+            }
             .cancelOnDisappear(true)
             .fade(duration: 0.25)
             .resizable()
