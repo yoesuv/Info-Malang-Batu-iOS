@@ -12,16 +12,17 @@ import AlertToast
 struct TabViewMaps: View {
     
     @ObservedObject var viewModel = MapsViewModel()
-    @State private var showToast = false
+    @ObservedObject var vcMapLink = VCMapLink()
     
     var body: some View {
+        let mapView = MapViewControllerBridge(pins: viewModel.pins, vcMapLink: vcMapLink)
         NavigationView {
-            MapViewControllerBridge(pins: viewModel.pins)
+            mapView
             .edgesIgnoringSafeArea(.top)
             .navigationTitle("Maps")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Button(action: {
-                showToast.toggle()
+                vcMapLink.resetMap()
             }, label: {
                 Image(systemName: "arrow.triangle.2.circlepath")
                     .foregroundColor(.white)
@@ -32,9 +33,6 @@ struct TabViewMaps: View {
         }
         .navigationTitle("")
         .navigationBarHidden(true)
-        .toast(isPresenting: $showToast, alert: {
-            AlertToast(type: .error(.yellow), title: "Under Development!")
-        })
         .toast(isPresenting: $viewModel.loading, alert: {
             AlertToast.init(type: .loading)
         })
