@@ -11,6 +11,7 @@ import AlertToast
 struct TabViewListPlace: View {
     
     @ObservedObject var viewModel = ListPlaceViewModel()
+    @State private var showMenuListPlace = false
     
     var body: some View {
         NavigationView {
@@ -25,6 +26,12 @@ struct TabViewListPlace: View {
             }
             .navigationTitle("List Place")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationBarItems(trailing: Button(action: {
+                
+            }, label: {
+                Image(systemName: "slider.horizontal.3")
+                    .foregroundColor(.white)
+            }))
         }
         .onAppear {
             viewModel.fetchPlaces()
