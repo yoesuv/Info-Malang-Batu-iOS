@@ -20,11 +20,56 @@ class ListPlaceViewModel: ObservableObject {
             self.loading = false
             if (response.error == nil) {
                 if let count = response.value?.count {
-                    print("NetworkManager # success data count \(count)")
+                    print("ListPlaceViewModel # \(#function) success data count \(count)")
                 }
                 self.places = response.value ?? []
             } else {
-                print("NetworkManager # error \(response.error!)")
+                print("ListPlaceViewModel # \(#function) error \(response.error!)")
+            }
+        }
+    }
+    
+    func fetchKotaBatuPlaces() {
+        loading = true
+        networkService.fetchKotaBatuPlaces{ response in
+            self.loading = false
+            if (response.error == nil) {
+                if let count = response.value?.count {
+                    print("ListPlaceViewModel # \(#function) success data count \(count)")
+                }
+                self.places = response.value ?? []
+            } else {
+                print("ListPlaceViewModel # \(#function) error \(response.error!)")
+            }
+        }
+    }
+    
+    func fetchKotaMalangPlaces() {
+        loading = true
+        networkService.fetchKotaMalangPlaces{ response in
+            self.loading = false
+            if (response.error == nil) {
+                if let count = response.value?.count {
+                    print("ListPlaceViewModel # \(#function) success data count \(count)")
+                }
+                self.places = response.value ?? []
+            } else {
+                print("ListPlaceViewModel # \(#function) error \(response.error!)")
+            }
+        }
+    }
+    
+    func fetchKabMalangPlaces() {
+        loading = true
+        networkService.fetchKabMalangPlaces{ response in
+            self.loading = false
+            if (response.error == nil) {
+                if let count = response.value?.count {
+                    print("ListPlaceViewModel # \(#function) success data count \(count)")
+                }
+                self.places = response.value ?? []
+            } else {
+                print("ListPlaceViewModel # \(#function) error \(response.error!)")
             }
         }
     }

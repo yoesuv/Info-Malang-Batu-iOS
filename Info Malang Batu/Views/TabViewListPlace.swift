@@ -27,7 +27,7 @@ struct TabViewListPlace: View {
             .navigationTitle("List Place")
             .navigationBarTitleDisplayMode(.inline)
             .navigationBarItems(trailing: Button(action: {
-                
+                showMenuListPlace.toggle()
             }, label: {
                 Image(systemName: "slider.horizontal.3")
                     .foregroundColor(.white)
@@ -38,10 +38,25 @@ struct TabViewListPlace: View {
         }
         .navigationTitle("")
         .navigationBarHidden(true)
+        .confirmationDialog("", isPresented: $showMenuListPlace, actions: {
+            Button("Semua") {
+                viewModel.fetchPlaces()
+            }
+            Button("Kab Malang") {
+                viewModel.fetchKabMalangPlaces()
+            }
+            Button("Kota Batu") {
+                viewModel.fetchKotaBatuPlaces()
+            }
+            Button("Kota Malang") {
+                viewModel.fetchKotaMalangPlaces()
+            }
+        })
         .toast(isPresenting: $viewModel.loading, alert: {
             AlertToast.init(type: .loading)
         })
     }
+
 }
 
 struct TabViewListPlace_Previews: PreviewProvider {
