@@ -47,7 +47,7 @@ struct TabViewListPlace: View {
                 Spacer()
                 VStack(spacing: 18) {
                     ForEach(filters) { filter in
-                        ItemCheckListPlace(filter: filter)
+                        ItemCheckListPlace(filter: filter, showMenuListPlace: $showMenuListPlace)
                     }
                 }
                 .padding(.bottom, 20)

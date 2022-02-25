@@ -11,6 +11,7 @@ import SwiftUI
 struct ItemCheckListPlace: View {
     
     @State var filter: FilterItemListPlaceModel
+    @Binding var showMenuListPlace: Bool
         
     var body: some View {
         HStack {
@@ -33,7 +34,14 @@ struct ItemCheckListPlace: View {
         .padding(.horizontal)
         .contentShape(Rectangle())
         .onTapGesture {
-            filter.checked.toggle()
+            if (!filter.checked) {
+                filter.checked = true
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                withAnimation {
+                    showMenuListPlace.toggle()
+                }
+            }
         }
     }
 }
