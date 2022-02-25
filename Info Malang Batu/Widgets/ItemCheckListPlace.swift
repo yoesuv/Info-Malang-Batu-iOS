@@ -12,6 +12,7 @@ struct ItemCheckListPlace: View {
     
     @State var filter: FilterItemListPlaceModel
     @Binding var showMenuListPlace: Bool
+    var completion: (Location) -> Void
         
     var body: some View {
         HStack {
@@ -34,6 +35,7 @@ struct ItemCheckListPlace: View {
         .padding(.horizontal)
         .contentShape(Rectangle())
         .onTapGesture {
+            completion(filter.location)
             if (!filter.checked) {
                 filter.checked = true
             }

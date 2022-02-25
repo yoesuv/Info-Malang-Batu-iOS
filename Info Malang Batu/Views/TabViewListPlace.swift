@@ -13,10 +13,10 @@ struct TabViewListPlace: View {
     @ObservedObject var viewModel = ListPlaceViewModel()
     @State private var showMenuListPlace = false
     @State var filters = [
-        FilterItemListPlaceModel(title: "Semua", checked: true),
-        FilterItemListPlaceModel(title: "Kab Malang", checked: false),
-        FilterItemListPlaceModel(title: "Kota Batu", checked: false),
-        FilterItemListPlaceModel(title: "Kota Malang", checked: false),
+        FilterItemListPlaceModel(title: "Semua", checked: true, location: Location.semua),
+        FilterItemListPlaceModel(title: "Kab Malang", checked: false, location: Location.kab_malang),
+        FilterItemListPlaceModel(title: "Kota Batu", checked: false, location: Location.kota_batu),
+        FilterItemListPlaceModel(title: "Kota Malang", checked: false, location: Location.kota_malang),
     ]
     
     var body: some View {
@@ -47,7 +47,9 @@ struct TabViewListPlace: View {
                 Spacer()
                 VStack(spacing: 18) {
                     ForEach(filters) { filter in
-                        ItemCheckListPlace(filter: filter, showMenuListPlace: $showMenuListPlace)
+                        ItemCheckListPlace(filter: filter, showMenuListPlace: $showMenuListPlace, completion: { location in
+                            loadPlace(location)
+                        })
                     }
                 }
                 .padding(.bottom, 20)
@@ -74,6 +76,20 @@ struct TabViewListPlace: View {
         .toast(isPresenting: $viewModel.loading, alert: {
             AlertToast.init(type: .loading)
         })
+    }
+
+    func loadPlace(_ location: Location) {
+        print("TabViewListPlace # \(#function) : \(location)")
+        switch location {
+        case .semua:
+            viewModel.fetchPlaces()
+        case .kab_malang:
+            viewModel.fetchKabMalangPlaces()
+        case .kota_batu:
+            viewModel.fetchKotaBatuPlaces()
+        case .kota_malang:
+            viewModel.fetchKotaMalangPlaces()
+        }
     }
 
 }

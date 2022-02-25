@@ -11,4 +11,5 @@ struct FilterItemListPlaceModel: Identifiable {
     var id = UUID().uuidString
     var title: String
     var checked: Bool
+    var location: Location
 }
