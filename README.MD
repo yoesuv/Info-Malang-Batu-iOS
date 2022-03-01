@@ -1,6 +1,7 @@
 ## Info Malang Batu iOS ##
 
-- Add Maps
+- Add Filter List Place
+- Change app color to brown
 
 ### How to run/build this project ###
 - in project directory run ```Pod install```
