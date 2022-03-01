@@ -15,7 +15,7 @@ struct SplashView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color.blue
+                Color(uiColor: UIColor(named: "Brown500")!)
                 VStack(alignment: .center) {
                     Text("Info Malang Batu")
                         .font(.custom("pacifico", size: 32))

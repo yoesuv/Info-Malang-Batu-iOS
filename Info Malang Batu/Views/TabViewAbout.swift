@@ -33,10 +33,11 @@ struct TabViewAbout: View {
 struct AppBar: View {
     
     @Binding var index: Int
+    private let brown = Color(UIColor(named: "Brown500")!)
     
     var body: some View {
         ZStack {
-            Color.blue
+            brown
                 .frame(height: 45)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
