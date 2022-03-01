@@ -12,6 +12,7 @@ struct TabViewListPlace: View {
     
     @ObservedObject var viewModel = ListPlaceViewModel()
     @State private var showMenuListPlace = false
+    @State private var selectedFilter = FilterItemListPlaceModel(title: "Semua", location: Location.semua)
     
     var body: some View {
         ZStack {
@@ -41,7 +42,7 @@ struct TabViewListPlace: View {
                 Spacer()
                 VStack(spacing: 18) {
                     ForEach(viewModel.filters) { filter in
-                        ItemCheckListPlace(filter: filter, showMenuListPlace: $showMenuListPlace, completion: { location in
+                        ItemCheckListPlace(filter: filter, selectedFilter: self.$selectedFilter, showMenuListPlace: $showMenuListPlace, completion: { location in
                             loadPlace(location)
                         })
                     }
