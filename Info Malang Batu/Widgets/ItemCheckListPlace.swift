@@ -35,11 +35,11 @@ struct ItemCheckListPlace: View {
         .padding(.horizontal)
         .contentShape(Rectangle())
         .onTapGesture {
-            completion(filter.location)
             if (!filter.checked) {
                 filter.checked = true
             }
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                completion(filter.location)
                 withAnimation {
                     showMenuListPlace.toggle()
                 }

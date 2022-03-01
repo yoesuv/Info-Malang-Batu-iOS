@@ -12,12 +12,6 @@ struct TabViewListPlace: View {
     
     @ObservedObject var viewModel = ListPlaceViewModel()
     @State private var showMenuListPlace = false
-    @State var filters = [
-        FilterItemListPlaceModel(title: "Semua", checked: true, location: Location.semua),
-        FilterItemListPlaceModel(title: "Kab Malang", checked: false, location: Location.kab_malang),
-        FilterItemListPlaceModel(title: "Kota Batu", checked: false, location: Location.kota_batu),
-        FilterItemListPlaceModel(title: "Kota Malang", checked: false, location: Location.kota_malang),
-    ]
     
     var body: some View {
         ZStack {
@@ -46,7 +40,7 @@ struct TabViewListPlace: View {
             VStack {
                 Spacer()
                 VStack(spacing: 18) {
-                    ForEach(filters) { filter in
+                    ForEach(viewModel.filters) { filter in
                         ItemCheckListPlace(filter: filter, showMenuListPlace: $showMenuListPlace, completion: { location in
                             loadPlace(location)
                         })

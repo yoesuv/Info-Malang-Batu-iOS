@@ -11,6 +11,12 @@ class ListPlaceViewModel: ObservableObject {
     
     @Published var places = [PlaceModel]()
     @Published var loading: Bool = true
+    @Published var filters = [
+        FilterItemListPlaceModel(title: "Semua", checked: true, location: Location.semua),
+        FilterItemListPlaceModel(title: "Kab Malang", checked: false, location: Location.kab_malang),
+        FilterItemListPlaceModel(title: "Kota Batu", checked: false, location: Location.kota_batu),
+        FilterItemListPlaceModel(title: "Kota Malang", checked: false, location: Location.kota_malang),
+    ]
     
     private let networkService = NetworkService()
     
