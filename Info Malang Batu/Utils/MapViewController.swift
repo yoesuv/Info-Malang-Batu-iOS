@@ -21,4 +21,11 @@ class MapViewController: UIViewController {
         self.view = map
     }
     
+    // https://stackoverflow.com/a/65926143/3559183
+    // google keyword uiviewcontrollerrepresentable call function
+    func action(_ action: VCMapLinkAction) {
+        print("MapViewController # \(#function) \(action)")
+        map.camera = defaultCamera
+    }
+    
 }

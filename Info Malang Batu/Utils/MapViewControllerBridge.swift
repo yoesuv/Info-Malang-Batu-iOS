@@ -8,17 +8,40 @@
 import Foundation
 import SwiftUI
 import GoogleMaps
+import Combine
 
 struct MapViewControllerBridge: UIViewControllerRepresentable {
     
     var pins:[PinModel]
+    var vcMapLink: VCMapLink
     @StateObject var locationManager = LocationManager()
+    
+    class Coordinator {
+        var vcMapLink: VCMapLink? {
+            didSet {
+                cancelable = vcMapLink?.$action.sink(receiveValue: { (action) in
+                    guard let action = action else {
+                        return
+                    }
+                    self.mapController?.action(action)
+                })
+            }
+        }
+        var mapController: MapViewController?
+        private var cancelable: AnyCancellable?
+    }
+    
+    func makeCoordinator() -> Coordinator {
+        Coordinator()
+    }
     
     func makeUIViewController(context: Context) -> some MapViewController {
         return MapViewController()
     }
     
     func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
+        context.coordinator.mapController = uiViewController
+        context.coordinator.vcMapLink = vcMapLink
         uiViewController.map.clear()
         if (CLLocationManager.locationServicesEnabled()) {
             let userLat = locationManager.lastLocation?.coordinate.latitude ?? 0.0

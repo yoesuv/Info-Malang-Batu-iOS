@@ -15,6 +15,14 @@ struct ItemPlaceView: View {
     var body: some View {
         ZStack (alignment: .bottomLeading) {
             KFImage.url(URL(string: place?.gambar ?? ""))
+                .placeholder{
+                    Image(uiImage: UIImage(named: "PlaceholderLoading")!)
+                        .resizable()
+                        .scaledToFill()
+                        .clipped()
+                }
+                .onFailureImage(UIImage(named: "PlaceholderError"))
+                .fade(duration: 1)
                 .cancelOnDisappear(true)
                 .fade(duration: 0.25)
                 .resizable()

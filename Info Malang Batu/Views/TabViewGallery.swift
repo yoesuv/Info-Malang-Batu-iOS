@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AlertToast
 
 struct TabViewGallery: View {
     
@@ -39,6 +40,9 @@ struct TabViewGallery: View {
         }
         .navigationTitle("")
         .navigationBarHidden(true)
+        .toast(isPresenting: $viewModel.loading, alert: {
+            AlertToast.init(type: .loading)
+        })
     }
 }
 

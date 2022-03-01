@@ -10,10 +10,11 @@ import SwiftUI
 struct HomeView: View {
     
     @State var selectedTab = 0
+    private let brown = UIColor(named: "Brown500")!
     
     init() {
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = UIColor(Color.blue)
+        appearance.backgroundColor = brown
         appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "pacifico", size: 20)!]
         appearance.shadowColor = .clear
         
@@ -48,6 +49,7 @@ struct HomeView: View {
                 }
                 .tag(3)
             }
+            .accentColor(Color(brown))
             .navigationViewStyle(StackNavigationViewStyle())
         }
         .navigationTitle("")

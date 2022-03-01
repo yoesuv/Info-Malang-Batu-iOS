@@ -20,10 +20,13 @@
 		AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */; };
 		AB4D5B2A27B50FBE00E01431 /* PinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5B2927B50FBE00E01431 /* PinModel.swift */; };
 		AB4D5B2C27B5107100E01431 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5B2B27B5107100E01431 /* MapsViewModel.swift */; };
-		AB625ECC27BDECE500305171 /* MapDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB625ECB27BDECE500305171 /* MapDelegate.swift */; };
+		AB57B01B27C8456E00FFC425 /* VCMapLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57B01A27C8456E00FFC425 /* VCMapLink.swift */; };
 		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
 		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
 		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
+		AB87377F27C8DDE800C385C0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87377E27C8DDE800C385C0 /* Location.swift */; };
+		AB93B6D927C8921D000B2EBA /* ItemCheckListPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93B6D827C8921D000B2EBA /* ItemCheckListPlace.swift */; };
+		AB93B6DB27C89273000B2EBA /* FilterItemListPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */; };
 		ABB268E427BBA74700BD3305 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB268E327BBA74700BD3305 /* LocationManager.swift */; };
 		ABC661D027BA145A003928F0 /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC661CF27BA145A003928F0 /* pacifico.ttf */; };
 		ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */; };
@@ -63,10 +66,13 @@
 		AB31F02227B0961C001A96D8 /* ListPlaceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceViewModel.swift; sourceTree = "<group>"; };
 		AB4D5B2927B50FBE00E01431 /* PinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinModel.swift; sourceTree = "<group>"; };
 		AB4D5B2B27B5107100E01431 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
-		AB625ECB27BDECE500305171 /* MapDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDelegate.swift; sourceTree = "<group>"; };
+		AB57B01A27C8456E00FFC425 /* VCMapLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCMapLink.swift; sourceTree = "<group>"; };
 		AB76902827B24E13006DA09B /* SwipeTabAbout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabAbout.swift; sourceTree = "<group>"; };
 		AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabChangelog.swift; sourceTree = "<group>"; };
 		AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabLibraries.swift; sourceTree = "<group>"; };
+		AB87377E27C8DDE800C385C0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		AB93B6D827C8921D000B2EBA /* ItemCheckListPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCheckListPlace.swift; sourceTree = "<group>"; };
+		AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemListPlaceModel.swift; sourceTree = "<group>"; };
 		ABB268E327BBA74700BD3305 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ABC661CF27BA145A003928F0 /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -123,7 +129,8 @@
 				AB23060027B6466A006B803B /* MapViewController.swift */,
 				AB23060227B64928006B803B /* MapViewControllerBridge.swift */,
 				ABB268E327BBA74700BD3305 /* LocationManager.swift */,
-				AB625ECB27BDECE500305171 /* MapDelegate.swift */,
+				AB57B01A27C8456E00FFC425 /* VCMapLink.swift */,
+				AB87377E27C8DDE800C385C0 /* Location.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 				AB1838EF27B2DC1C001DCBC8 /* ChangelogModel.swift */,
 				ABF7736927B3605400330C8D /* LibraryModel.swift */,
 				AB4D5B2927B50FBE00E01431 /* PinModel.swift */,
+				AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -183,6 +191,7 @@
 				AB257A6E27B201510003B98F /* ItemGalleryView.swift */,
 				AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */,
 				ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */,
+				AB93B6D827C8921D000B2EBA /* ItemCheckListPlace.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -399,11 +408,12 @@
 				ABCFE2F927B11E64007D19F3 /* GalleryViewModel.swift in Sources */,
 				AB1838EE27B2D9C3001DCBC8 /* ChangelogViewModel.swift in Sources */,
 				ABB268E427BBA74700BD3305 /* LocationManager.swift in Sources */,
+				AB93B6D927C8921D000B2EBA /* ItemCheckListPlace.swift in Sources */,
+				AB93B6DB27C89273000B2EBA /* FilterItemListPlaceModel.swift in Sources */,
 				ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */,
 				ABE0582427AF7B1F00E63467 /* TabViewListPlace.swift in Sources */,
 				ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */,
 				ABF7736E27B3657D00330C8D /* ItemLibraryView.swift in Sources */,
-				AB625ECC27BDECE500305171 /* MapDelegate.swift in Sources */,
 				AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */,
 				AB31F02027B09387001A96D8 /* NetworkService.swift in Sources */,
 				ABE0582227AF557600E63467 /* HomeView.swift in Sources */,
@@ -415,6 +425,7 @@
 				AB31F02327B0961C001A96D8 /* ListPlaceViewModel.swift in Sources */,
 				AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */,
 				AB4D5B2C27B5107100E01431 /* MapsViewModel.swift in Sources */,
+				AB87377F27C8DDE800C385C0 /* Location.swift in Sources */,
 				ABD01BB927B3A0AD008DAE5F /* GalleryDetailView.swift in Sources */,
 				AB1838F027B2DC1C001DCBC8 /* ChangelogModel.swift in Sources */,
 				ABF7737027B3728E00330C8D /* ListPlaceDetailView.swift in Sources */,
@@ -423,6 +434,7 @@
 				AB4D5B2A27B50FBE00E01431 /* PinModel.swift in Sources */,
 				ABE0581527AF513D00E63467 /* SplashView.swift in Sources */,
 				AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */,
+				AB57B01B27C8456E00FFC425 /* VCMapLink.swift in Sources */,
 				AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */,
 				AB257A6F27B201510003B98F /* ItemGalleryView.swift in Sources */,
 				AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */,
@@ -571,7 +583,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -602,7 +614,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

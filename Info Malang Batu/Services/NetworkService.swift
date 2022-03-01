@@ -17,6 +17,27 @@ class NetworkService {
         }
     }
     
+    func fetchKotaBatuPlaces(result: @escaping (DataResponse<[PlaceModel], AFError>) -> Void) {
+        AF.request("https://info-malang-batu.firebaseapp.com/List_place_kota_batu.json", method: .get)
+            .responseDecodable(of: [PlaceModel].self) { response in
+                result(response)
+        }
+    }
+    
+    func fetchKotaMalangPlaces(result: @escaping (DataResponse<[PlaceModel], AFError>) -> Void) {
+        AF.request("https://info-malang-batu.firebaseapp.com/List_place_kota_malang.json", method: .get)
+            .responseDecodable(of: [PlaceModel].self) { response in
+                result(response)
+        }
+    }
+    
+    func fetchKabMalangPlaces(result: @escaping (DataResponse<[PlaceModel], AFError>) -> Void) {
+        AF.request("https://info-malang-batu.firebaseapp.com/List_place_kab_malang.json", method: .get)
+            .responseDecodable(of: [PlaceModel].self) { response in
+                result(response)
+        }
+    }
+    
     func fetchGalleries(result: @escaping (DataResponse<[GalleryModel], AFError>) -> Void) {
         AF.request("https://info-malang-batu.firebaseapp.com/Gallery_Malang_Batu.json", method: .get)
             .responseDecodable(of: [GalleryModel].self) { response in
