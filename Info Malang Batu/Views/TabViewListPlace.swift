@@ -64,7 +64,7 @@ struct TabViewListPlace: View {
             )
         }
         .onAppear {
-            viewModel.fetchPlaces()
+            viewModel.fetchPlaces(self.selectedFilter.location)
         }
         .navigationTitle("")
         .navigationBarHidden(true)
@@ -75,16 +75,7 @@ struct TabViewListPlace: View {
 
     func loadPlace(_ location: Location) {
         print("TabViewListPlace # \(#function) : \(location)")
-        switch location {
-        case .semua:
-            viewModel.fetchPlaces()
-        case .kab_malang:
-            viewModel.fetchKabMalangPlaces()
-        case .kota_batu:
-            viewModel.fetchKotaBatuPlaces()
-        case .kota_malang:
-            viewModel.fetchKotaMalangPlaces()
-        }
+        viewModel.fetchPlaces(location)
     }
 
 }
