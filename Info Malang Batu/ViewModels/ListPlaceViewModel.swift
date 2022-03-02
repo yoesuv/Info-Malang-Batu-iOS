@@ -20,54 +20,8 @@ class ListPlaceViewModel: ObservableObject {
     
     private let networkService = NetworkService()
     
-    func fetchPlaces() {
-        loading = true
-        networkService.fetchPlaces{ response in
-            self.loading = false
-            if (response.error == nil) {
-                if let count = response.value?.count {
-                    print("ListPlaceViewModel # \(#function) success data count \(count)")
-                }
-                self.places = response.value ?? []
-            } else {
-                print("ListPlaceViewModel # \(#function) error \(response.error!)")
-            }
-        }
-    }
-    
-    func fetchKotaBatuPlaces() {
-        loading = true
-        networkService.fetchKotaBatuPlaces{ response in
-            self.loading = false
-            if (response.error == nil) {
-                if let count = response.value?.count {
-                    print("ListPlaceViewModel # \(#function) success data count \(count)")
-                }
-                self.places = response.value ?? []
-            } else {
-                print("ListPlaceViewModel # \(#function) error \(response.error!)")
-            }
-        }
-    }
-    
-    func fetchKotaMalangPlaces() {
-        loading = true
-        networkService.fetchKotaMalangPlaces{ response in
-            self.loading = false
-            if (response.error == nil) {
-                if let count = response.value?.count {
-                    print("ListPlaceViewModel # \(#function) success data count \(count)")
-                }
-                self.places = response.value ?? []
-            } else {
-                print("ListPlaceViewModel # \(#function) error \(response.error!)")
-            }
-        }
-    }
-    
-    func fetchKabMalangPlaces() {
-        loading = true
-        networkService.fetchKabMalangPlaces{ response in
+    func fetchPlaces(_ location: Location) {
+        networkService.fetchPlaces(location) { response in
             self.loading = false
             if (response.error == nil) {
                 if let count = response.value?.count {
