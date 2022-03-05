@@ -1,5 +1,8 @@
 ## Info Malang Batu iOS ##
 
+build with `Xcode 13.2.1`
+
+### Whats new ###
 - Add Filter List Place
 - Change app color to brown
 
