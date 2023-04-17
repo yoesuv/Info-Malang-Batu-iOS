@@ -1,10 +1,9 @@
 ## Info Malang Batu iOS ##
 
-build with `Xcode 13.2.1`
+build with `Xcode 14.2`
 
 ### Whats new ###
-- Add Filter List Place
-- Change app color to brown
+- :arrow_up: Update libraries
 
 ### How to run/build this project ###
 - in project directory run ```Pod install```
