@@ -57,10 +57,10 @@ PODS:
     - GoogleUtilities/Network (~> 7.11)
     - "GoogleUtilities/NSData+zlib (~> 7.11)"
     - nanopb (< 2.30911.0, >= 2.30908.0)
-  - GoogleMaps (7.4.0):
-    - GoogleMaps/Maps (= 7.4.0)
-  - GoogleMaps/Base (7.4.0)
-  - GoogleMaps/Maps (7.4.0):
+  - GoogleMaps (8.4.0):
+    - GoogleMaps/Maps (= 8.4.0)
+  - GoogleMaps/Base (8.4.0)
+  - GoogleMaps/Maps (8.4.0):
     - GoogleMaps/Base
   - GoogleUtilities/AppDelegateSwizzler (7.13.2):
     - GoogleUtilities/Environment
@@ -102,7 +102,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.9.1)
   - AlertToast (~> 1.3)
   - Firebase/Analytics
-  - GoogleMaps (~> 7.4)
+  - GoogleMaps (~> 8.4.0)
   - Kingfisher (~> 7.11.0)
 
 SPEC REPOS:
@@ -130,12 +130,12 @@ SPEC CHECKSUMS:
   FirebaseCoreInternal: 910a81992c33715fec9263ca7381d59ab3a750b7
   FirebaseInstallations: 91950fe859846fff0fbd296180909dd273103b09
   GoogleAppMeasurement: 9abf64b682732fed36da827aa2a68f0221fd2356
-  GoogleMaps: 032f676450ba0779bd8ce16840690915f84e57ac
+  GoogleMaps: 8939898920281c649150e0af74aa291c60f2e77d
   GoogleUtilities: c56430aef51a1aa57b25da78c3f8397e522c67b7
   Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
-PODFILE CHECKSUM: 58bd541a7d5bf25454feb0de59a1b619d38e96ce
+PODFILE CHECKSUM: b747b529ddb487c7217f8b34aefd20c743520720
 
 COCOAPODS: 1.15.2
