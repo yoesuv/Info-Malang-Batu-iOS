@@ -28,7 +28,7 @@ struct HtmlText: UIViewRepresentable {
 
     func updateUIView(_ uiView: UITextView, context: UIViewRepresentableContext<Self>) {
         DispatchQueue.main.async {
-            if let attributeText = self.converHTML(text: text) {
+            if let attributeText = self.convertHTML(text: text) {
                 textView.attributedText = attributeText
             } else {
                 textView.text = ""
@@ -37,7 +37,7 @@ struct HtmlText: UIViewRepresentable {
         }
     }
     
-    private func converHTML(text: String) -> NSAttributedString? {
+    private func convertHTML(text: String) -> NSAttributedString? {
         guard let data = text.data(using: .utf8) else {
             return nil
         }
