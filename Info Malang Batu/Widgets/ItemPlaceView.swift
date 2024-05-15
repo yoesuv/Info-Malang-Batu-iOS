@@ -27,7 +27,7 @@ struct ItemPlaceView: View {
                 .fade(duration: 0.25)
                 .resizable()
                 .scaledToFill()
-                .frame(width: .infinity, height: 180)
+                .frame(width: UIScreen.main.bounds.width, height: 180)
                 .clipped()
             VStack (alignment: .leading){
                 Text(place?.nama ?? "")
