@@ -99,11 +99,11 @@ PODS:
   - PromisesObjC (2.4.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.6)
+  - Alamofire (~> 5.9.1)
   - AlertToast (~> 1.3)
   - Firebase/Analytics
   - GoogleMaps (~> 7.4)
-  - Kingfisher (~> 7.6)
+  - Kingfisher (~> 7.11.0)
 
 SPEC REPOS:
   trunk:
@@ -136,6 +136,6 @@ SPEC CHECKSUMS:
   nanopb: 438bc412db1928dac798aa6fd75726007be04262
   PromisesObjC: f5707f49cb48b9636751c5b2e7d227e43fba9f47
 
-PODFILE CHECKSUM: deebb6afda2d63be29001dfe145af57cd1eafce5
+PODFILE CHECKSUM: 58bd541a7d5bf25454feb0de59a1b619d38e96ce
 
 COCOAPODS: 1.15.2
