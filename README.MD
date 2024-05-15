@@ -1,6 +1,6 @@
 ## Info Malang Batu iOS ##
 
-build with `Xcode 14.2`
+build with `Xcode 15.3`
 
 ### Whats new ###
 - :arrow_up: Update libraries

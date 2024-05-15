@@ -43,14 +43,19 @@ struct MapViewControllerBridge: UIViewControllerRepresentable {
         context.coordinator.mapController = uiViewController
         context.coordinator.vcMapLink = vcMapLink
         uiViewController.map.clear()
-        if (CLLocationManager.locationServicesEnabled()) {
-            let userLat = locationManager.lastLocation?.coordinate.latitude ?? 0.0
-            let userLng = locationManager.lastLocation?.coordinate.longitude ?? 0.0
-            print("MapViewControllerBridge # test get user user location lat:\(userLat) lng:\(userLng)")
-            uiViewController.map.isMyLocationEnabled = true
-            uiViewController.map.settings.compassButton = true
-            uiViewController.map.settings.myLocationButton = true
+        DispatchQueue.global().async {
+            if (CLLocationManager.locationServicesEnabled()) {
+                DispatchQueue.main.async {
+                    let userLat = locationManager.lastLocation?.coordinate.latitude ?? 0.0
+                    let userLng = locationManager.lastLocation?.coordinate.longitude ?? 0.0
+                    print("MapViewControllerBridge # test get user user location lat:\(userLat) lng:\(userLng)")
+                    uiViewController.map.isMyLocationEnabled = true
+                    uiViewController.map.settings.compassButton = true
+                    uiViewController.map.settings.myLocationButton = true
+                }
+            }
         }
+        
         for pin in pins {
             let markerImage = UIImage(named: "IcMapPin")!.withRenderingMode(.alwaysTemplate)
             let marker = GMSMarker()
