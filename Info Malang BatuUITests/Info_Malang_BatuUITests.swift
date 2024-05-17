@@ -41,6 +41,12 @@ final class Info_Malang_BatuUITests: XCTestCase {
         
         app.swipeUp()
         app.swipeDown()
+        // go to detail gallery
+        app.scrollViews.element(boundBy: 0).tap()
+        sleep(2)
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        sleep(1)
+        
         
         // tap list place
         let listPlace = app.tabBars.buttons["List Place"]
