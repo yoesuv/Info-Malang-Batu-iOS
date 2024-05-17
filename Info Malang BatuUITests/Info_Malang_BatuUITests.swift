@@ -28,13 +28,37 @@ final class Info_Malang_BatuUITests: XCTestCase {
         
         let splashText = app.staticTexts["Info Malang Batu"]
         XCTAssertTrue(splashText.exists)
-        
         sleep(3)
         
+        app.swipeUp()
+        app.swipeUp()
+        
+        // tap gallery
         let gallery = app.tabBars.buttons["Gallery"]
         XCTAssertTrue(gallery.waitForExistence(timeout: timeOut))
         gallery.tap()
-        sleep(5)
+        sleep(1)
+        
+        app.swipeUp()
+        app.swipeDown()
+        
+        // tap list place
+        let listPlace = app.tabBars.buttons["List Place"]
+        XCTAssertTrue(listPlace.waitForExistence(timeout: timeOut))
+        listPlace.tap()
+        sleep(3)
+        
+        // tap about
+        let about = app.tabBars.buttons["About"]
+        XCTAssertTrue(about.waitForExistence(timeout: timeOut))
+        about.tap()
+        sleep(2)
+        
+        app.swipeLeft()
+        app.swipeLeft()
+        app.swipeRight()
+        app.swipeRight()
+        sleep(2)
         
     }
 
