@@ -47,6 +47,14 @@ final class Info_Malang_BatuUITests: XCTestCase {
         XCTAssertTrue(listPlace.waitForExistence(timeout: timeOut))
         listPlace.tap()
         sleep(3)
+        app.swipeDown(velocity: .fast)
+        app.swipeDown(velocity: .fast)
+        sleep(1)
+        // go to detail list place
+        app.scrollViews.element(boundBy: 0).tap()
+        sleep(2)
+        app.navigationBars.buttons.element(boundBy: 0).tap()
+        sleep(1)
         
         // tap about
         let about = app.tabBars.buttons["About"]
