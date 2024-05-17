@@ -7,21 +7,35 @@
 
 import XCTest
 
+let timeOut = 3.0
+
 final class Info_Malang_BatuUITests: XCTestCase {
+    
+    override class func setUp() {
+        XCUIApplication().launch()
+    }
 
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
 
     override func tearDownWithError() throws {}
+    
 
     func testExample() throws {
         
         let app = XCUIApplication()
-        app.launch()
         
         let splashText = app.staticTexts["Info Malang Batu"]
-        XCTAssert(splashText.exists)
+        XCTAssertTrue(splashText.exists)
+        
+        sleep(3)
+        
+        let gallery = app.tabBars.buttons["Gallery"]
+        XCTAssertTrue(gallery.waitForExistence(timeout: timeOut))
+        gallery.tap()
+        sleep(5)
+        
     }
 
     /*func testLaunchPerformance() throws {
