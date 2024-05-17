@@ -60,14 +60,19 @@ final class Info_Malang_BatuUITests: XCTestCase {
         app.swipeRight()
         sleep(2)
         
+        let maps = app.tabBars.buttons["Maps"]
+        XCTAssertTrue(maps.waitForExistence(timeout: timeOut))
+        maps.tap()
+        sleep(2)
+        
+        // allow location permission
+        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
+        let buttonAllow = springboard.buttons["Allow While Using App"]
+        if buttonAllow.exists {
+            buttonAllow.tap()
+        }
+        sleep(3)
+        
     }
 
-    /*func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }*/
 }
