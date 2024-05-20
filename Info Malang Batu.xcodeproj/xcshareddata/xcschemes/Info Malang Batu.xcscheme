@@ -41,6 +41,17 @@
                ReferencedContainer = "container:Info Malang Batu.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ABA25F5B2BFAE6E60024C25B"
+               BuildableName = "Info Malang BatuTests.xctest"
+               BlueprintName = "Info Malang BatuTests"
+               ReferencedContainer = "container:Info Malang Batu.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

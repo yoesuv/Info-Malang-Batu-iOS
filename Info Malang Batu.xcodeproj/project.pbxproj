@@ -31,6 +31,7 @@
 		AB89BE2D28176080008A2DA8 /* TabBarAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89BE2C28176080008A2DA8 /* TabBarAccessor.swift */; };
 		AB93B6D927C8921D000B2EBA /* ItemCheckListPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93B6D827C8921D000B2EBA /* ItemCheckListPlace.swift */; };
 		AB93B6DB27C89273000B2EBA /* FilterItemListPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */; };
+		ABA25F5F2BFAE6E60024C25B /* Info_Malang_BatuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */; };
 		ABB268E427BBA74700BD3305 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB268E327BBA74700BD3305 /* LocationManager.swift */; };
 		ABC661D027BA145A003928F0 /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC661CF27BA145A003928F0 /* pacifico.ttf */; };
 		ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */; };
@@ -56,6 +57,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		AB0EF6C32BF70061004C3C53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABE0580727AF513D00E63467 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABE0580E27AF513D00E63467;
+			remoteInfo = "Info Malang Batu";
+		};
+		ABA25F602BFAE6E60024C25B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ABE0580727AF513D00E63467 /* Project object */;
 			proxyType = 1;
@@ -91,6 +99,8 @@
 		AB89BE2C28176080008A2DA8 /* TabBarAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAccessor.swift; sourceTree = "<group>"; };
 		AB93B6D827C8921D000B2EBA /* ItemCheckListPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCheckListPlace.swift; sourceTree = "<group>"; };
 		AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemListPlaceModel.swift; sourceTree = "<group>"; };
+		ABA25F5C2BFAE6E60024C25B /* Info Malang BatuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Info Malang BatuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuTests.swift; sourceTree = "<group>"; };
 		ABB268E327BBA74700BD3305 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ABC661CF27BA145A003928F0 /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -119,6 +129,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		AB0EF6BA2BF70061004C3C53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA25F592BFAE6E60024C25B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +234,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		ABA25F5D2BFAE6E60024C25B /* Info Malang BatuTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */,
+			);
+			path = "Info Malang BatuTests";
+			sourceTree = "<group>";
+		};
 		ABC661CD27BA141B003928F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +277,7 @@
 				ABE0581127AF513D00E63467 /* Info Malang Batu */,
 				AB89BE2A2817605A008A2DA8 /* Shared */,
 				AB0EF6BE2BF70061004C3C53 /* Info Malang BatuUITests */,
+				ABA25F5D2BFAE6E60024C25B /* Info Malang BatuTests */,
 				ABE0581027AF513D00E63467 /* Products */,
 				A9DCDB2CA36166F7F33FCB6B /* Pods */,
 				F0DE7239F4BC4B0B263CD9E1 /* Frameworks */,
@@ -263,6 +289,7 @@
 			children = (
 				ABE0580F27AF513D00E63467 /* Info Malang Batu.app */,
 				AB0EF6BD2BF70061004C3C53 /* Info Malang BatuUITests.xctest */,
+				ABA25F5C2BFAE6E60024C25B /* Info Malang BatuTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,6 +368,24 @@
 			productReference = AB0EF6BD2BF70061004C3C53 /* Info Malang BatuUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		ABA25F5B2BFAE6E60024C25B /* Info Malang BatuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABA25F642BFAE6E60024C25B /* Build configuration list for PBXNativeTarget "Info Malang BatuTests" */;
+			buildPhases = (
+				ABA25F582BFAE6E60024C25B /* Sources */,
+				ABA25F592BFAE6E60024C25B /* Frameworks */,
+				ABA25F5A2BFAE6E60024C25B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABA25F612BFAE6E60024C25B /* PBXTargetDependency */,
+			);
+			name = "Info Malang BatuTests";
+			productName = "Info Malang BatuTests";
+			productReference = ABA25F5C2BFAE6E60024C25B /* Info Malang BatuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ABE0580E27AF513D00E63467 /* Info Malang Batu */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE0581D27AF513E00E63467 /* Build configuration list for PBXNativeTarget "Info Malang Batu" */;
@@ -375,6 +420,10 @@
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = ABE0580E27AF513D00E63467;
 					};
+					ABA25F5B2BFAE6E60024C25B = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = ABE0580E27AF513D00E63467;
+					};
 					ABE0580E27AF513D00E63467 = {
 						CreatedOnToolsVersion = 13.1;
 					};
@@ -395,12 +444,20 @@
 			targets = (
 				ABE0580E27AF513D00E63467 /* Info Malang Batu */,
 				AB0EF6BC2BF70061004C3C53 /* Info Malang BatuUITests */,
+				ABA25F5B2BFAE6E60024C25B /* Info Malang BatuTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AB0EF6BB2BF70061004C3C53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABA25F5A2BFAE6E60024C25B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -490,6 +547,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ABA25F582BFAE6E60024C25B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABA25F5F2BFAE6E60024C25B /* Info_Malang_BatuTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ABE0580B27AF513D00E63467 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -542,6 +607,11 @@
 			target = ABE0580E27AF513D00E63467 /* Info Malang Batu */;
 			targetProxy = AB0EF6C32BF70061004C3C53 /* PBXContainerItemProxy */;
 		};
+		ABA25F612BFAE6E60024C25B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABE0580E27AF513D00E63467 /* Info Malang Batu */;
+			targetProxy = ABA25F602BFAE6E60024C25B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -587,6 +657,53 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Info Malang Batu";
+			};
+			name = Release;
+		};
+		ABA25F622BFAE6E60024C25B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-BatuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Info Malang Batu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Info Malang Batu";
+			};
+			name = Debug;
+		};
+		ABA25F632BFAE6E60024C25B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-BatuTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Info Malang Batu.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Info Malang Batu";
 			};
 			name = Release;
 		};
@@ -776,6 +893,15 @@
 			buildConfigurations = (
 				AB0EF6C52BF70061004C3C53 /* Debug */,
 				AB0EF6C62BF70061004C3C53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABA25F642BFAE6E60024C25B /* Build configuration list for PBXNativeTarget "Info Malang BatuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA25F622BFAE6E60024C25B /* Debug */,
+				ABA25F632BFAE6E60024C25B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
