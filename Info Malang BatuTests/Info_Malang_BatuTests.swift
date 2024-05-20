@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import Info_Malang_Batu
 
 final class Info_Malang_BatuTests: XCTestCase {
 
@@ -19,12 +20,6 @@ final class Info_Malang_BatuTests: XCTestCase {
 
     func testExample() throws {
         
-    }
-
-    func testPerformanceExample() throws {
-        measure {
-            
-        }
     }
 
 }

@@ -12,6 +12,12 @@ target 'Info Malang Batu' do
   pod 'Firebase/Analytics'
   pod 'AlertToast', '~> 1.3.9'
 
+  # https://qiita.com/nakagawa1017/items/d49232cf26c6ebcb69f0
+  target  'Info Malang BatuTests' do
+    inherit! :search_paths
+    pod 'Firebase'
+end
+
 end
 
 post_install do |installer|
