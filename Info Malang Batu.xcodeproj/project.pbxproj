@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */; };
 		AB0EF6C02BF70061004C3C53 /* Info_Malang_BatuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0EF6BF2BF70061004C3C53 /* Info_Malang_BatuUITests.swift */; };
-		AB0EF6C22BF70061004C3C53 /* Info_Malang_BatuUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0EF6C12BF70061004C3C53 /* Info_Malang_BatuUITestsLaunchTests.swift */; };
 		AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838E927B2D60B001DCBC8 /* Bundle.swift */; };
 		AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */; };
 		AB1838EE27B2D9C3001DCBC8 /* ChangelogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */; };
@@ -77,7 +76,6 @@
 		6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.debug.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.debug.xcconfig"; sourceTree = "<group>"; };
 		AB0EF6BD2BF70061004C3C53 /* Info Malang BatuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Info Malang BatuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0EF6BF2BF70061004C3C53 /* Info_Malang_BatuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuUITests.swift; sourceTree = "<group>"; };
-		AB0EF6C12BF70061004C3C53 /* Info_Malang_BatuUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AB1838E927B2D60B001DCBC8 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemChangelogView.swift; sourceTree = "<group>"; };
 		AB1838ED27B2D9C3001DCBC8 /* ChangelogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelogViewModel.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				AB0EF6BF2BF70061004C3C53 /* Info_Malang_BatuUITests.swift */,
-				AB0EF6C12BF70061004C3C53 /* Info_Malang_BatuUITestsLaunchTests.swift */,
 			);
 			path = "Info Malang BatuUITests";
 			sourceTree = "<group>";
@@ -542,7 +539,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB0EF6C22BF70061004C3C53 /* Info_Malang_BatuUITestsLaunchTests.swift in Sources */,
 				AB0EF6C02BF70061004C3C53 /* Info_Malang_BatuUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
