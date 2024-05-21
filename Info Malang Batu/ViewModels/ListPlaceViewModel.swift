@@ -21,15 +21,13 @@ class ListPlaceViewModel: ObservableObject {
     private let networkService = NetworkService()
     
     func fetchPlaces(_ location: Location) {
-        networkService.fetchPlaces(location) { response in
+        networkService.fetchPlaces(location) { data in
             self.loading = false
-            if (response.error == nil) {
-                if let count = response.value?.count {
-                    print("ListPlaceViewModel # \(#function) success data count \(count)")
-                }
-                self.places = response.value ?? []
-            } else {
-                print("ListPlaceViewModel # \(#function) error \(response.error!)")
+            self.places = data
+        } resultError: { error in
+            self.loading = false
+            if let err = error {
+                print("ListPlaceViewModel # \(#function) error \(err)")
             }
         }
     }
