@@ -8,7 +8,11 @@
 import Foundation
 import Alamofire
 
-class NetworkService {
+protocol NetworkServiceProtocol {
+    func fetchPlaces(_ location: Location, resultSuccess: @escaping ([PlaceModel]) -> Void, resultError: @escaping (AFError?) -> Void)
+}
+
+class NetworkService : NetworkServiceProtocol {
     
     func fetchPlaces(_ location: Location, resultSuccess: @escaping ([PlaceModel]) -> Void, resultError: @escaping (AFError?) -> Void) {
         var urlListPlace: String = ""

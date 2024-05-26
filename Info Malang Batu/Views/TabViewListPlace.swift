@@ -10,7 +10,7 @@ import AlertToast
 
 struct TabViewListPlace: View {
     
-    @ObservedObject var viewModel = ListPlaceViewModel()
+    @ObservedObject var viewModel = ListPlaceViewModel(NetworkService())
     @State private var showMenuListPlace = false
     @State private var selectedFilter = FilterItemListPlaceModel(title: "Semua", location: Location.semua)
     

@@ -10,11 +10,7 @@ import XCTest
 
 final class Info_Malang_BatuTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        
-    }
-
-    override func tearDownWithError() throws {
+    override func setUp() {
         
     }
 

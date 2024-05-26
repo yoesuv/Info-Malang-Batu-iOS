@@ -18,7 +18,11 @@ class ListPlaceViewModel: ObservableObject {
         FilterItemListPlaceModel(title: "Kota Malang", location: Location.kota_malang),
     ]
     
-    private let networkService = NetworkService()
+    private var networkService: NetworkServiceProtocol!
+    
+    init(_ networkService: NetworkServiceProtocol) {
+        self.networkService = networkService
+    }
     
     func fetchPlaces(_ location: Location) {
         networkService.fetchPlaces(location) { data in
