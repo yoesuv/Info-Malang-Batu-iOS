@@ -9,13 +9,12 @@ import XCTest
 @testable import Info_Malang_Batu
 
 final class Info_Malang_BatuTests: XCTestCase {
-
-    override func setUp() {
-        
-    }
-
-    func testExample() throws {
-        
+    
+    func testListPlace() {
+        let mockService = MockNetworkService()
+        let viewmodel = ListPlaceViewModel(mockService)
+        viewmodel.fetchPlaces(Location.semua)
+        XCTAssertTrue(viewmodel.places.count == 60)
     }
 
 }

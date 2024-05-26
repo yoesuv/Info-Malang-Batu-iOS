@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ListPlaceViewModel: ObservableObject {
+public class ListPlaceViewModel: ObservableObject {
     
     @Published var places = [PlaceModel]()
     @Published var loading: Bool = true
