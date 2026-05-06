@@ -12,8 +12,12 @@ import Alamofire
 class MockNetworkService : NetworkServiceProtocol, Mockable {
     
     func fetchPlaces(_ location: Location, resultSuccess: @escaping ([PlaceModel]) -> Void, resultError: @escaping (AFError?) -> Void) {
-        let data = loadJSON(filename: "ListPlaceResponse", type: [PlaceModel].self)
-        resultSuccess(data)
+        do {
+            let data = try loadJSON(filename: "ListPlaceResponse", type: [PlaceModel].self)
+            resultSuccess(data)
+        } catch {
+            resultError(AFError.explicitlyCancelled)
+        }
     }
     
 }

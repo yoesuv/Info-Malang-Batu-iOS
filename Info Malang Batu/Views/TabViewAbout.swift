@@ -12,7 +12,7 @@ struct TabViewAbout: View {
     @State var selectedTab:Int = 0
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 AppBar(index: $selectedTab)
                 TabView(selection: $selectedTab) {
@@ -25,8 +25,6 @@ struct TabViewAbout: View {
             .navigationTitle("About")
             .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
     }
 }
 

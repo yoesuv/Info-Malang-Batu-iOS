@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */; };
-		5947BA798E7682B5647386CA /* Pods_Info_Malang_BatuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 986FFE5DF3F15824734174C0 /* Pods_Info_Malang_BatuTests.framework */; };
 		AB0EF6C02BF70061004C3C53 /* Info_Malang_BatuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0EF6BF2BF70061004C3C53 /* Info_Malang_BatuUITests.swift */; };
 		AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838E927B2D60B001DCBC8 /* Bundle.swift */; };
 		AB1838EC27B2D969001DCBC8 /* ItemChangelogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB1838EB27B2D969001DCBC8 /* ItemChangelogView.swift */; };
@@ -23,9 +21,16 @@
 		AB3656052C0383BD00195B79 /* ListPlaceResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = AB3656042C0383BD00195B79 /* ListPlaceResponse.json */; };
 		AB3656072C03840C00195B79 /* MockNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3656062C03840C00195B79 /* MockNetworkService.swift */; };
 		AB3656092C03854800195B79 /* Mockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB3656082C03854800195B79 /* Mockable.swift */; };
+		AB3A46892FAB1D92002BE40C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AB3A46882FAB1D92002BE40C /* Alamofire */; };
+		AB3A468E2FAB205E002BE40C /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AB3A468D2FAB205E002BE40C /* Kingfisher */; };
 		AB4D5B2A27B50FBE00E01431 /* PinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5B2927B50FBE00E01431 /* PinModel.swift */; };
 		AB4D5B2C27B5107100E01431 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4D5B2B27B5107100E01431 /* MapsViewModel.swift */; };
 		AB57B01B27C8456E00FFC425 /* VCMapLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57B01A27C8456E00FFC425 /* VCMapLink.swift */; };
+		AB67C29F2FAB23070017BC6D /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = AB67C29E2FAB23070017BC6D /* AlertToast */; };
+		AB7019EA2FAB26A100B5A7F3 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = AB7019E92FAB26A100B5A7F3 /* GoogleMaps */; };
+		AB7019EC2FAB26A100B5A7F3 /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = AB7019EB2FAB26A100B5A7F3 /* GoogleMapsBase */; };
+		AB7019EE2FAB26A100B5A7F3 /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = AB7019ED2FAB26A100B5A7F3 /* GoogleMapsCore */; };
+		AB7019F02FAB26A100B5A7F3 /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = AB7019EF2FAB26A100B5A7F3 /* GoogleMapsM4B */; };
 		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
 		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
 		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
@@ -76,11 +81,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		337D80FB20697D072CDDC406 /* Pods-Info Malang BatuTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang BatuTests.debug.xcconfig"; path = "Target Support Files/Pods-Info Malang BatuTests/Pods-Info Malang BatuTests.debug.xcconfig"; sourceTree = "<group>"; };
-		3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.release.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.release.xcconfig"; sourceTree = "<group>"; };
-		4360A9E7C56FAAC4DD17CA2C /* Pods-Info Malang BatuTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang BatuTests.release.xcconfig"; path = "Target Support Files/Pods-Info Malang BatuTests/Pods-Info Malang BatuTests.release.xcconfig"; sourceTree = "<group>"; };
-		6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Info Malang Batu.debug.xcconfig"; path = "Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu.debug.xcconfig"; sourceTree = "<group>"; };
-		986FFE5DF3F15824734174C0 /* Pods_Info_Malang_BatuTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Malang_BatuTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0EF6BD2BF70061004C3C53 /* Info Malang BatuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Info Malang BatuUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB0EF6BF2BF70061004C3C53 /* Info_Malang_BatuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuUITests.swift; sourceTree = "<group>"; };
 		AB1838E927B2D60B001DCBC8 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
@@ -132,7 +132,6 @@
 		ABF7736B27B3609700330C8D /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLibraryView.swift; sourceTree = "<group>"; };
 		ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceDetailView.swift; sourceTree = "<group>"; };
-		B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Info_Malang_Batu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +146,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5947BA798E7682B5647386CA /* Pods_Info_Malang_BatuTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,24 +153,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CFC3AA172B86322E81E4111 /* Pods_Info_Malang_Batu.framework in Frameworks */,
+				AB3A468E2FAB205E002BE40C /* Kingfisher in Frameworks */,
+				AB67C29F2FAB23070017BC6D /* AlertToast in Frameworks */,
+				AB7019EA2FAB26A100B5A7F3 /* GoogleMaps in Frameworks */,
+				AB7019EC2FAB26A100B5A7F3 /* GoogleMapsBase in Frameworks */,
+				AB3A46892FAB1D92002BE40C /* Alamofire in Frameworks */,
+				AB7019F02FAB26A100B5A7F3 /* GoogleMapsM4B in Frameworks */,
+				AB7019EE2FAB26A100B5A7F3 /* GoogleMapsCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A9DCDB2CA36166F7F33FCB6B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */,
-				3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */,
-				337D80FB20697D072CDDC406 /* Pods-Info Malang BatuTests.debug.xcconfig */,
-				4360A9E7C56FAAC4DD17CA2C /* Pods-Info Malang BatuTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		AB0EF6BE2BF70061004C3C53 /* Info Malang BatuUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,8 +285,6 @@
 				AB0EF6BE2BF70061004C3C53 /* Info Malang BatuUITests */,
 				ABA25F5D2BFAE6E60024C25B /* Info Malang BatuTests */,
 				ABE0581027AF513D00E63467 /* Products */,
-				A9DCDB2CA36166F7F33FCB6B /* Pods */,
-				F0DE7239F4BC4B0B263CD9E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -352,15 +343,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		F0DE7239F4BC4B0B263CD9E1 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B09D8CB43C1552A85F5015D8 /* Pods_Info_Malang_Batu.framework */,
-				986FFE5DF3F15824734174C0 /* Pods_Info_Malang_BatuTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,11 +368,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABA25F642BFAE6E60024C25B /* Build configuration list for PBXNativeTarget "Info Malang BatuTests" */;
 			buildPhases = (
-				1F9B2E1033C37F692B1C488A /* [CP] Check Pods Manifest.lock */,
 				ABA25F582BFAE6E60024C25B /* Sources */,
 				ABA25F592BFAE6E60024C25B /* Frameworks */,
 				ABA25F5A2BFAE6E60024C25B /* Resources */,
-				47399115070BC4C0CD0F4E84 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -406,12 +386,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ABE0581D27AF513E00E63467 /* Build configuration list for PBXNativeTarget "Info Malang Batu" */;
 			buildPhases = (
-				28A7603F81AEC1671ECE170B /* [CP] Check Pods Manifest.lock */,
 				ABE0580B27AF513D00E63467 /* Sources */,
 				ABE0580C27AF513D00E63467 /* Frameworks */,
 				ABE0580D27AF513D00E63467 /* Resources */,
-				75BD77AA1FF8C3EB71A195FC /* [CP] Embed Pods Frameworks */,
-				0A3EF65677F147CB0DE9C4EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -454,6 +431,12 @@
 				Base,
 			);
 			mainGroup = ABE0580627AF513D00E63467;
+			packageReferences = (
+				AB3A46872FAB1D92002BE40C /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AB3A468C2FAB205E002BE40C /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AB67C29D2FAB23070017BC6D /* XCRemoteSwiftPackageReference "AlertToast" */,
+				AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+			);
 			productRefGroup = ABE0581027AF513D00E63467 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -494,104 +477,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		0A3EF65677F147CB0DE9C4EF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1F9B2E1033C37F692B1C488A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Info Malang BatuTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		28A7603F81AEC1671ECE170B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Info Malang Batu-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		47399115070BC4C0CD0F4E84 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Info Malang BatuTests/Pods-Info Malang BatuTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Info Malang BatuTests/Pods-Info Malang BatuTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Info Malang BatuTests/Pods-Info Malang BatuTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75BD77AA1FF8C3EB71A195FC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Info Malang Batu/Pods-Info Malang Batu-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AB0EF6B92BF70061004C3C53 /* Sources */ = {
@@ -719,7 +604,6 @@
 		};
 		ABA25F622BFAE6E60024C25B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 337D80FB20697D072CDDC406 /* Pods-Info Malang BatuTests.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -744,7 +628,6 @@
 		};
 		ABA25F632BFAE6E60024C25B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4360A9E7C56FAAC4DD17CA2C /* Pods-Info Malang BatuTests.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -817,7 +700,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -872,7 +755,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -884,7 +767,6 @@
 		};
 		ABE0581E27AF513E00E63467 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D545250B65E6E0D0840B47A /* Pods-Info Malang Batu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -900,11 +782,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.2;
+				MARKETING_VERSION = 1.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -915,7 +798,6 @@
 		};
 		ABE0581F27AF513E00E63467 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3985F5C51ADA884E7679F3BA /* Pods-Info Malang Batu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -931,11 +813,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.2;
+				MARKETING_VERSION = 1.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -984,6 +867,79 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB3A46872FAB1D92002BE40C /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.9.1;
+			};
+		};
+		AB3A468C2FAB205E002BE40C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.11.0;
+			};
+		};
+		AB67C29D2FAB23070017BC6D /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.3.9;
+			};
+		};
+		AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 8.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AB3A46882FAB1D92002BE40C /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB3A46872FAB1D92002BE40C /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		AB3A468D2FAB205E002BE40C /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB3A468C2FAB205E002BE40C /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		AB67C29E2FAB23070017BC6D /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB67C29D2FAB23070017BC6D /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+		AB7019E92FAB26A100B5A7F3 /* GoogleMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMaps;
+		};
+		AB7019EB2FAB26A100B5A7F3 /* GoogleMapsBase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMapsBase;
+		};
+		AB7019ED2FAB26A100B5A7F3 /* GoogleMapsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMapsCore;
+		};
+		AB7019EF2FAB26A100B5A7F3 /* GoogleMapsM4B */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
+			productName = GoogleMapsM4B;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = ABE0580727AF513D00E63467 /* Project object */;
 }

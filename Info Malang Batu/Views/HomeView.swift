@@ -26,34 +26,29 @@ struct HomeView: View {
     }
     
     var body: some View {
-        NavigationView {
-            TabView (selection: $selectedTab){
-                TabViewListPlace().tabItem {
-                    Image(systemName: "house.fill")
-                    Text("List Place")
-                }
-                .tag(0)
-                TabViewGallery().tabItem {
-                    Image(systemName: "photo.artframe")
-                    Text("Gallery")
-                }
-                .tag(1)
-                TabViewMaps().tabItem {
-                    Image(systemName: "map")
-                    Text("Maps")
-                }
-                .tag(2)
-                TabViewAbout().tabItem {
-                    Image(systemName: "info.circle.fill")
-                    Text("About")
-                }
-                .tag(3)
+        TabView(selection: $selectedTab) {
+            TabViewListPlace().tabItem {
+                Image(systemName: "house.fill")
+                Text("List Place")
             }
-            .accentColor(Color(brown))
-            .navigationViewStyle(StackNavigationViewStyle())
+            .tag(0)
+            TabViewGallery().tabItem {
+                Image(systemName: "photo.artframe")
+                Text("Gallery")
+            }
+            .tag(1)
+            TabViewMaps().tabItem {
+                Image(systemName: "map")
+                Text("Maps")
+            }
+            .tag(2)
+            TabViewAbout().tabItem {
+                Image(systemName: "info.circle.fill")
+                Text("About")
+            }
+            .tag(3)
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
+        .accentColor(Color(brown))
     }
 }
 

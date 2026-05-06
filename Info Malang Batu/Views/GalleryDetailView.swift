@@ -14,7 +14,7 @@ struct GalleryDetailView: View {
     let imageHeight: CGFloat = 230
     let paddingText = EdgeInsets.init(top: 0, leading: 8, bottom: 0, trailing: 8)
     
-    @Environment(\.presentationMode) var presentation
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         GeometryReader { geo in
@@ -32,13 +32,20 @@ struct GalleryDetailView: View {
             }
             .frame(maxHeight: geo.size.height, alignment: .topLeading)
         }
-        .navigationBarTitle(Text("Detail Gallery"), displayMode: .inline)
+        .navigationTitle("Detail Gallery")
+        .navigationBarTitleDisplayMode(.inline)
         .navigationBarBackButtonHidden(true)
-        .navigationBarItems(leading: Button(action: {
-            self.presentation.wrappedValue.dismiss()
-        }) {
-            Image(systemName: "chevron.left")
-        }.foregroundColor(.white))
+        .toolbar(.hidden, for: .tabBar)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button(action: {
+                    dismiss()
+                }) {
+                    Image(systemName: "chevron.left")
+                }
+                .foregroundColor(.white)
+            }
+        }
     }
 }
 

@@ -10,36 +10,33 @@ import SwiftUI
 struct SplashView: View {
     
     @State private var isActive = false
-    let home = HomeView()
     
     var body: some View {
-        NavigationView {
-            ZStack {
+        ZStack {
+            if isActive {
+                HomeView()
+                    .transition(.opacity)
+            } else {
                 Color(uiColor: UIColor(named: "Brown500")!)
                 VStack(alignment: .center) {
                     Text("Info Malang Batu")
                         .font(.custom("pacifico", size: 32))
                         .foregroundColor(.white)
                         .padding()
-                    NavigationLink(
-                        destination: home,
-                        isActive: $isActive,
-                        label: {
-                            EmptyView()
-                        }
-                    )
                 }
             }
-            .navigationBarHidden(true)
-            .edgesIgnoringSafeArea(.all)
-        }.onAppear(perform: {
+        }
+        .edgesIgnoringSafeArea(.all)
+        .onAppear {
             goToHome()
-        })
+        }
     }
     
     func goToHome() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-            self.isActive = true
+            withAnimation {
+                self.isActive = true
+            }
         })
     }
     

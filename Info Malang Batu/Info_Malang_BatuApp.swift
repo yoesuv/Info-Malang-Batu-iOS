@@ -6,17 +6,12 @@
 //
 
 import SwiftUI
-import Firebase
 import GoogleMaps
 
 @main
 struct Info_Malang_BatuApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
-    init() {
-        FirebaseApp.configure()
-    }
     
     var body: some Scene {
         WindowGroup {

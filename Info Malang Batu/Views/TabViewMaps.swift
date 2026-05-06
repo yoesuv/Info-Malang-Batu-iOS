@@ -16,23 +16,25 @@ struct TabViewMaps: View {
     
     var body: some View {
         let mapView = MapViewControllerBridge(pins: viewModel.pins, vcMapLink: vcMapLink)
-        NavigationView {
+        NavigationStack {
             mapView
             .edgesIgnoringSafeArea(.top)
             .navigationTitle("Maps")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(trailing: Button(action: {
-                vcMapLink.resetMap()
-            }, label: {
-                Image(systemName: "arrow.triangle.2.circlepath")
-                    .foregroundColor(.white)
-            }))
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        vcMapLink.resetMap()
+                    }) {
+                        Image(systemName: "arrow.triangle.2.circlepath")
+                            .foregroundColor(.white)
+                    }
+                }
+            }
         }
         .onAppear {
             viewModel.fetchPins()
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
         .toast(isPresenting: $viewModel.loading, alert: {
             AlertToast.init(type: .loading)
         })

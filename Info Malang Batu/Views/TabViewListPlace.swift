@@ -16,7 +16,7 @@ struct TabViewListPlace: View {
     
     var body: some View {
         ZStack {
-            NavigationView {
+            NavigationStack {
                 ScrollView(showsIndicators: false) {
                     LazyVStack(spacing: 0) {
                         ForEach(viewModel.places) { place in
@@ -28,14 +28,18 @@ struct TabViewListPlace: View {
                 }
                 .navigationTitle("List Place")
                 .navigationBarTitleDisplayMode(.inline)
-                .navigationBarItems(trailing: Button(action: {
-                    withAnimation {
-                        showMenuListPlace.toggle()
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(action: {
+                            withAnimation {
+                                showMenuListPlace.toggle()
+                            }
+                        }) {
+                            Image(systemName: "slider.horizontal.3")
+                                .foregroundColor(.white)
+                        }
                     }
-                }, label: {
-                    Image(systemName: "slider.horizontal.3")
-                        .foregroundColor(.white)
-                }))
+                }
             }
             // bottom dialog custom
             VStack {
@@ -66,8 +70,6 @@ struct TabViewListPlace: View {
         .onAppear {
             viewModel.fetchPlaces(self.selectedFilter.location)
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
         .toast(isPresenting: $viewModel.loading, alert: {
             AlertToast.init(type: .loading)
         })

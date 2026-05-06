@@ -1,27 +1,25 @@
-## Info Malang Batu iOS ##
+## Info Malang Batu iOS
 
-build with `Xcode 15.3`
+Another version project Info Malang Batu build with Swift UI.
 
-### Whats new ###
-- :arrow_up: Update libraries
+### How to run/build this project
 
-### How to run/build this project ###
-- in project directory run ```Pod install```
-- in root project create file ```keys.plist``` then set value ![](https://images2.imgbox.com/62/c5/D3UZ3vqN_o.png)
+- in root project create file `keys.plist` then set value ![](https://images2.imgbox.com/62/c5/D3UZ3vqN_o.png)
 
-### Screenshot ###
-| ![Splash Screen](https://i.imgur.com/VJZHHbj.png) | ![List Place](https://i.imgur.com/nGSXLUe.png) | ![Detail List Place](https://i.imgur.com/7RtxVRi.png) | ![Filter List Place](https://i.imgur.com/IUjZe7w.png) |
-| :---: | :---: | :---: | :---: |
-| ![Gallery](https://i.imgur.com/YsVjlch.png) | ![Detail Gallery](https://i.imgur.com/czijTtf.png) | ![Maps](https://i.imgur.com/Tu6fqfx.png) | ![About](https://i.imgur.com/uWUfn4u.png) |
+### Screenshot
 
-### List Library ###
-- [Alamofire](https://cocoapods.org/pods/Alamofire)
-- [AlertToast](https://cocoapods.org/pods/AlertToast)
-- [Firebase Analytics](https://cocoapods.org/pods/FirebaseAnalytics)
-- [Google Maps](https://cocoapods.org/pods/GoogleMaps)
-- [Kingfisher](https://cocoapods.org/pods/Kingfisher)
+| ![Splash Screen](https://i.imgur.com/VJZHHbj.png) |   ![List Place](https://i.imgur.com/nGSXLUe.png)   | ![Detail List Place](https://i.imgur.com/7RtxVRi.png) | ![Filter List Place](https://i.imgur.com/IUjZe7w.png) |
+| :-----------------------------------------------: | :------------------------------------------------: | :---------------------------------------------------: | :---------------------------------------------------: |
+|    ![Gallery](https://i.imgur.com/YsVjlch.png)    | ![Detail Gallery](https://i.imgur.com/czijTtf.png) |       ![Maps](https://i.imgur.com/Tu6fqfx.png)        |       ![About](https://i.imgur.com/uWUfn4u.png)       |
 
-### License ###
+### List Library
+
+- [Alamofire](https://github.com/Alamofire/Alamofire)
+- [AlertToast](https://github.com/elai950/AlertToast)
+- [Google Maps](https://github.com/googlemaps/ios-maps-sdk)
+- [Kingfisher](https://github.com/onevcat/Kingfisher)
+
+### License
 
     Copyright 2022 Yusuf Saifudin
 
