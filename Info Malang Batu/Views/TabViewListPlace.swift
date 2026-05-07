@@ -15,66 +15,70 @@ struct TabViewListPlace: View {
     @State private var selectedFilter = FilterItemListPlaceModel(title: "Semua", location: Location.semua)
     
     var body: some View {
-        GeometryReader { geometry in
-            ZStack {
-                NavigationStack {
-                    ScrollView(showsIndicators: false) {
-                        LazyVStack(spacing: 0) {
-                            ForEach(viewModel.places) { place in
-                                NavigationLink(destination: ListPlaceDetailView(place: place)) {
-                                    ItemPlaceView(place: place)
-                                }
-                            }
-                        }
-                    }
-                    .navigationTitle("List Place")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .toolbar {
-                        ToolbarItem(placement: .topBarTrailing) {
-                            Button(action: {
-                                withAnimation {
-                                    showMenuListPlace.toggle()
-                                }
-                            }) {
-                                Image(systemName: "slider.horizontal.3")
-                                    .foregroundColor(.white)
-                            }
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                LazyVStack(spacing: 0) {
+                    ForEach(viewModel.places) { place in
+                        NavigationLink(destination: ListPlaceDetailView(place: place)) {
+                            ItemPlaceView(place: place)
                         }
                     }
                 }
-                // bottom dialog custom
-                VStack {
-                    Spacer()
-                    VStack(spacing: 18) {
-                        ForEach(viewModel.filters) { filter in
-                            ItemCheckListPlace(filter: filter, selectedFilter: self.$selectedFilter, showMenuListPlace: $showMenuListPlace, completion: { location in
-                                loadPlace(location)
-                            })
-                        }
+            }
+            .navigationTitle("List Place")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {
+                        showMenuListPlace.toggle()
+                    }) {
+                        Image(systemName: "slider.horizontal.3")
+                            .foregroundColor(.white)
                     }
-                    .padding(.bottom, 20)
-                    .padding(.top, 35)
-                    .background(Color.white.clipShape(CustomCorner(corners: [.topLeft, .topRight])))
-                    .offset(y: showMenuListPlace ? 0 : geometry.size.height / 2)
                 }
-                .ignoresSafeArea(.container, edges: .top)
-                .background(
-                    Color.black.opacity(0.3).ignoresSafeArea()
-                        .opacity(showMenuListPlace ? 1:0)
-                        .onTapGesture {
-                            withAnimation {
-                                showMenuListPlace.toggle()
-                            }
-                        }
-                )
             }
-            .onAppear {
-                viewModel.fetchPlaces(self.selectedFilter.location)
-            }
-            .toast(isPresenting: $viewModel.loading, alert: {
-                AlertToast.init(type: .loading)
-            })
         }
+        .sheet(isPresented: $showMenuListPlace) {
+            VStack(spacing: 18) {
+                ForEach(viewModel.filters) { filter in
+                    ItemCheckListPlace(
+                        filter: filter,
+                        selectedFilter: $selectedFilter,
+                        showMenuListPlace: $showMenuListPlace,
+                        completion: { location in
+                            loadPlace(location)
+                        }
+                    )
+                }
+            }
+            .padding(.top, 35)
+            .padding(.bottom, 20)
+            .frame(maxWidth: .infinity)
+            .presentationDetents([.height(300)])
+            .presentationCornerRadius(24)
+            .presentationDragIndicator(.visible)
+            .presentationBackground {
+                ZStack {
+                    Rectangle()
+                        .fill(.ultraThinMaterial)
+                        .opacity(0.85)
+                    
+                    // Liquid Glass top edge highlight
+                    VStack {
+                        Rectangle()
+                            .fill(.white.opacity(0.12))
+                            .frame(height: 1)
+                        Spacer()
+                    }
+                }
+            }
+        }
+        .onAppear {
+            viewModel.fetchPlaces(self.selectedFilter.location)
+        }
+        .toast(isPresenting: $viewModel.loading, alert: {
+            AlertToast.init(type: .loading)
+        })
     }
 
     func loadPlace(_ location: Location) {
@@ -82,16 +86,6 @@ struct TabViewListPlace: View {
         viewModel.fetchPlaces(location)
     }
 
-}
-
-struct CustomCorner: Shape {
-    var corners: UIRectCorner
-    
-    func path(in rect: CGRect) -> Path {
-        let path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: CGSize(width: 35, height: 35))
-        
-        return Path(path.cgPath)
-    }
 }
 
 struct TabViewListPlace_Previews: PreviewProvider {
