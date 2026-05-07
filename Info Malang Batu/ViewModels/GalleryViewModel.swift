@@ -7,24 +7,30 @@
 
 import Foundation
 
+@MainActor
 class GalleryViewModel: ObservableObject {
     
     @Published var galleries = [GalleryModel]()
     @Published var loading: Bool = true
     
-    private let networkService = NetworkService()
+    private let networkService: any NetworkServiceProtocol
+    
+    init(_ networkService: any NetworkServiceProtocol = NetworkService()) {
+        self.networkService = networkService
+    }
     
     func fetchGalleries() {
         loading = true
-        networkService.fetchGalleries{ response in
+        networkService.fetchGalleries { [weak self] data in
+            guard let self else { return }
             self.loading = false
-            if (response.error == nil) {
-                if let count = response.value?.count {
-                    print("GalleryViewModel # success data count \(count)")
-                }
-                self.galleries = response.value ?? []
-            } else {
-                print("GalleryViewModel # error \(response.error!)")
+            print("GalleryViewModel # success data count \(data.count)")
+            self.galleries = data
+        } resultError: { [weak self] error in
+            guard let self else { return }
+            self.loading = false
+            if let err = error {
+                print("GalleryViewModel # error \(err)")
             }
         }
     }

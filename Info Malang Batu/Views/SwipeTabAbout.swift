@@ -25,6 +25,7 @@ struct SwipeTabAbout: View {
                 .font(.callout)
             Spacer()
         }
+        .frame(maxHeight: .infinity)
     }
 }
 

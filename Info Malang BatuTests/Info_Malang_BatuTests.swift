@@ -6,21 +6,21 @@
 //
 
 import XCTest
-import Combine
+@preconcurrency import Combine
 @testable import Info_Malang_Batu
 
 final class Info_Malang_BatuTests: XCTestCase {
     
-    private var cancellables = Set<AnyCancellable>()
-    
+    @MainActor
     func testListPlace() {
+        var cancellables = Set<AnyCancellable>()
         let expectation = expectation(description: "Places loaded")
         let mockService = MockNetworkService()
         let viewmodel = ListPlaceViewModel(mockService)
         
         viewmodel.$places
             .dropFirst() // skip initial empty value
-            .sink { places in
+            .sink { @MainActor _ in
                 expectation.fulfill()
             }
             .store(in: &cancellables)

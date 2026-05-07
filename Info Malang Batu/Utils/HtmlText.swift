@@ -4,49 +4,31 @@
 //
 //  Created by Yusuf Saifudin on 09/02/22.
 //
-import UIKit
 import SwiftUI
 
-// https://stackoverflow.com/a/68498657
-struct HtmlText: UIViewRepresentable {
+struct HtmlText: View {
     
     let text: String
-    private  let textView = UITextView()
+    let font: Font
     
-    init(_ content: String) {
+    init(_ content: String, font: Font = .body) {
         self.text = content
+        self.font = font
     }
     
-    func makeUIView(context: UIViewRepresentableContext<Self>) -> UITextView {
-        textView.widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width-20).isActive = true
-        textView.isSelectable = false
-        textView.isUserInteractionEnabled = false
-        textView.translatesAutoresizingMaskIntoConstraints = false
-        textView.isScrollEnabled = false
-        return textView
-    }
-
-    func updateUIView(_ uiView: UITextView, context: UIViewRepresentableContext<Self>) {
-        DispatchQueue.main.async {
-            if let attributeText = self.convertHTML(text: text) {
-                textView.attributedText = attributeText
-            } else {
-                textView.text = ""
-            }
-    
-        }
+    private var plainText: String {
+        guard let data = text.data(using: .utf8) else { return text }
+        guard let nsAttributedString = try? NSAttributedString(
+            data: data,
+            options: [.documentType: NSAttributedString.DocumentType.html],
+            documentAttributes: nil
+        ) else { return text }
+        return nsAttributedString.string
     }
     
-    private func convertHTML(text: String) -> NSAttributedString? {
-        guard let data = text.data(using: .utf8) else {
-            return nil
-        }
-        
-        if let attributedString = try? NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html], documentAttributes: nil) {
-            return attributedString
-        } else{
-            return nil
-        }
+    var body: some View {
+        Text(plainText)
+            .font(font)
     }
     
 }

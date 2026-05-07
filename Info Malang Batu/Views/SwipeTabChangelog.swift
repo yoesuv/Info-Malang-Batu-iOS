@@ -9,17 +9,16 @@ import SwiftUI
 
 struct SwipeTabChangelog: View {
     
-    @ObservedObject var viewModel = ChangelogViewModel()
+    @StateObject private var viewModel = ChangelogViewModel()
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            LazyVStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 0) {
                 ForEach(viewModel.changelog) { item in
                     ItemChangelogView(changelog: item)
                 }
             }
         }
-        
     }
 }
 

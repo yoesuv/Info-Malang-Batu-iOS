@@ -12,12 +12,11 @@ struct ItemChangelogView: View {
     let changelog: ChangelogModel?
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 4) {
             Text(changelog?.version ?? "")
                 .font(.body)
                 .fontWeight(.bold)
             HtmlText(changelog?.information ?? "")
-                .font(.title)
             Divider()
         }
         .padding(.horizontal, 10)

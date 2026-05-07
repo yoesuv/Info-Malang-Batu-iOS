@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct GalleryModel: Codable, Identifiable {
+struct GalleryModel: Codable, Identifiable, Sendable {
     var id: String {
-        return caption!
+        return caption ?? UUID().uuidString
     }
     let caption: String?
     let thumbnail: String?

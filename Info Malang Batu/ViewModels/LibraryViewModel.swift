@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 class LibraryViewModel: ObservableObject {
     
     @Published var libraries = [LibraryModel]()

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct LibraryModel: Identifiable {
+struct LibraryModel: Identifiable, Sendable {
     var id: String {
         return name
     }

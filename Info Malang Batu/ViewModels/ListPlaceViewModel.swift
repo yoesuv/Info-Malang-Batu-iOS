@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 public class ListPlaceViewModel: ObservableObject {
     
     @Published var places = [PlaceModel]()
@@ -18,20 +19,22 @@ public class ListPlaceViewModel: ObservableObject {
         FilterItemListPlaceModel(title: "Kota Malang", location: Location.kota_malang),
     ]
     
-    private var networkService: NetworkServiceProtocol!
+    private let networkService: any NetworkServiceProtocol
     
-    init(_ networkService: NetworkServiceProtocol) {
+    init(_ networkService: any NetworkServiceProtocol) {
         self.networkService = networkService
     }
     
     func fetchPlaces(_ location: Location) {
-        networkService.fetchPlaces(location) { data in
+        networkService.fetchPlaces(location) { [weak self] data in
+            guard let self else { return }
             self.loading = false
             self.places = data
-        } resultError: { error in
+        } resultError: { [weak self] error in
+            guard let self else { return }
             self.loading = false
             if let err = error {
-                print("ListPlaceViewModel # \(#function) error \(err)")
+                print("ListPlaceViewModel # \( #function) error \(err)")
             }
         }
     }

@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
-import AlertToast
+@preconcurrency import AlertToast
 
 struct TabViewGallery: View {
     
-    @ObservedObject var viewModel = GalleryViewModel()
+    @StateObject private var viewModel = GalleryViewModel()
     let column = [
         GridItem(.flexible(), spacing: 0),
         GridItem(.flexible(), spacing: 0),

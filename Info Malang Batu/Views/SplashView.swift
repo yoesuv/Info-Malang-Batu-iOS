@@ -17,7 +17,7 @@ struct SplashView: View {
                 HomeView()
                     .transition(.opacity)
             } else {
-                Color(uiColor: UIColor(named: "Brown500")!)
+                Color(uiColor: UIColor(named: "Brown500") ?? .brown)
                 VStack(alignment: .center) {
                     Text("Info Malang Batu")
                         .font(.custom("pacifico", size: 32))
@@ -33,11 +33,12 @@ struct SplashView: View {
     }
     
     func goToHome() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+        Task { @MainActor in
+            try? await Task.sleep(for: .seconds(2))
             withAnimation {
-                self.isActive = true
+                isActive = true
             }
-        })
+        }
     }
     
 }

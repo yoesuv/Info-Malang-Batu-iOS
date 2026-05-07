@@ -10,11 +10,11 @@ import SwiftUI
 
 struct ItemCheckListPlace: View {
     
-    @State var filter: FilterItemListPlaceModel
+    let filter: FilterItemListPlaceModel
     @Binding var selectedFilter: FilterItemListPlaceModel
     @Binding var showMenuListPlace: Bool
-    var completion: (Location) -> Void
-    private let brown = Color(UIColor(named: "Brown500")!)
+    var completion: @MainActor (Location) -> Void
+    private let brown = Color(UIColor(named: "Brown500") ?? .brown)
         
     var body: some View {
         HStack {
@@ -37,7 +37,8 @@ struct ItemCheckListPlace: View {
         .contentShape(Rectangle())
         .onTapGesture {
             self.selectedFilter = filter
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            Task { @MainActor in
+                try? await Task.sleep(for: .seconds(0.3))
                 completion(filter.location)
                 withAnimation {
                     showMenuListPlace.toggle()

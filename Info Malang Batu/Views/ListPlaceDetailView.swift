@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Kingfisher
+@preconcurrency import Kingfisher
 
 struct ListPlaceDetailView: View {
     

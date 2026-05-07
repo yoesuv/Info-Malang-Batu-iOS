@@ -6,15 +6,17 @@
 //
 
 import Foundation
-import Alamofire
+@preconcurrency import Alamofire
 
-protocol NetworkServiceProtocol {
-    func fetchPlaces(_ location: Location, resultSuccess: @escaping ([PlaceModel]) -> Void, resultError: @escaping (AFError?) -> Void)
+protocol NetworkServiceProtocol: Sendable {
+    func fetchPlaces(_ location: Location, resultSuccess: @escaping @MainActor ([PlaceModel]) -> Void, resultError: @escaping @MainActor (AFError?) -> Void)
+    func fetchGalleries(resultSuccess: @escaping @MainActor ([GalleryModel]) -> Void, resultError: @escaping @MainActor (AFError?) -> Void)
+    func fetchPins(resultSuccess: @escaping @MainActor ([PinModel]) -> Void, resultError: @escaping @MainActor (AFError?) -> Void)
 }
 
-class NetworkService : NetworkServiceProtocol {
+final class NetworkService: NetworkServiceProtocol, Sendable {
     
-    func fetchPlaces(_ location: Location, resultSuccess: @escaping ([PlaceModel]) -> Void, resultError: @escaping (AFError?) -> Void) {
+    func fetchPlaces(_ location: Location, resultSuccess: @escaping @MainActor ([PlaceModel]) -> Void, resultError: @escaping @MainActor (AFError?) -> Void) {
         var urlListPlace: String = ""
         switch location {
         case .semua:
@@ -29,25 +31,47 @@ class NetworkService : NetworkServiceProtocol {
         AF.request(urlListPlace, method: .get)
             .responseDecodable(of: [PlaceModel].self) { response in
                 switch response.result {
-                case .success(_) :
-                    resultSuccess(response.value ?? [])
-                case .failure(_) :
-                    resultError(response.error)
+                case .success:
+                    Task { @MainActor in
+                        resultSuccess(response.value ?? [])
+                    }
+                case .failure:
+                    Task { @MainActor in
+                        resultError(response.error)
+                    }
                 }
             }
     }
     
-    func fetchGalleries(result: @escaping (DataResponse<[GalleryModel], AFError>) -> Void) {
+    func fetchGalleries(resultSuccess: @escaping @MainActor ([GalleryModel]) -> Void, resultError: @escaping @MainActor (AFError?) -> Void) {
         AF.request("https://info-malang-batu.firebaseapp.com/Gallery_Malang_Batu.json", method: .get)
             .responseDecodable(of: [GalleryModel].self) { response in
-                result(response)
+                switch response.result {
+                case .success:
+                    Task { @MainActor in
+                        resultSuccess(response.value ?? [])
+                    }
+                case .failure:
+                    Task { @MainActor in
+                        resultError(response.error)
+                    }
+                }
             }
     }
     
-    func fetchPins(result: @escaping (DataResponse<[PinModel], AFError>) -> Void) {
+    func fetchPins(resultSuccess: @escaping @MainActor ([PinModel]) -> Void, resultError: @escaping @MainActor (AFError?) -> Void) {
         AF.request("https://info-malang-batu.firebaseapp.com/Maps_Malang_Batu.json", method: .get)
             .responseDecodable(of: [PinModel].self) { response in
-                result(response)
+                switch response.result {
+                case .success:
+                    Task { @MainActor in
+                        resultSuccess(response.value ?? [])
+                    }
+                case .failure:
+                    Task { @MainActor in
+                        resultError(response.error)
+                    }
+                }
             }
     }
     

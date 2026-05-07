@@ -9,6 +9,7 @@ import XCTest
 
 let timeOut = 3.0
 
+@MainActor
 final class Info_Malang_BatuUITests: XCTestCase {
     
     override class func setUp() {

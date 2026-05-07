@@ -10,12 +10,13 @@ import SwiftUI
 struct HomeView: View {
     
     @State var selectedTab = 0
-    private let brown = UIColor(named: "Brown500")!
+    private let brown = UIColor(named: "Brown500") ?? .brown
     
+    @MainActor
     init() {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = brown
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "pacifico", size: 20)!]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "pacifico", size: 20) ?? .systemFont(ofSize: 20)]
         appearance.shadowColor = .clear
         
         UINavigationBar.appearance().standardAppearance = appearance

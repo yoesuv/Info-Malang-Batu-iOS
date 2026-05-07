@@ -7,24 +7,30 @@
 
 import Foundation
 
+@MainActor
 class MapsViewModel: ObservableObject {
     
     @Published var pins = [PinModel]()
     @Published var loading: Bool = true
     
-    private let networkService = NetworkService()
+    private let networkService: any NetworkServiceProtocol
+    
+    init(_ networkService: any NetworkServiceProtocol = NetworkService()) {
+        self.networkService = networkService
+    }
     
     func fetchPins() {
         loading = true
-        networkService.fetchPins { response in
+        networkService.fetchPins { [weak self] data in
+            guard let self else { return }
             self.loading = false
-            if (response.error == nil) {
-                if let count = response.value?.count {
-                    print("MapsViewModel # success data count \(count)")
-                }
-                self.pins = response.value ?? []
-            } else {
-                print("MapsViewModel # error \(response.error!)")
+            print("MapsViewModel # success data count \(data.count)")
+            self.pins = data
+        } resultError: { [weak self] error in
+            guard let self else { return }
+            self.loading = false
+            if let err = error {
+                print("MapsViewModel # error \(err)")
             }
         }
     }

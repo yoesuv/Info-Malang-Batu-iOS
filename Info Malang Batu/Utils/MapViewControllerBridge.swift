@@ -7,27 +7,28 @@
 
 import Foundation
 import SwiftUI
-import GoogleMaps
+@preconcurrency import GoogleMaps
 import Combine
 
 struct MapViewControllerBridge: UIViewControllerRepresentable {
     
-    var pins:[PinModel]
+    var pins: [PinModel]
     var vcMapLink: VCMapLink
     @StateObject var locationManager = LocationManager()
     
+    @MainActor
     class Coordinator {
         var vcMapLink: VCMapLink? {
             didSet {
-                cancelable = vcMapLink?.$action.sink(receiveValue: { (action) in
-                    guard let action = action else {
+                cancelable = vcMapLink?.$action.sink(receiveValue: { [weak self] (action) in
+                    guard let self, let action = action else {
                         return
                     }
                     self.mapController?.action(action)
                 })
             }
         }
-        var mapController: MapViewController?
+        weak var mapController: MapViewController?
         private var cancelable: AnyCancellable?
     }
     
@@ -43,24 +44,22 @@ struct MapViewControllerBridge: UIViewControllerRepresentable {
         context.coordinator.mapController = uiViewController
         context.coordinator.vcMapLink = vcMapLink
         uiViewController.map.clear()
-        DispatchQueue.global().async {
-            if (CLLocationManager.locationServicesEnabled()) {
-                DispatchQueue.main.async {
-                    let userLat = locationManager.lastLocation?.coordinate.latitude ?? 0.0
-                    let userLng = locationManager.lastLocation?.coordinate.longitude ?? 0.0
-                    print("MapViewControllerBridge # test get user user location lat:\(userLat) lng:\(userLng)")
-                    uiViewController.map.isMyLocationEnabled = true
-                    uiViewController.map.settings.compassButton = true
-                    uiViewController.map.settings.myLocationButton = true
-                }
-            }
+        
+        if CLLocationManager.locationServicesEnabled() {
+            let userLat = locationManager.lastLocation?.coordinate.latitude ?? 0.0
+            let userLng = locationManager.lastLocation?.coordinate.longitude ?? 0.0
+            print("MapViewControllerBridge # test get user user location lat:\(userLat) lng:\(userLng)")
+            uiViewController.map.isMyLocationEnabled = true
+            uiViewController.map.settings.compassButton = true
+            uiViewController.map.settings.myLocationButton = true
         }
         
         for pin in pins {
-            let markerImage = UIImage(named: "IcMapPin")!.withRenderingMode(.alwaysTemplate)
             let marker = GMSMarker()
             let locationLatLng = CLLocationCoordinate2D(latitude: pin.latitude ?? 0, longitude: pin.longitude ?? 0)
-            marker.icon = markerImage
+            if let markerImage = UIImage(named: "IcMapPin")?.withRenderingMode(.alwaysTemplate) {
+                marker.icon = markerImage
+            }
             marker.position = locationLatLng
             marker.title = pin.name
             marker.map = uiViewController.map

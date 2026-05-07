@@ -6,19 +6,19 @@
 //
 
 import SwiftUI
-import GoogleMaps
-import AlertToast
+@preconcurrency import GoogleMaps
+@preconcurrency import AlertToast
 
 struct TabViewMaps: View {
     
-    @ObservedObject var viewModel = MapsViewModel()
-    @ObservedObject var vcMapLink = VCMapLink()
+    @StateObject private var viewModel = MapsViewModel()
+    @StateObject private var vcMapLink = VCMapLink()
     
     var body: some View {
         let mapView = MapViewControllerBridge(pins: viewModel.pins, vcMapLink: vcMapLink)
         NavigationStack {
             mapView
-            .edgesIgnoringSafeArea(.top)
+            .ignoresSafeArea(.container, edges: .top)
             .navigationTitle("Maps")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
