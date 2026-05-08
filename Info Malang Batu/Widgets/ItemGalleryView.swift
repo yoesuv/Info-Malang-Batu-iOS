@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Kingfisher
+@preconcurrency import Kingfisher
 
 struct ItemGalleryView: View {
     
@@ -15,7 +15,7 @@ struct ItemGalleryView: View {
     var body: some View {
         KFImage.url(URL(string: gallery?.image ?? ""))
             .placeholder {
-                Image(uiImage: UIImage(named: "PlaceholderLoadingSquare")!)
+                Image("PlaceholderLoadingSquare")
                     .resizable()
                     .scaledToFill()
                     .clipped()

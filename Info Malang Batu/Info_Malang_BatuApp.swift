@@ -6,17 +6,12 @@
 //
 
 import SwiftUI
-import Firebase
-import GoogleMaps
+@preconcurrency import GoogleMaps
 
 @main
 struct Info_Malang_BatuApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
-    init() {
-        FirebaseApp.configure()
-    }
     
     var body: some Scene {
         WindowGroup {
@@ -26,6 +21,7 @@ struct Info_Malang_BatuApp: App {
 }
 
 // https://betterprogramming.pub/how-to-use-firebase-in-swiftuis-new-application-lifecycle-c77a8a306d63
+@MainActor
 class AppDelegate: NSObject, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         if let path = Bundle.main.path(forResource: "keys", ofType: "plist") {

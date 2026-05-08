@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct FilterItemListPlaceModel: Identifiable {
-    var id = UUID().uuidString
-    var title: String
-    var location: Location
+struct FilterItemListPlaceModel: Identifiable, Sendable {
+    let id = UUID().uuidString
+    let title: String
+    let location: Location
 }

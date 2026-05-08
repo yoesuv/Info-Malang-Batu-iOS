@@ -12,8 +12,8 @@ struct TabViewAbout: View {
     @State var selectedTab:Int = 0
     
     var body: some View {
-        NavigationView {
-            VStack {
+        NavigationStack {
+            VStack(spacing: 0) {
                 AppBar(index: $selectedTab)
                 TabView(selection: $selectedTab) {
                     SwipeTabAbout().tag(0)
@@ -25,48 +25,61 @@ struct TabViewAbout: View {
             .navigationTitle("About")
             .navigationBarTitleDisplayMode(.inline)
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
     }
 }
 
 struct AppBar: View {
-    
+
     @Binding var index: Int
-    private let brown = Color(UIColor(named: "Brown500")!)
-    
+    private let brown = Color(UIColor(named: "Brown500") ?? .brown)
+    @Namespace private var animation
+
     var body: some View {
         ZStack {
             brown
-                .frame(height: 45)
+                .frame(height: 50)
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 10) {
+                HStack(spacing: 0) {
                     Spacer().frame(width: 10)
-                    Button(action: {
-                        setSelected(index: 0)
-                    }, label: {
-                        Text("About")
-                            .foregroundColor(self.index == 0 ? .white : Color.white.opacity(0.7))
-                    })
-                    Button(action: {
-                        setSelected(index: 1)
-                    }, label: {
-                        Text("Changelog")
-                            .foregroundColor(self.index == 1 ? .white : Color.white.opacity(0.7))
-                    })
-                    Button(action: {
-                        setSelected(index: 2)
-                    }, label: {
-                        Text("Libraries")
-                            .foregroundColor(self.index == 2 ? .white : Color.white.opacity(0.7))
-                    })
+                    tabButton(title: "About", tag: 0)
+                    tabButton(title: "Changelog", tag: 1)
+                    tabButton(title: "Libraries", tag: 2)
+                    Spacer().frame(width: 10)
                 }
             }
         }
     }
-    
+
+    private func tabButton(title: String, tag: Int) -> some View {
+        Button(action: {
+            setSelected(index: tag)
+        }, label: {
+            VStack(spacing: 0) {
+                Text(title)
+                    .font(.system(size: 15, weight: index == tag ? .bold : .medium))
+                    .foregroundColor(index == tag ? .white : Color.white.opacity(0.7))
+                    .frame(maxHeight: .infinity)
+                    .padding(.horizontal, 16)
+
+                ZStack {
+                    if self.index == tag {
+                        Rectangle()
+                            .fill(Color.white)
+                            .frame(height: 3)
+                            .matchedGeometryEffect(id: "underline", in: animation, properties: .frame, anchor: .bottom)
+                    } else {
+                        Rectangle()
+                            .fill(Color.clear)
+                            .frame(height: 3)
+                    }
+                }
+            }
+            .frame(height: 50)
+        })
+    }
+
     func setSelected(index: Int) {
-        withAnimation {
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
             self.index = index
         }
     }

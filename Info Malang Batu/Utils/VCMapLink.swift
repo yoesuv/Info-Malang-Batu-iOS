@@ -8,14 +8,15 @@
 import Foundation
 import SwiftUI
 
-enum VCMapLinkAction {
+enum VCMapLinkAction: Sendable {
     case resetMap
 }
 
+@MainActor
 class VCMapLink: ObservableObject {
     @Published var action: VCMapLinkAction?
     
-    @objc func resetMap() {
+    func resetMap() {
         action = .resetMap
     }
 }

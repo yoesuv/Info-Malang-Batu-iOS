@@ -12,16 +12,18 @@ struct ItemLibraryView: View {
     let library: LibraryModel?
     
     var body: some View {
-        VStack (alignment: .leading){
+        VStack (alignment: .leading, spacing: 4){
             Text(library?.name ?? "")
                 .font(.title3)
                 .fontWeight(.bold)
             Text(library?.url ?? "")
                 .font(.caption)
-            HtmlText(library?.license ?? "")
+            HtmlText(library?.license ?? "", font: .system(.caption, design: .monospaced))
+                .foregroundColor(.primary)
             Divider()
         }
         .padding(.horizontal, 10)
+        .padding(.top, 10)
     }
 }
 

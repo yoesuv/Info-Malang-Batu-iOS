@@ -8,7 +8,7 @@ import SwiftUI
 
 // https://gist.github.com/TuenTuenna/ad16f07645e59ef8e115fda8e0511031
 struct TabBarAccessor: UIViewControllerRepresentable {
-    var callback: (UITabBar) -> Void
+    var callback: @MainActor (UITabBar) -> Void
     private let proxyController = ViewController()
 
     func makeUIViewController(context: UIViewControllerRepresentableContext<TabBarAccessor>) ->
@@ -24,7 +24,7 @@ struct TabBarAccessor: UIViewControllerRepresentable {
 
 
     private class ViewController: UIViewController {
-        var callback: (UITabBar) -> Void = { _ in }
+        var callback: @MainActor (UITabBar) -> Void = { _ in }
 
         override func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)

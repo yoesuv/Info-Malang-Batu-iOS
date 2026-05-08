@@ -6,9 +6,10 @@
 //
 
 import Foundation
-import GoogleMaps
+@preconcurrency import GoogleMaps
 import UIKit
 
+@MainActor
 class MapViewController: UIViewController {
     
     let map =  GMSMapView(frame: .zero)
@@ -24,7 +25,7 @@ class MapViewController: UIViewController {
     // https://stackoverflow.com/a/65926143/3559183
     // google keyword uiviewcontrollerrepresentable call function
     func action(_ action: VCMapLinkAction) {
-        print("MapViewController # \(#function) \(action)")
+        print("MapViewController # \( #function) \(action)")
         map.camera = defaultCamera
     }
     

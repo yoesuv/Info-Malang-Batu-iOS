@@ -71,3 +71,7 @@ Dependencies/
 .accio/
 
 keys.plist
+GoogleService-Info.plist
+
+# macOS
+.DS_Store

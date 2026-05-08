@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "9DFE326A-7FFC-47B1-93EB-9D284EAC34BB",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Info Malang Batu.xcodeproj",
+      "identifier" : "ABE0580E27AF513D00E63467",
+      "name" : "Info Malang Batu"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Info Malang Batu.xcodeproj",
+        "identifier" : "AB0EF6BC2BF70061004C3C53",
+        "name" : "Info Malang BatuUITests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Info Malang Batu.xcodeproj",
+        "identifier" : "ABA25F5B2BFAE6E60024C25B",
+        "name" : "Info Malang BatuTests"
+      }
+    }
+  ],
+  "version" : 1
+}

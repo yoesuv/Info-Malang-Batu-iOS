@@ -9,11 +9,11 @@ import SwiftUI
 
 struct SwipeTabLibraries: View {
     
-    @ObservedObject var viewModel = LibraryViewModel()
+    @StateObject private var viewModel = LibraryViewModel()
     
     var body: some View {
         ScrollView(showsIndicators: false) {
-            LazyVStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 0) {
                 ForEach(viewModel.libraries) { item in
                     ItemLibraryView(library: item)
                 }

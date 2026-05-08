@@ -10,12 +10,13 @@ import SwiftUI
 struct HomeView: View {
     
     @State var selectedTab = 0
-    private let brown = UIColor(named: "Brown500")!
+    private let brown = UIColor(named: "Brown500") ?? .brown
     
+    @MainActor
     init() {
         let appearance = UINavigationBarAppearance()
         appearance.backgroundColor = brown
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "pacifico", size: 20)!]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont(name: "pacifico", size: 20) ?? .systemFont(ofSize: 20)]
         appearance.shadowColor = .clear
         
         UINavigationBar.appearance().standardAppearance = appearance
@@ -26,34 +27,29 @@ struct HomeView: View {
     }
     
     var body: some View {
-        NavigationView {
-            TabView (selection: $selectedTab){
-                TabViewListPlace().tabItem {
-                    Image(systemName: "house.fill")
-                    Text("List Place")
-                }
-                .tag(0)
-                TabViewGallery().tabItem {
-                    Image(systemName: "photo.artframe")
-                    Text("Gallery")
-                }
-                .tag(1)
-                TabViewMaps().tabItem {
-                    Image(systemName: "map")
-                    Text("Maps")
-                }
-                .tag(2)
-                TabViewAbout().tabItem {
-                    Image(systemName: "info.circle.fill")
-                    Text("About")
-                }
-                .tag(3)
+        TabView(selection: $selectedTab) {
+            TabViewListPlace().tabItem {
+                Image(systemName: "house.fill")
+                Text("List Place")
             }
-            .accentColor(Color(brown))
-            .navigationViewStyle(StackNavigationViewStyle())
+            .tag(0)
+            TabViewGallery().tabItem {
+                Image(systemName: "photo.artframe")
+                Text("Gallery")
+            }
+            .tag(1)
+            TabViewMaps().tabItem {
+                Image(systemName: "map")
+                Text("Maps")
+            }
+            .tag(2)
+            TabViewAbout().tabItem {
+                Image(systemName: "info.circle.fill")
+                Text("About")
+            }
+            .tag(3)
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
+        .accentColor(Color(brown))
     }
 }
 

@@ -7,11 +7,13 @@
 
 import Foundation
 
+@MainActor
 class ChangelogViewModel: ObservableObject {
     
     @Published var changelog = [ChangelogModel]()
     
     init() {
+        changelog.append(ChangelogModel(version: "1.2.3", information: "- Swift 6 migration</br>- improve tab bar & UI</br>- add tests & DI</br>- fix warnings & cycles"))
         changelog.append(ChangelogModel(version: "1.2.2", information: "- update libraries"))
         changelog.append(ChangelogModel(version: "1.2.1", information: "- update libraries"))
         changelog.append(ChangelogModel(version: "1.2.0", information: "- add filter list place</br>- change base color brown"))

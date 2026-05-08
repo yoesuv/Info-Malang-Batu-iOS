@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ChangelogModel: Identifiable {
+struct ChangelogModel: Identifiable, Sendable {
     var id: String {
         return version
     }

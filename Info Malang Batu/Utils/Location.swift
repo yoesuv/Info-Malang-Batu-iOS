@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Location {
+enum Location: Sendable {
     case semua
     case kab_malang
     case kota_batu

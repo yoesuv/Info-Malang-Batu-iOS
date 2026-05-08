@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
-import AlertToast
+@preconcurrency import AlertToast
 
 struct TabViewGallery: View {
     
-    @ObservedObject var viewModel = GalleryViewModel()
+    @StateObject private var viewModel = GalleryViewModel(NetworkService())
     let column = [
         GridItem(.flexible(), spacing: 0),
         GridItem(.flexible(), spacing: 0),
@@ -18,7 +18,7 @@ struct TabViewGallery: View {
     ]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ScrollView (showsIndicators: false){
                 LazyVGrid(columns: column, spacing: 0) {
                     ForEach(viewModel.galleries) { item in
@@ -38,8 +38,6 @@ struct TabViewGallery: View {
         .onAppear {
             viewModel.fetchGalleries()
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
         .toast(isPresenting: $viewModel.loading, alert: {
             AlertToast.init(type: .loading)
         })

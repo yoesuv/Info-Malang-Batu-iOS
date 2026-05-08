@@ -7,9 +7,9 @@
 
 import Foundation
 
-struct PinModel: Codable, Identifiable {
+struct PinModel: Codable, Identifiable, Sendable {
     var id: String {
-        return name!
+        return name ?? UUID().uuidString
     }
     let name: String?
     let lokasi: Int?
