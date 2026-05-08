@@ -15,7 +15,7 @@ class MapsViewModel: ObservableObject {
     
     private let networkService: any NetworkServiceProtocol
     
-    init(_ networkService: any NetworkServiceProtocol = NetworkService()) {
+    init(_ networkService: any NetworkServiceProtocol) {
         self.networkService = networkService
     }
     

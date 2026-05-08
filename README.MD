@@ -8,9 +8,9 @@ Another version project Info Malang Batu build with Swift UI.
 
 ### Screenshot
 
-| ![Splash Screen](https://i.imgur.com/VJZHHbj.png) |   ![List Place](https://i.imgur.com/nGSXLUe.png)   | ![Detail List Place](https://i.imgur.com/7RtxVRi.png) | ![Filter List Place](https://i.imgur.com/IUjZe7w.png) |
-| :-----------------------------------------------: | :------------------------------------------------: | :---------------------------------------------------: | :---------------------------------------------------: |
-|    ![Gallery](https://i.imgur.com/YsVjlch.png)    | ![Detail Gallery](https://i.imgur.com/czijTtf.png) |       ![Maps](https://i.imgur.com/Tu6fqfx.png)        |       ![About](https://i.imgur.com/uWUfn4u.png)       |
+| ![](https://i.imgur.com/ZNpAWgS.png) | ![](https://i.imgur.com/xvfzU92.png) | ![](https://i.imgur.com/AyT8oPF.png) | ![](https://i.imgur.com/qt1WSj5.png) |
+| :----------------------------------: | :----------------------------------: | :----------------------------------: | :----------------------------------: |
+| ![](https://i.imgur.com/Aivnsbi.png) | ![](https://i.imgur.com/tiH76vn.png) | ![](https://i.imgur.com/uU9WpgD.png) | ![](https://i.imgur.com/oPAk5me.png) |
 
 ### List Library
 

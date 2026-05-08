@@ -42,7 +42,7 @@
 		ABA25F5F2BFAE6E60024C25B /* Info_Malang_BatuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */; };
 		ABB268E427BBA74700BD3305 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB268E327BBA74700BD3305 /* LocationManager.swift */; };
 		ABC661D027BA145A003928F0 /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC661CF27BA145A003928F0 /* pacifico.ttf */; };
-		ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */; };
+		
 		ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */; };
 		ABCFE2F727B11C60007D19F3 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */; };
 		ABCFE2F927B11E64007D19F3 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */; };
@@ -111,7 +111,7 @@
 		ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuTests.swift; sourceTree = "<group>"; };
 		ABB268E327BBA74700BD3305 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ABC661CF27BA145A003928F0 /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
-		ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		
 		ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPlaceView.swift; sourceTree = "<group>"; };
 		ABCFE2F627B11C60007D19F3 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
 		ABCFE2F827B11E64007D19F3 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
@@ -303,7 +303,7 @@
 			children = (
 				ABF3E77527BA2D2D0013E00F /* Info-Malang-Batu-Info.plist */,
 				ABC661CD27BA141B003928F0 /* Resources */,
-				ABCB201127B4E95800CAC45C /* GoogleService-Info.plist */,
+				
 				AB1838E827B2D5FB001DCBC8 /* Utils */,
 				AB31F02127B09600001A96D8 /* ViewModels */,
 				AB31F01E27B0936A001A96D8 /* Services */,
@@ -470,7 +470,7 @@
 			files = (
 				AB89BE2928175C06008A2DA8 /* keys.plist in Resources */,
 				ABE0581A27AF513E00E63467 /* Preview Assets.xcassets in Resources */,
-				ABCB201227B4E95800CAC45C /* GoogleService-Info.plist in Resources */,
+				
 				ABC661D027BA145A003928F0 /* pacifico.ttf in Resources */,
 				ABE0581727AF513E00E63467 /* Assets.xcassets in Resources */,
 			);

@@ -11,7 +11,7 @@ import SwiftUI
 
 struct TabViewMaps: View {
     
-    @StateObject private var viewModel = MapsViewModel()
+    @StateObject private var viewModel = MapsViewModel(NetworkService())
     @StateObject private var vcMapLink = VCMapLink()
     
     var body: some View {

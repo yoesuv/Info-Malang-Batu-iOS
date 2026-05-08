@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TabViewGallery: View {
     
-    @StateObject private var viewModel = GalleryViewModel()
+    @StateObject private var viewModel = GalleryViewModel(NetworkService())
     let column = [
         GridItem(.flexible(), spacing: 0),
         GridItem(.flexible(), spacing: 0),
