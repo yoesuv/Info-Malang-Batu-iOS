@@ -34,35 +34,100 @@ jobs:
           xcodebuild -version
           swift --version
 
-      - name: Build
-        run: |
-          set -o pipefail
-          xcodebuild build \
-            -project "Info Malang Batu.xcodeproj" \
-            -scheme "Info Malang Batu" \
-            -destination "platform=iOS Simulator,name=iPhone 16,OS=18.6" \
-            CODE_SIGN_IDENTITY="" \
-            CODE_SIGNING_REQUIRED=NO \
-            CODE_SIGNING_ALLOWED=NO \
-            | xcpretty --color
-
-      - name: Run Tests
+      - name: Build & Test
         run: |
           set -o pipefail
           xcodebuild test \
             -project "Info Malang Batu.xcodeproj" \
             -scheme "Info Malang Batu" \
-            -destination "platform=iOS Simulator,name=iPhone 16,OS=18.6" \
+            -sdk iphonesimulator \
+            -destination "platform=iOS Simulator,name=iPhone 16" \
             -testPlan "Info Malang Batu" \
+            -enableCodeCoverage YES \
+            -derivedDataPath DerivedData \
+            -resultBundlePath TestResults.xcresult \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGNING_ALLOWED=NO \
-            | xcpretty --color
+            | xcpretty
+
+      - name: Generate Coverage Report
+        run: |
+          set -e
+
+          PROFDATA=$(find DerivedData -name "*.profdata" | head -n 1)
+
+          if [ -z "$PROFDATA" ]; then
+            echo "Error: No .profdata file found in DerivedData"
+            exit 1
+          fi
+
+          echo "Profdata: $PROFDATA"
+
+          # Find all candidate binaries
+          APP_DIR="DerivedData/Build/Products/Debug-iphonesimulator/Info Malang Batu.app"
+          BINARIES=(
+            "$APP_DIR/Info Malang Batu"
+            "$APP_DIR/Info Malang Batu.debug.dylib"
+          )
+
+          # Also search for any executable in the app bundle
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            if file "$file" | grep -q "Mach-O"; then
+              BINARIES+=("$file")
+            fi
+          done < <(find "$APP_DIR" -type f 2>/dev/null || true)
+
+          echo "Found ${#BINARIES[@]} candidate binaries"
+
+          # Try each binary with different architectures
+          SUCCESS=0
+          for binary in "${BINARIES[@]}"; do
+            [ -f "$binary" ] || continue
+            echo ""
+            echo "Trying: $binary"
+            echo "File type: $(file "$binary" 2>/dev/null || echo 'unknown')"
+
+            for arch in "" "-arch arm64" "-arch x86_64"; do
+              if xcrun llvm-cov export \
+                -format=lcov \
+                -instr-profile="$PROFDATA" \
+                -ignore-filename-regex=".build|Pods|DerivedData" \
+                $arch \
+                "$binary" > lcov.info 2>/dev/null; then
+                echo "  ✓ Success with flags: '$arch'"
+                SUCCESS=1
+                break 2
+              fi
+            done
+          done
+
+          if [ $SUCCESS -eq 0 ]; then
+            echo ""
+            echo "Error: Could not generate coverage from any binary."
+            echo "This means the binary was not compiled with coverage instrumentation."
+            echo ""
+            echo "Debugging app bundle contents:"
+            ls -la "$APP_DIR" 2>/dev/null || echo "App directory not found"
+            echo ""
+            echo "Check Xcode Build Settings -> ensure CLANG_ENABLE_CODE_COVERAGE=YES"
+            exit 1
+          fi
+
+          echo ""
+          echo "Generated lcov.info ($(wc -l < lcov.info) lines)"
+
+      - name: Upload Coverage to Codacy
+        uses: codacy/codacy-coverage-reporter-action@v1.3.0
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: lcov.info
 
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: ~/Library/Developer/Xcode/DerivedData/**/Logs/Test/*.xcresult
+          path: TestResults.xcresult
           retention-days: 7

@@ -655,6 +655,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Info Malang Batu/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Info-Malang-Batu-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "show user current location";
@@ -686,6 +688,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Info Malang Batu/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Info-Malang-Batu-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "show user current location";
