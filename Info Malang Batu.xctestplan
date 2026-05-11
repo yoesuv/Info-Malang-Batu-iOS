@@ -19,13 +19,6 @@
     {
       "target" : {
         "containerPath" : "container:Info Malang Batu.xcodeproj",
-        "identifier" : "AB0EF6BC2BF70061004C3C53",
-        "name" : "Info Malang BatuUITests"
-      }
-    },
-    {
-      "target" : {
-        "containerPath" : "container:Info Malang Batu.xcodeproj",
         "identifier" : "ABA25F5B2BFAE6E60024C25B",
         "name" : "Info Malang BatuTests"
       }
