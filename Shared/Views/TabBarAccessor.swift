@@ -17,7 +17,10 @@ struct TabBarAccessor: UIViewControllerRepresentable {
         return proxyController
     }
 
-    func updateUIViewController(_ uiViewController: UIViewController, context: UIViewControllerRepresentableContext<TabBarAccessor>) {
+    func updateUIViewController(
+        _ uiViewController: UIViewController,
+        context: UIViewControllerRepresentableContext<TabBarAccessor>
+    ) {
     }
 
     typealias UIViewControllerType = UIViewController
