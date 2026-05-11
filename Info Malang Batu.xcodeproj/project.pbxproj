@@ -27,17 +27,14 @@
 		AB57B01B27C8456E00FFC425 /* VCMapLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB57B01A27C8456E00FFC425 /* VCMapLink.swift */; };
 		AB67C29F2FAB23070017BC6D /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = AB67C29E2FAB23070017BC6D /* AlertToast */; };
 		AB7019EA2FAB26A100B5A7F3 /* GoogleMaps in Frameworks */ = {isa = PBXBuildFile; productRef = AB7019E92FAB26A100B5A7F3 /* GoogleMaps */; };
-		AB7019EC2FAB26A100B5A7F3 /* GoogleMapsBase in Frameworks */ = {isa = PBXBuildFile; productRef = AB7019EB2FAB26A100B5A7F3 /* GoogleMapsBase */; };
-		AB7019EE2FAB26A100B5A7F3 /* GoogleMapsCore in Frameworks */ = {isa = PBXBuildFile; productRef = AB7019ED2FAB26A100B5A7F3 /* GoogleMapsCore */; };
-		AB7019F02FAB26A100B5A7F3 /* GoogleMapsM4B in Frameworks */ = {isa = PBXBuildFile; productRef = AB7019EF2FAB26A100B5A7F3 /* GoogleMapsM4B */; };
 		AB76902927B24E13006DA09B /* SwipeTabAbout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902827B24E13006DA09B /* SwipeTabAbout.swift */; };
 		AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902A27B24F47006DA09B /* SwipeTabChangelog.swift */; };
 		AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */; };
 		AB87377F27C8DDE800C385C0 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB87377E27C8DDE800C385C0 /* Location.swift */; };
 		AB89BE2928175C06008A2DA8 /* keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB89BE2828175C06008A2DA8 /* keys.plist */; };
-		AB89BE2D28176080008A2DA8 /* TabBarAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB89BE2C28176080008A2DA8 /* TabBarAccessor.swift */; };
 		AB93B6D927C8921D000B2EBA /* ItemCheckListPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93B6D827C8921D000B2EBA /* ItemCheckListPlace.swift */; };
 		AB93B6DB27C89273000B2EBA /* FilterItemListPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */; };
+		AB9F00932FB1D04000723C15 /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = AB9F00922FB1D04000723C15 /* ViewInspector */; };
 		ABA25F5F2BFAE6E60024C25B /* Info_Malang_BatuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */; };
 		ABA8E7652FB1B1DB00C7B95A /* GalleryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = ABA8E7642FB1B1CC00C7B95A /* GalleryResponse.json */; };
 		ABA8E7672FB1B29500C7B95A /* MapsPinResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = ABA8E7662FB1B28300C7B95A /* MapsPinResponse.json */; };
@@ -61,6 +58,7 @@
 		ABF7736C27B3609700330C8D /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736B27B3609700330C8D /* LibraryViewModel.swift */; };
 		ABF7736E27B3657D00330C8D /* ItemLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */; };
 		ABF7737027B3728E00330C8D /* ListPlaceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */; };
+		ABVTEST01FB1D04000723C15 /* ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABVTEST02FB1D04000723C15 /* ViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,7 +93,6 @@
 		AB76902C27B24F75006DA09B /* SwipeTabLibraries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabLibraries.swift; sourceTree = "<group>"; };
 		AB87377E27C8DDE800C385C0 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		AB89BE2828175C06008A2DA8 /* keys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = keys.plist; sourceTree = "<group>"; };
-		AB89BE2C28176080008A2DA8 /* TabBarAccessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAccessor.swift; sourceTree = "<group>"; };
 		AB93B6D827C8921D000B2EBA /* ItemCheckListPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCheckListPlace.swift; sourceTree = "<group>"; };
 		AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemListPlaceModel.swift; sourceTree = "<group>"; };
 		ABA25F5C2BFAE6E60024C25B /* Info Malang BatuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Info Malang BatuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +121,7 @@
 		ABF7736B27B3609700330C8D /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		ABF7736D27B3657D00330C8D /* ItemLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemLibraryView.swift; sourceTree = "<group>"; };
 		ABF7736F27B3728E00330C8D /* ListPlaceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPlaceDetailView.swift; sourceTree = "<group>"; };
+		ABVTEST02FB1D04000723C15 /* ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9F00932FB1D04000723C15 /* ViewInspector in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +140,7 @@
 				AB3A468E2FAB205E002BE40C /* Kingfisher in Frameworks */,
 				AB67C29F2FAB23070017BC6D /* AlertToast in Frameworks */,
 				AB7019EA2FAB26A100B5A7F3 /* GoogleMaps in Frameworks */,
-				AB7019EC2FAB26A100B5A7F3 /* GoogleMapsBase in Frameworks */,
 				AB3A46892FAB1D92002BE40C /* Alamofire in Frameworks */,
-				AB7019F02FAB26A100B5A7F3 /* GoogleMapsM4B in Frameworks */,
-				AB7019EE2FAB26A100B5A7F3 /* GoogleMapsCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,28 +194,13 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		AB89BE2A2817605A008A2DA8 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				AB89BE2B28176069008A2DA8 /* Views */,
-			);
-			path = Shared;
-			sourceTree = "<group>";
-		};
-		AB89BE2B28176069008A2DA8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				AB89BE2C28176080008A2DA8 /* TabBarAccessor.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		ABA25F5D2BFAE6E60024C25B /* Info Malang BatuTests */ = {
 			isa = PBXGroup;
 			children = (
 				ABA8E7662FB1B28300C7B95A /* MapsPinResponse.json */,
 				ABA8E7642FB1B1CC00C7B95A /* GalleryResponse.json */,
 				ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */,
+				ABVTEST02FB1D04000723C15 /* ViewTests.swift */,
 				AB3656042C0383BD00195B79 /* ListPlaceResponse.json */,
 				AB3656062C03840C00195B79 /* MockNetworkService.swift */,
 				AB3656082C03854800195B79 /* Mockable.swift */,
@@ -260,7 +241,6 @@
 			children = (
 				AB89BE2828175C06008A2DA8 /* keys.plist */,
 				ABE0581127AF513D00E63467 /* Info Malang Batu */,
-				AB89BE2A2817605A008A2DA8 /* Shared */,
 				ABA25F5D2BFAE6E60024C25B /* Info Malang BatuTests */,
 				ABE0581027AF513D00E63467 /* Products */,
 			);
@@ -390,6 +370,7 @@
 				AB3A468C2FAB205E002BE40C /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				AB67C29D2FAB23070017BC6D /* XCRemoteSwiftPackageReference "AlertToast" */,
 				AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */,
+				AB9F00912FB1D04000723C15 /* XCRemoteSwiftPackageReference "ViewInspector" */,
 			);
 			productRefGroup = ABE0581027AF513D00E63467 /* Products */;
 			projectDirPath = "";
@@ -433,6 +414,7 @@
 				AB3656072C03840C00195B79 /* MockNetworkService.swift in Sources */,
 				AB3656092C03854800195B79 /* Mockable.swift in Sources */,
 				ABA25F5F2BFAE6E60024C25B /* Info_Malang_BatuTests.swift in Sources */,
+				ABVTEST01FB1D04000723C15 /* ViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +455,6 @@
 				AB76902B27B24F47006DA09B /* SwipeTabChangelog.swift in Sources */,
 				AB57B01B27C8456E00FFC425 /* VCMapLink.swift in Sources */,
 				AB1838EA27B2D60B001DCBC8 /* Bundle.swift in Sources */,
-				AB89BE2D28176080008A2DA8 /* TabBarAccessor.swift in Sources */,
 				AB257A6F27B201510003B98F /* ItemGalleryView.swift in Sources */,
 				AB76902D27B24F75006DA09B /* SwipeTabLibraries.swift in Sources */,
 				ABE0581327AF513D00E63467 /* Info_Malang_BatuApp.swift in Sources */,
@@ -678,7 +659,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.3;
+				MARKETING_VERSION = 1.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -711,7 +692,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.3;
+				MARKETING_VERSION = 1.2.4;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.yoesuv.Info-Malang-Batu";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -758,7 +739,7 @@
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
 				kind = exactVersion;
-				version = 5.9.1;
+				version = 5.12.0;
 			};
 		};
 		AB3A468C2FAB205E002BE40C /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
@@ -766,7 +747,7 @@
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
 				kind = exactVersion;
-				version = 7.11.0;
+				version = 8.9.0;
 			};
 		};
 		AB67C29D2FAB23070017BC6D /* XCRemoteSwiftPackageReference "AlertToast" */ = {
@@ -782,7 +763,15 @@
 			repositoryURL = "https://github.com/googlemaps/ios-maps-sdk";
 			requirement = {
 				kind = exactVersion;
-				version = 8.4.0;
+				version = 10.13.0;
+			};
+		};
+		AB9F00912FB1D04000723C15 /* XCRemoteSwiftPackageReference "ViewInspector" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nalexn/ViewInspector";
+			requirement = {
+				kind = exactVersion;
+				version = 0.10.3;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -808,20 +797,10 @@
 			package = AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
 			productName = GoogleMaps;
 		};
-		AB7019EB2FAB26A100B5A7F3 /* GoogleMapsBase */ = {
+		AB9F00922FB1D04000723C15 /* ViewInspector */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
-			productName = GoogleMapsBase;
-		};
-		AB7019ED2FAB26A100B5A7F3 /* GoogleMapsCore */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
-			productName = GoogleMapsCore;
-		};
-		AB7019EF2FAB26A100B5A7F3 /* GoogleMapsM4B */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = AB7019E82FAB26A100B5A7F3 /* XCRemoteSwiftPackageReference "ios-maps-sdk" */;
-			productName = GoogleMapsM4B;
+			package = AB9F00912FB1D04000723C15 /* XCRemoteSwiftPackageReference "ViewInspector" */;
+			productName = ViewInspector;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

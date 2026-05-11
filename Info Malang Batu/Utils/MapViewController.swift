@@ -12,7 +12,7 @@ import UIKit
 @MainActor
 class MapViewController: UIViewController {
     
-    let map =  GMSMapView(frame: .zero)
+    let map = GMSMapView()
     let defaultCamera = GMSCameraPosition.init(latitude: -7.982914, longitude: 112.630875, zoom: 9)
     var isAnimating: Bool = false
     

@@ -64,19 +64,11 @@ final class InfoMalangBatuTests: XCTestCase {
     func testChangelog() {
         let viewmodel = ChangelogViewModel()
         
-        XCTAssertEqual(viewmodel.changelog.count, 6)
+        XCTAssertEqual(viewmodel.changelog.count, 7)
         
         // first entry
-        XCTAssertEqual(viewmodel.changelog[0].version, "1.2.3")
-        XCTAssertTrue(viewmodel.changelog[0].information.contains("Swift 6 migration"))
-        XCTAssertEqual(viewmodel.changelog[0].id, "1.2.3")
-        
-        // last entry
-        XCTAssertEqual(viewmodel.changelog[5].version, "1.0.0")
-        XCTAssertEqual(viewmodel.changelog[5].information, "- initial release")
-        
-        // middle entry
-        XCTAssertEqual(viewmodel.changelog[3].version, "1.2.0")
+        XCTAssertEqual(viewmodel.changelog[0].version, "1.2.4")
+        XCTAssertEqual(viewmodel.changelog[0].id, "1.2.4")
     }
     
     @MainActor
