@@ -20,6 +20,7 @@ Another version project Info Malang Batu build with Swift UI.
 - [AlertToast](https://github.com/elai950/AlertToast)
 - [Google Maps](https://github.com/googlemaps/ios-maps-sdk)
 - [Kingfisher](https://github.com/onevcat/Kingfisher)
+- [View Inspector](https://github.com/nalexn/ViewInspector)
 
 ### License
 

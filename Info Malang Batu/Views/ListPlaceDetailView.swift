@@ -20,6 +20,7 @@ struct ListPlaceDetailView: View {
         GeometryReader { geo in
             VStack (alignment: .leading) {
                KFImage.url(URL(string: place?.gambar ?? ""))
+                   .onFailureView { Image("PlaceholderError").resizable() }
                    .cancelOnDisappear(true)
                    .fade(duration: 0.25)
                    .resizable()

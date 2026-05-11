@@ -17,6 +17,7 @@ struct ItemChangelogView: View {
                 .font(.body)
                 .fontWeight(.bold)
             HtmlText(changelog?.information ?? "")
+                .padding(.bottom, 5)
             Divider()
         }
         .padding(.horizontal, 10)

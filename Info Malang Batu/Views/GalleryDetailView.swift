@@ -20,6 +20,7 @@ struct GalleryDetailView: View {
         GeometryReader { geo in
             VStack (alignment: .leading) {
                KFImage.url(URL(string: gallery?.image ?? ""))
+                    .onFailureView { Image("PlaceholderError").resizable() }
                    .cancelOnDisappear(true)
                    .fade(duration: 0.25)
                    .resizable()

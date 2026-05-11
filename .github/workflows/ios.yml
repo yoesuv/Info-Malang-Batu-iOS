@@ -29,6 +29,12 @@ jobs:
         env:
           GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
+      - name: Debug working directory
+        run: |
+          pwd
+          ls -ll
+          sw_vers
+
       - name: Show build environment
         run: |
           xcodebuild -version

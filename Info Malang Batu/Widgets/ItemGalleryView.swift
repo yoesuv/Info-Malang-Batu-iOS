@@ -20,7 +20,7 @@ struct ItemGalleryView: View {
                     .scaledToFill()
                     .clipped()
             }
-            .onFailureImage(UIImage(named: "PlaceholderErrorSquare"))
+            .onFailureView { Image("PlaceholderErrorSquare").resizable() }
             .cancelOnDisappear(true)
             .fade(duration: 0.25)
             .resizable()

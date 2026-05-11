@@ -22,7 +22,7 @@ struct ItemPlaceView: View {
                             .scaledToFill()
                             .clipped()
                     }
-                    .onFailureImage(UIImage(named: "PlaceholderError"))
+                    .onFailureView { Image("PlaceholderError").resizable() }
                     .fade(duration: 1)
                     .cancelOnDisappear(true)
                     .fade(duration: 0.25)

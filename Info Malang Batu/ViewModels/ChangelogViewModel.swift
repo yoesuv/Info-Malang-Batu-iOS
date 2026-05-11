@@ -15,6 +15,13 @@ class ChangelogViewModel: ObservableObject {
     init() {
         changelog.append(
             ChangelogModel(
+                version: "1.2.4",
+                information: "- add ViewInspector tests</br>- Codacy code coverage</br>" +
+                    "- remove unused TabBarAccessor</br>- improve changelog UI"
+            )
+        )
+        changelog.append(
+            ChangelogModel(
                 version: "1.2.3",
                 information: "- Swift 6 migration</br>- improve tab bar & UI</br>" +
                     "- add tests & DI</br>- fix warnings & cycles"
