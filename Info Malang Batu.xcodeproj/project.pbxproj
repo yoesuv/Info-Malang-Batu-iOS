@@ -39,6 +39,8 @@
 		AB93B6D927C8921D000B2EBA /* ItemCheckListPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93B6D827C8921D000B2EBA /* ItemCheckListPlace.swift */; };
 		AB93B6DB27C89273000B2EBA /* FilterItemListPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */; };
 		ABA25F5F2BFAE6E60024C25B /* Info_Malang_BatuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */; };
+		ABA8E7652FB1B1DB00C7B95A /* GalleryResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = ABA8E7642FB1B1CC00C7B95A /* GalleryResponse.json */; };
+		ABA8E7672FB1B29500C7B95A /* MapsPinResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = ABA8E7662FB1B28300C7B95A /* MapsPinResponse.json */; };
 		ABB268E427BBA74700BD3305 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABB268E327BBA74700BD3305 /* LocationManager.swift */; };
 		ABC661D027BA145A003928F0 /* pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ABC661CF27BA145A003928F0 /* pacifico.ttf */; };
 		ABCFE2F527B0F3ED007D19F3 /* ItemPlaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */; };
@@ -98,6 +100,8 @@
 		AB93B6DA27C89273000B2EBA /* FilterItemListPlaceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItemListPlaceModel.swift; sourceTree = "<group>"; };
 		ABA25F5C2BFAE6E60024C25B /* Info Malang BatuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Info Malang BatuTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info_Malang_BatuTests.swift; sourceTree = "<group>"; };
+		ABA8E7642FB1B1CC00C7B95A /* GalleryResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GalleryResponse.json; sourceTree = "<group>"; };
+		ABA8E7662FB1B28300C7B95A /* MapsPinResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MapsPinResponse.json; sourceTree = "<group>"; };
 		ABB268E327BBA74700BD3305 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		ABC661CF27BA145A003928F0 /* pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pacifico.ttf; sourceTree = "<group>"; };
 		ABCFE2F427B0F3ED007D19F3 /* ItemPlaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPlaceView.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 		ABA25F5D2BFAE6E60024C25B /* Info Malang BatuTests */ = {
 			isa = PBXGroup;
 			children = (
+				ABA8E7662FB1B28300C7B95A /* MapsPinResponse.json */,
+				ABA8E7642FB1B1CC00C7B95A /* GalleryResponse.json */,
 				ABA25F5E2BFAE6E60024C25B /* Info_Malang_BatuTests.swift */,
 				AB3656042C0383BD00195B79 /* ListPlaceResponse.json */,
 				AB3656062C03840C00195B79 /* MockNetworkService.swift */,
@@ -401,6 +407,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB3656052C0383BD00195B79 /* ListPlaceResponse.json in Resources */,
+				ABA8E7672FB1B29500C7B95A /* MapsPinResponse.json in Resources */,
+				ABA8E7652FB1B1DB00C7B95A /* GalleryResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

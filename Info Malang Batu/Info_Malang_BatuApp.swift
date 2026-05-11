@@ -9,7 +9,7 @@ import SwiftUI
 @preconcurrency import GoogleMaps
 
 @main
-struct Info_Malang_BatuApp: App {
+struct InfoMalangBatuApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
@@ -23,7 +23,10 @@ struct Info_Malang_BatuApp: App {
 // https://betterprogramming.pub/how-to-use-firebase-in-swiftuis-new-application-lifecycle-c77a8a306d63
 @MainActor
 class AppDelegate: NSObject, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    func application(
+        _ application: UIApplication,
+        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
+    ) -> Bool {
         if let path = Bundle.main.path(forResource: "keys", ofType: "plist") {
             if let dict = NSDictionary(contentsOfFile: path) {
                 if let apiKey = dict["google_maps_api_key"] as? String {

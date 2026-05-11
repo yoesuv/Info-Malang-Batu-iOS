@@ -1,5 +1,7 @@
 ## Info Malang Batu iOS
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/780af04013884b2ea68ff29f65522677)](https://app.codacy.com/gh/yoesuv/Info-Malang-Batu-iOS/dashboard) [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/780af04013884b2ea68ff29f65522677)](https://app.codacy.com/gh/yoesuv/Info-Malang-Batu-iOS/dashboard)
+
 Another version project Info Malang Batu build with Swift UI.
 
 ### How to run/build this project
