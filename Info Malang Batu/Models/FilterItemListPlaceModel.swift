@@ -8,7 +8,13 @@
 import Foundation
 
 struct FilterItemListPlaceModel: Identifiable, Sendable {
-    let id = UUID().uuidString
+    let id: String
     let title: String
     let location: Location
+    
+    init(title: String, location: Location) {
+        self.id = UUID().uuidString
+        self.title = title
+        self.location = location
+    }
 }
