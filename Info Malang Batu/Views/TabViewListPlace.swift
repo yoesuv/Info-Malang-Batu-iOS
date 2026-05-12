@@ -10,9 +10,19 @@ import SwiftUI
 
 struct TabViewListPlace: View {
     
-    @StateObject private var viewModel = ListPlaceViewModel(NetworkService())
-    @State private var showMenuListPlace = false
-    @State private var selectedFilter = FilterItemListPlaceModel(title: "Semua", location: Location.semua)
+    @StateObject private var viewModel: ListPlaceViewModel
+    @State private var showMenuListPlace: Bool
+    @State private var selectedFilter: FilterItemListPlaceModel
+    
+    init(
+        viewModel: ListPlaceViewModel = ListPlaceViewModel(NetworkService()),
+        showMenuListPlace: Bool = false,
+        selectedFilter: FilterItemListPlaceModel = FilterItemListPlaceModel(title: "Semua", location: Location.semua)
+    ) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+        _showMenuListPlace = State(initialValue: showMenuListPlace)
+        _selectedFilter = State(initialValue: selectedFilter)
+    }
     
     var body: some View {
         NavigationStack {

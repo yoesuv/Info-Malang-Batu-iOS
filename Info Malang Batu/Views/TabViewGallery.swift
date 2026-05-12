@@ -10,12 +10,16 @@ import SwiftUI
 
 struct TabViewGallery: View {
     
-    @StateObject private var viewModel = GalleryViewModel(NetworkService())
+    @StateObject private var viewModel: GalleryViewModel
     let column = [
         GridItem(.flexible(), spacing: 0),
         GridItem(.flexible(), spacing: 0),
         GridItem(.flexible(), spacing: 0),
     ]
+    
+    init(viewModel: GalleryViewModel = GalleryViewModel(NetworkService())) {
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         NavigationStack {
